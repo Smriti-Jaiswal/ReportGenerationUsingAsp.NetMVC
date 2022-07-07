@@ -1,0 +1,34 @@
+﻿@model procpu.Models.StudentViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+
+<body>
+
+
+    <div class="col-sm-6">
+        @foreach (var item in ViewBag.deateilsby_id)
+            {
+            <input type="hidden" id="custId" name="custId" value="@item.transid">
+            <label><b>Name: </b>@(item.stdfname + " " + item.stdmname + " " + item.stdlname)</label><br />
+                <label><b>Date of Birth: </b>@item.dob.ToString("dd-MM-yyyy")</label><br />
+                <label><b>Citizenship ID: </b>@item.citizenship_id</label><br />
+                <label><b>Gender: </b>@item.gender</label><br />
+                <label><b>Home Address: </b>@item.address</label><br />
+                <label><b>Country: </b>@item.country</label><br />
+                <label><b>Phone Number: </b>@item.phno</label><br />
+                <label><b>Grade level applied for: </b>@item.grade</label><br />
+                <label><b>Subjects Taken: </b>@item.subjectstaken</label><br />
+                <label><b>Science / Business/ Medical/Engineering or Accounting or computer science pathway: </b>@item.pathway</label><br />
+                <label><b>Centre Name: </b>@item.centrename</label><br />
+                <label><b>Centre Address: </b>@item.centreaddress</label><br />
+                <label><b>Centre Phone Number: </b>@item.centrephno</label><br />
+        }
+    </div>
+</body>
+</html>

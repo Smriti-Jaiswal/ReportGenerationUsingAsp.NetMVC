@@ -1,0 +1,1084 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="db_luccpuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblcpugeninfo">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="cpugeninfo" Type="varchar(max)" Nullable="false" />
+          <Property Name="cpugeninfodesc" Type="varchar(max)" Nullable="false" />
+          <Property Name="geninfoupld" Type="varchar(max)" Nullable="false" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lcm" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblcpupartmoudtls">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="partnerid" Type="varchar(max)" Nullable="false" />
+          <Property Name="partnername" Type="varchar(max)" Nullable="false" />
+          <Property Name="partneremail" Type="varchar(max)" Nullable="false" />
+          <Property Name="partnercnumber" Type="varchar(max)" Nullable="false" />
+          <Property Name="partnercountry" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="partnermouupld" Type="varchar(max)" Nullable="false" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lcm" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblstdacademicgradedtls">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="frmmodtransid" Type="uniqueidentifier" />
+          <Property Name="schoolyear" Type="varchar(max)" />
+          <Property Name="gradelvl" Type="varchar(max)" />
+          <Property Name="totalcredits" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="gpa" Type="varchar(max)" />
+          <Property Name="cumulativegpa" Type="varchar(max)" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+          <Property Name="studenttransid" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="tblstdacademicrecord">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="frmmodtransid" Type="uniqueidentifier" />
+          <Property Name="coursetitle" Type="varchar(max)" />
+          <Property Name="creditattempted" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="creditearned" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="finalgrade" Type="varchar(max)" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+          <Property Name="studenttransid" Type="uniqueidentifier" />
+          <Property Name="assignments" Type="varchar(max)" />
+          <Property Name="quizzes" Type="varchar(max)" />
+          <Property Name="marksobtained" Type="varchar(max)" />
+          <Property Name="totalmarks" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tblstdacademicsummary">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="frmmodtransid" Type="uniqueidentifier" />
+          <Property Name="cumugpa" Type="varchar(max)" />
+          <Property Name="creditsattempted" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="creditsearned" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="diplomaearned" Type="varchar(max)" />
+          <Property Name="graduationdate" Type="datetime" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+          <Property Name="studenttransid" Type="uniqueidentifier" />
+          <Property Name="totalsubjects" Type="varchar(max)" />
+          <Property Name="totalmarksattempted" Type="varchar(max)" />
+          <Property Name="totalmarksobtained" Type="varchar(max)" />
+          <Property Name="totalpercentage" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tblstdapplicationdtls">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="stdfname" Type="varchar(max)" Nullable="false" />
+          <Property Name="stdmname" Type="varchar(max)" />
+          <Property Name="stdlname" Type="varchar(max)" Nullable="false" />
+          <Property Name="dob" Type="date" Nullable="false" />
+          <Property Name="citizenship_id" Type="varchar(max)" Nullable="false" />
+          <Property Name="gender" Type="varchar(max)" Nullable="false" />
+          <Property Name="address" Type="varchar(max)" Nullable="false" />
+          <Property Name="country" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="phno" Type="varchar(max)" Nullable="false" />
+          <Property Name="grade" Type="varchar(max)" Nullable="false" />
+          <Property Name="subjectstaken" Type="varchar(max)" Nullable="false" />
+          <Property Name="pathway" Type="varchar(max)" Nullable="false" />
+          <Property Name="centrename" Type="varchar(max)" Nullable="false" />
+          <Property Name="centreaddress" Type="varchar(max)" Nullable="false" />
+          <Property Name="centrephno" Type="varchar(max)" Nullable="false" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblstdattachment">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="frmmodtransid" Type="uniqueidentifier" />
+          <Property Name="attachmenttype" Type="varchar(max)" />
+          <Property Name="attachmentotherdtls" Type="varchar(max)" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+          <Property Name="studenttransid" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="tblstddocupload">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="frmmodtransid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="docid" Type="varchar(max)" Nullable="false" />
+          <Property Name="uploaddocs" Type="varchar(max)" Nullable="false" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblstdparentdtls">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="frmmodtransid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="fname" Type="varchar(max)" Nullable="false" />
+          <Property Name="lname" Type="varchar(max)" Nullable="false" />
+          <Property Name="idnumber" Type="varchar(max)" Nullable="false" />
+          <Property Name="email" Type="varchar(max)" Nullable="false" />
+          <Property Name="relation" Type="varchar(max)" Nullable="false" />
+          <Property Name="homeaddress" Type="varchar(max)" Nullable="false" />
+          <Property Name="mobile" Type="varchar(max)" Nullable="false" />
+          <Property Name="cname" Type="varchar(max)" Nullable="false" />
+          <Property Name="caddress" Type="varchar(max)" Nullable="false" />
+          <Property Name="suite" Type="varchar(max)" Nullable="false" />
+          <Property Name="state" Type="varchar(max)" Nullable="false" />
+          <Property Name="postalcode" Type="varchar(max)" Nullable="false" />
+          <Property Name="city" Type="varchar(max)" Nullable="false" />
+          <Property Name="cuntry" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="cphno" Type="varchar(max)" Nullable="false" />
+          <Property Name="howdidyouhearaboutus" Type="varchar(max)" Nullable="false" />
+          <Property Name="fileupload" Type="varchar(max)" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lcm" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblattachmenttype">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="attachmentname" Type="varchar(max)" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblcountrymast">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="country_name" Type="varchar(max)" />
+          <Property Name="currency" Type="varchar" MaxLength="50" />
+          <Property Name="nationality" Type="varchar(max)" />
+          <Property Name="rco" Type="varchar" MaxLength="50" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="del_sts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar" MaxLength="50" />
+          <Property Name="lum" Type="datetime" />
+          <Property Name="callcode" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tbldoctypemast">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="doctype" Type="varchar(max)" Nullable="false" />
+          <Property Name="docgroup" Type="varchar(max)" Nullable="false" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblstdtranscript">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="frmmodtransid" Type="uniqueidentifier" />
+          <Property Name="transcriptnumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="transgendt" Type="datetime" />
+          <Property Name="rco" Type="varchar(max)" />
+          <Property Name="rcm" Type="datetime" />
+          <Property Name="delsts" Type="char" MaxLength="1" />
+          <Property Name="luo" Type="varchar(max)" />
+          <Property Name="lum" Type="datetime" />
+        </EntityType>
+        <EntityType Name="__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+          <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetRoles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetUserClaims">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="ClaimType" Type="nvarchar(max)" />
+          <Property Name="ClaimValue" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="AspNetUserLogins">
+          <Key>
+            <PropertyRef Name="LoginProvider" />
+            <PropertyRef Name="ProviderKey" />
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetUserRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+          <Property Name="PasswordHash" Type="nvarchar(max)" />
+          <Property Name="SecurityStamp" Type="nvarchar(max)" />
+          <Property Name="PhoneNumber" Type="nvarchar(max)" />
+          <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="datetime" />
+          <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_system_AspNetUserClaims_system_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserClaims">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_system_AspNetUserLogins_system_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserLogins">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_system_AspNetUserRoles_system_AspNetRoles_RoleId">
+          <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetRoles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_system_AspNetUserRoles_system_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="db_luccpuModelStoreContainer">
+          <EntitySet Name="tblcpugeninfo" EntityType="Self.tblcpugeninfo" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblcpupartmoudtls" EntityType="Self.tblcpupartmoudtls" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblstdacademicgradedtls" EntityType="Self.tblstdacademicgradedtls" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblstdacademicrecord" EntityType="Self.tblstdacademicrecord" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblstdacademicsummary" EntityType="Self.tblstdacademicsummary" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblstdapplicationdtls" EntityType="Self.tblstdapplicationdtls" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblstdattachment" EntityType="Self.tblstdattachment" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblstddocupload" EntityType="Self.tblstddocupload" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblstdparentdtls" EntityType="Self.tblstdparentdtls" Schema="cpu" store:Type="Tables" />
+          <EntitySet Name="tblattachmenttype" EntityType="Self.tblattachmenttype" Schema="master" store:Type="Tables" />
+          <EntitySet Name="tblcountrymast" EntityType="Self.tblcountrymast" Schema="master" store:Type="Tables" />
+          <EntitySet Name="tbldoctypemast" EntityType="Self.tbldoctypemast" Schema="master" store:Type="Tables" />
+          <EntitySet Name="tblstdtranscript" EntityType="Self.tblstdtranscript" Schema="master" store:Type="Tables" />
+          <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="system" store:Type="Tables" />
+          <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="system" store:Type="Tables" />
+          <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="system" store:Type="Tables" />
+          <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="system" store:Type="Tables" />
+          <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="system" store:Type="Tables" />
+          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="system" store:Type="Tables" />
+          <AssociationSet Name="FK_system_AspNetUserClaims_system_AspNetUsers_UserId" Association="Self.FK_system_AspNetUserClaims_system_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+          </AssociationSet>
+          <AssociationSet Name="FK_system_AspNetUserLogins_system_AspNetUsers_UserId" Association="Self.FK_system_AspNetUserLogins_system_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+          </AssociationSet>
+          <AssociationSet Name="FK_system_AspNetUserRoles_system_AspNetRoles_RoleId" Association="Self.FK_system_AspNetUserRoles_system_AspNetRoles_RoleId">
+            <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_system_AspNetUserRoles_system_AspNetUsers_UserId" Association="Self.FK_system_AspNetUserRoles_system_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_luccpuModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblcpugeninfo">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="cpugeninfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cpugeninfodesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="geninfoupld" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lcm" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblcpupartmoudtl">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="partnerid" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="partnername" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="partneremail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="partnercnumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="partnercountry" Type="Guid" Nullable="false" />
+          <Property Name="partnermouupld" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lcm" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblstdacademicgradedtl">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="frmmodtransid" Type="Guid" />
+          <Property Name="schoolyear" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="gradelvl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="totalcredits" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="gpa" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cumulativegpa" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+          <Property Name="studenttransid" Type="Guid" />
+        </EntityType>
+        <EntityType Name="tblstdacademicrecord">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="frmmodtransid" Type="Guid" />
+          <Property Name="coursetitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="creditattempted" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="creditearned" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="finalgrade" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+          <Property Name="studenttransid" Type="Guid" />
+          <Property Name="assignments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="quizzes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="marksobtained" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="totalmarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblstdacademicsummary">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="frmmodtransid" Type="Guid" />
+          <Property Name="cumugpa" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="creditsattempted" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="creditsearned" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="diplomaearned" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="graduationdate" Type="DateTime" Precision="3" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+          <Property Name="studenttransid" Type="Guid" />
+          <Property Name="totalsubjects" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="totalmarksattempted" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="totalmarksobtained" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="totalpercentage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblstdapplicationdtl">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="stdfname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="stdmname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="stdlname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dob" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="citizenship_id" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="country" Type="Guid" Nullable="false" />
+          <Property Name="phno" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="grade" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="subjectstaken" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pathway" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="centrename" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="centreaddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="centrephno" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblstdattachment">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="frmmodtransid" Type="Guid" />
+          <Property Name="attachmenttype" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="attachmentotherdtls" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+          <Property Name="studenttransid" Type="Guid" />
+        </EntityType>
+        <EntityType Name="tblstddocupload">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="frmmodtransid" Type="Guid" Nullable="false" />
+          <Property Name="docid" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="uploaddocs" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblstdparentdtl">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="frmmodtransid" Type="Guid" Nullable="false" />
+          <Property Name="fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idnumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="relation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="homeaddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="caddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="suite" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="state" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="postalcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cuntry" Type="Guid" Nullable="false" />
+          <Property Name="cphno" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="howdidyouhearaboutus" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fileupload" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lcm" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblcountrymast">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="country_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="currency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="nationality" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rco" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="del_sts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+          <Property Name="callcode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbldoctypemast">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="doctype" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="docgroup" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblstdtranscript">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="frmmodtransid" Type="Guid" />
+          <Property Name="transcriptnumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="transgendt" Type="DateTime" Precision="3" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="C__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="AspNetUserClaim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUser" Relationship="Self.FK_system_AspNetUserClaims_system_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="AspNetUserLogin">
+          <Key>
+            <PropertyRef Name="LoginProvider" />
+            <PropertyRef Name="ProviderKey" />
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AspNetUser" Relationship="Self.FK_system_AspNetUserLogins_system_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="AspNetUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+          <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_system_AspNetUserClaims_system_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+          <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_system_AspNetUserLogins_system_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+          <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+        </EntityType>
+        <Association Name="FK_system_AspNetUserClaims_system_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserClaims">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_system_AspNetUserLogins_system_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserLogins">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AspNetUserRoles">
+          <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
+          <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="db_luccpuEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblcpugeninfoes" EntityType="Self.tblcpugeninfo" />
+          <EntitySet Name="tblcpupartmoudtls" EntityType="Self.tblcpupartmoudtl" />
+          <EntitySet Name="tblstdacademicgradedtls" EntityType="Self.tblstdacademicgradedtl" />
+          <EntitySet Name="tblstdacademicrecords" EntityType="Self.tblstdacademicrecord" />
+          <EntitySet Name="tblstdacademicsummaries" EntityType="Self.tblstdacademicsummary" />
+          <EntitySet Name="tblstdapplicationdtls" EntityType="Self.tblstdapplicationdtl" />
+          <EntitySet Name="tblstdattachments" EntityType="Self.tblstdattachment" />
+          <EntitySet Name="tblstddocuploads" EntityType="Self.tblstddocupload" />
+          <EntitySet Name="tblstdparentdtls" EntityType="Self.tblstdparentdtl" />
+          <EntitySet Name="tblcountrymasts" EntityType="Self.tblcountrymast" />
+          <EntitySet Name="tbldoctypemasts" EntityType="Self.tbldoctypemast" />
+          <EntitySet Name="tblstdtranscripts" EntityType="Self.tblstdtranscript" />
+          <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+          <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
+          <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
+          <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
+          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+          <AssociationSet Name="FK_system_AspNetUserClaims_system_AspNetUsers_UserId" Association="Self.FK_system_AspNetUserClaims_system_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+          </AssociationSet>
+          <AssociationSet Name="FK_system_AspNetUserLogins_system_AspNetUsers_UserId" Association="Self.FK_system_AspNetUserLogins_system_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+          </AssociationSet>
+          <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+            <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+          </AssociationSet>
+          <EntitySet Name="tblattachmenttypes" EntityType="db_luccpuModel.tblattachmenttype" />
+        </EntityContainer>
+        <EntityType Name="tblattachmenttype">
+          <Key>
+            <PropertyRef Name="transid" />
+          </Key>
+          <Property Name="transid" Type="Guid" Nullable="false" />
+          <Property Name="attachmentname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rco" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rcm" Type="DateTime" Precision="3" />
+          <Property Name="delsts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="luo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lum" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_luccpuModelStoreContainer" CdmEntityContainer="db_luccpuEntities">
+          <EntitySetMapping Name="tblcpugeninfoes">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblcpugeninfo">
+              <MappingFragment StoreEntitySet="tblcpugeninfo">
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="cpugeninfo" ColumnName="cpugeninfo" />
+                <ScalarProperty Name="cpugeninfodesc" ColumnName="cpugeninfodesc" />
+                <ScalarProperty Name="geninfoupld" ColumnName="geninfoupld" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lcm" ColumnName="lcm" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblcpupartmoudtls">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblcpupartmoudtl">
+              <MappingFragment StoreEntitySet="tblcpupartmoudtls">
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="partnerid" ColumnName="partnerid" />
+                <ScalarProperty Name="partnername" ColumnName="partnername" />
+                <ScalarProperty Name="partneremail" ColumnName="partneremail" />
+                <ScalarProperty Name="partnercnumber" ColumnName="partnercnumber" />
+                <ScalarProperty Name="partnercountry" ColumnName="partnercountry" />
+                <ScalarProperty Name="partnermouupld" ColumnName="partnermouupld" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lcm" ColumnName="lcm" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblstdacademicgradedtls">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblstdacademicgradedtl">
+              <MappingFragment StoreEntitySet="tblstdacademicgradedtls">
+                <ScalarProperty Name="studenttransid" ColumnName="studenttransid" />
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+                <ScalarProperty Name="schoolyear" ColumnName="schoolyear" />
+                <ScalarProperty Name="gradelvl" ColumnName="gradelvl" />
+                <ScalarProperty Name="totalcredits" ColumnName="totalcredits" />
+                <ScalarProperty Name="gpa" ColumnName="gpa" />
+                <ScalarProperty Name="cumulativegpa" ColumnName="cumulativegpa" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblstdacademicrecords">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblstdacademicrecord">
+              <MappingFragment StoreEntitySet="tblstdacademicrecord">
+                <ScalarProperty Name="totalmarks" ColumnName="totalmarks" />
+                <ScalarProperty Name="marksobtained" ColumnName="marksobtained" />
+                <ScalarProperty Name="quizzes" ColumnName="quizzes" />
+                <ScalarProperty Name="assignments" ColumnName="assignments" />
+                <ScalarProperty Name="studenttransid" ColumnName="studenttransid" />
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+                <ScalarProperty Name="coursetitle" ColumnName="coursetitle" />
+                <ScalarProperty Name="creditattempted" ColumnName="creditattempted" />
+                <ScalarProperty Name="creditearned" ColumnName="creditearned" />
+                <ScalarProperty Name="finalgrade" ColumnName="finalgrade" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblstdacademicsummaries">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblstdacademicsummary">
+              <MappingFragment StoreEntitySet="tblstdacademicsummary">
+                <ScalarProperty Name="totalpercentage" ColumnName="totalpercentage" />
+                <ScalarProperty Name="totalmarksobtained" ColumnName="totalmarksobtained" />
+                <ScalarProperty Name="totalmarksattempted" ColumnName="totalmarksattempted" />
+                <ScalarProperty Name="totalsubjects" ColumnName="totalsubjects" />
+                <ScalarProperty Name="studenttransid" ColumnName="studenttransid" />
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+                <ScalarProperty Name="cumugpa" ColumnName="cumugpa" />
+                <ScalarProperty Name="creditsattempted" ColumnName="creditsattempted" />
+                <ScalarProperty Name="creditsearned" ColumnName="creditsearned" />
+                <ScalarProperty Name="diplomaearned" ColumnName="diplomaearned" />
+                <ScalarProperty Name="graduationdate" ColumnName="graduationdate" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblstdapplicationdtls">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblstdapplicationdtl">
+              <MappingFragment StoreEntitySet="tblstdapplicationdtls">
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="stdfname" ColumnName="stdfname" />
+                <ScalarProperty Name="stdmname" ColumnName="stdmname" />
+                <ScalarProperty Name="stdlname" ColumnName="stdlname" />
+                <ScalarProperty Name="dob" ColumnName="dob" />
+                <ScalarProperty Name="citizenship_id" ColumnName="citizenship_id" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="phno" ColumnName="phno" />
+                <ScalarProperty Name="grade" ColumnName="grade" />
+                <ScalarProperty Name="subjectstaken" ColumnName="subjectstaken" />
+                <ScalarProperty Name="pathway" ColumnName="pathway" />
+                <ScalarProperty Name="centrename" ColumnName="centrename" />
+                <ScalarProperty Name="centreaddress" ColumnName="centreaddress" />
+                <ScalarProperty Name="centrephno" ColumnName="centrephno" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblstdattachments">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblstdattachment">
+              <MappingFragment StoreEntitySet="tblstdattachment">
+                <ScalarProperty Name="studenttransid" ColumnName="studenttransid" />
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+                <ScalarProperty Name="attachmenttype" ColumnName="attachmenttype" />
+                <ScalarProperty Name="attachmentotherdtls" ColumnName="attachmentotherdtls" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblstddocuploads">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblstddocupload">
+              <MappingFragment StoreEntitySet="tblstddocupload">
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+                <ScalarProperty Name="docid" ColumnName="docid" />
+                <ScalarProperty Name="uploaddocs" ColumnName="uploaddocs" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblstdparentdtls">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblstdparentdtl">
+              <MappingFragment StoreEntitySet="tblstdparentdtls">
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+                <ScalarProperty Name="idnumber" ColumnName="idnumber" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="relation" ColumnName="relation" />
+                <ScalarProperty Name="homeaddress" ColumnName="homeaddress" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="cname" ColumnName="cname" />
+                <ScalarProperty Name="caddress" ColumnName="caddress" />
+                <ScalarProperty Name="suite" ColumnName="suite" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="postalcode" ColumnName="postalcode" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="cuntry" ColumnName="cuntry" />
+                <ScalarProperty Name="cphno" ColumnName="cphno" />
+                <ScalarProperty Name="howdidyouhearaboutus" ColumnName="howdidyouhearaboutus" />
+                <ScalarProperty Name="fileupload" ColumnName="fileupload" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lcm" ColumnName="lcm" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblcountrymasts">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblcountrymast">
+              <MappingFragment StoreEntitySet="tblcountrymast">
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="country_name" ColumnName="country_name" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="nationality" ColumnName="nationality" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="del_sts" ColumnName="del_sts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+                <ScalarProperty Name="callcode" ColumnName="callcode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbldoctypemasts">
+            <EntityTypeMapping TypeName="db_luccpuModel.tbldoctypemast">
+              <MappingFragment StoreEntitySet="tbldoctypemast">
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="doctype" ColumnName="doctype" />
+                <ScalarProperty Name="docgroup" ColumnName="docgroup" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblstdtranscripts">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblstdtranscript">
+              <MappingFragment StoreEntitySet="tblstdtranscript">
+                <ScalarProperty Name="transid" ColumnName="transid" />
+                <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+                <ScalarProperty Name="transcriptnumber" ColumnName="transcriptnumber" />
+                <ScalarProperty Name="transgendt" ColumnName="transgendt" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="lum" ColumnName="lum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C__MigrationHistory">
+            <EntityTypeMapping TypeName="db_luccpuModel.C__MigrationHistory">
+              <MappingFragment StoreEntitySet="__MigrationHistory">
+                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+                <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetRoles">
+            <EntityTypeMapping TypeName="db_luccpuModel.AspNetRole">
+              <MappingFragment StoreEntitySet="AspNetRoles">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUserClaims">
+            <EntityTypeMapping TypeName="db_luccpuModel.AspNetUserClaim">
+              <MappingFragment StoreEntitySet="AspNetUserClaims">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+                <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUserLogins">
+            <EntityTypeMapping TypeName="db_luccpuModel.AspNetUserLogin">
+              <MappingFragment StoreEntitySet="AspNetUserLogins">
+                <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+                <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUsers">
+            <EntityTypeMapping TypeName="db_luccpuModel.AspNetUser">
+              <MappingFragment StoreEntitySet="AspNetUsers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+                <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+                <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+                <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+                <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="AspNetUserRoles" TypeName="db_luccpuModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+            <EndProperty Name="AspNetRoles">
+              <ScalarProperty Name="Id" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="AspNetUsers">
+              <ScalarProperty Name="Id" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="tblattachmenttypes">
+            <EntityTypeMapping TypeName="db_luccpuModel.tblattachmenttype">
+              <MappingFragment StoreEntitySet="tblattachmenttype">
+                <ScalarProperty Name="lum" ColumnName="lum" />
+                <ScalarProperty Name="luo" ColumnName="luo" />
+                <ScalarProperty Name="delsts" ColumnName="delsts" />
+                <ScalarProperty Name="rcm" ColumnName="rcm" />
+                <ScalarProperty Name="rco" ColumnName="rco" />
+                <ScalarProperty Name="attachmentname" ColumnName="attachmentname" />
+                <ScalarProperty Name="transid" ColumnName="transid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

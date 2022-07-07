@@ -1,0 +1,953 @@
+﻿@{
+    Layout = "~/Views/Shared/_CPULayout.cshtml";
+}
+<asp:Content ID="Content1" ContentPlaceHolderID="head">
+    <link href="~/dashboard/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/dashboard/css/dropzone.css" rel="stylesheet">
+    <link href="~/dashboard/css/jquery.gritter.css" rel="stylesheet">
+    <link href="~/dashboard/css/bootstrap-tour.min.css" rel="stylesheet">
+
+   
+    <link href="~/dashboard/css/reset.css" rel="stylesheet">
+    <link href="~/dashboard/css/layout.css" rel="stylesheet">
+    <link href="~/dashboard/css/components.css" rel="stylesheet">
+    <link href="~/dashboard/css/plugins.css" rel="stylesheet">
+    <link href="~/dashboard/css/default.theme.css" rel="stylesheet" id="theme">
+    <link href="~/dashboard/css/custom.css" rel="stylesheet">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1">
+    <asp:Panel ID="pnldata" CssClass="pnl_dataentry">
+
+        <div class="container">
+
+            <section id="page-content">
+
+           
+                <div id="tour-11" class="header-content">
+                    <h2><i class="fa fa-home"></i>Dashboard </h2>
+
+                </div>
+                <div class="body-content animated fadeIn">
+
+
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12 DBWIDTH">
+
+            
+                            <div id="tour-15" class="blog-item blog-quote rounded shadow">
+                                <div class="quote quote-lilac">
+                                    <a>
+                                        <span id="ContentPlaceHolder1_lblquote">I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character.</span>
+                                        <small class="quote-author">-<span id="ContentPlaceHolder1_lblwrittenby"> Martin Luther King, Jr. </span>-</small>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <!-- Start widget visitor chart -->
+                            <div id="tour-13" class="panel stat-stack widget-visitor rounded shadow">
+                                <div class="no-padding br-3">
+                                    <div class="row">
+                                        <div class="col-md-8 DBWIDTH">
+                                            <div class="panel panel-theme stat-left no-margin no-box-shadow">
+                                                <div class="panel-body bg-theme no-border">
+                                                    <div class="col-md-8">
+                                                        <h3 class="panel-title">My Profile</h3>
+                                                        <div class="panel-title2"><i class="fa fa-user" aria-hidden="true"></i><span id="ContentPlaceHolder1_lblname"></span> </div>
+                                                        <div class="panel-title2"><i class="fa fa-briefcase" aria-hidden="true"></i> <span id="ContentPlaceHolder1_lbldesig"></span></div>
+                                                        <div class="panel-title2"><i class="fa fa-birthday-cake" aria-hidden="true"></i> <span id="ContentPlaceHolder1_lbldob"></span></div>
+                                                        <div class="panel-title2"><i class="fa fa-phone" aria-hidden="true"></i> <span id="ContentPlaceHolder1_lblmob"></span></div>
+                                                    </div>
+                                                    @*<div class="col-md-4">
+                                                        <img id="ContentPlaceHolder1_imgpic" src="#" style="width:100px;" />
+                                                    </div>*@
+
+                                                    <div class="col-md-12">
+                                                        <div class="panel-title2"><i class="fa fa-map-marker" aria-hidden="true"></i> <span id="ContentPlaceHolder1_lbladdress"></span></div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <a href="#">
+                                                            <div class="col-md-3 no-padding no-margin">
+                                                                <div class="profile-button WhiteColor">
+                                                                    <div><i class="fa fa-users" aria-hidden="true"></i></div>
+                                                                    My Particulars
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="col-md-3 no-padding no-margin">
+                                                                <div class="profile-button WhiteColor">
+                                                                    <div><i class="fa fa-users" aria-hidden="true"></i></div>
+                                                                    Research Activities
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="col-md-3 no-padding no-margin">
+                                                                <div class="profile-button WhiteColor">
+                                                                    <div><i class="fa fa-users" aria-hidden="true"></i></div>
+                                                                    Other Activities
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="col-md-3 no-padding no-margin">
+                                                                <div class="profile-button-last WhiteColor">
+                                                                    <div><i class="fa fa-users" aria-hidden="true"></i></div>
+                                                                    Upload Document
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+
+                                                    </div>
+
+
+                                                    <div class="clearfix"></div>
+                                                </div><!-- /.panel-heading -->
+                                                <!--<div class="panel-body bg-theme">
+
+
+
+                                            </div> /.panel-body -->
+
+
+
+
+
+                                            </div><!-- /.panel -->
+                                        </div><!-- /.col-sm-6 -->
+                                        <div class="col-sm-4 DBMinHight1 DBWIDTH">
+                                            <div class="panel stat-right no-margin no-box-shadow">
+                                                <div class="panel-body">
+                                                    <h4 class="no-margin">Subject Attendance Status</h4>
+                                                    <p class="text-muted">Summary of current month's attendance status.</p>
+
+
+                                                </div><!-- /.panel-body -->
+
+                                            </div><!-- /.panel -->
+                                        </div><!-- /.col-sm-6 -->
+
+
+                                    </div><!-- /.row -->
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!--/ End widget visitor chart -->
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-4 col-xs-12">
+
+                                    <!-- Start weather widget -->
+                                    <div id="tour-14" class="widget-wrapper bg-theme rounded">
+                                        <div class="weather-current-city">
+
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                                    <span class="current-city">
+                                                        <span id="ContentPlaceHolder1_lblCity_Country">Petaling Jaya,MY</span>
+                                                    </span>
+                                                    <span class="current-temp">
+                                                        Humidity
+                                                        <span id="ContentPlaceHolder1_lblHumidity">50</span>
+                                                    </span>
+                                                </div><!-- /.col-md-7 -->
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <span class="current-day-icon">
+                                                        <img id="ContentPlaceHolder1_imgWeatherIcon" src="http://openweathermap.org/img/w/10d.png" style="height:60px;width:60px;" />
+
+                                                    </span>
+
+                                                </div><!-- /.col-md-5 -->
+                                            </div><!-- /.row -->
+                                            <span class="current-day"> <span id="printed-date"></span> </span>
+                                        </div><!-- /.weather-current-city -->
+                                        <div class="row">
+                                            <ul class="days">
+                                                <li class="col-md-6 col-sm-6 col-xs-6">
+                                                    <strong>Min</strong>
+
+                                                    <span> <span id="ContentPlaceHolder1_lblTempMin">24.4°С</span></span>
+                                                </li>
+                                                <li class="col-md-6 col-sm-6 col-xs-6">
+                                                    <strong>Max</strong>
+
+                                                    <span><span id="ContentPlaceHolder1_lblTempMax">35°С</span></span>
+                                                </li>
+
+                                            </ul><!-- /.days -->
+                                        </div><!-- /.row -->
+                                    </div><!-- /.widget-wrapper -->
+                                    <!--/ End weather widget -->
+
+                                    <div class="divider"></div>
+
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-4 col-xs-12">
+
+                                    <!-- Start Calulator widget -->
+                                    <div id="Div1" class="widget-wrapper bg-theme-card rounded">
+                                        <div class="weather-current-city">
+
+                                            <div class="row">
+
+
+                                                <div class="col-lg-6">
+                                                    <select name="ctl00$ContentPlaceHolder1$ddlcurrency" id="ContentPlaceHolder1_ddlcurrency" class="form-control-transparent">
+                                                        <option selected="selected" value="CBF41175-573E-4591-AA97-85E9BE18495B">AFN</option>
+                                                        <option value="BBE910C5-72CD-4699-8C61-B7AD20223D1A">Euro </option>
+                                                        <option value="50FA1783-6CF4-4A74-A022-9EDB64F56894">ALL</option>
+                                                        <option value="C7A48F27-861E-485B-B552-D5EF0E2C1E76">DZD</option>
+                                                        <option value="6E700E07-ACBE-4E6B-8BC0-F9B244CE8C71">USD</option>
+                                                        <option value="66916D2A-FD49-4BAB-9268-8D6A64C9BAE6">EUR</option>
+                                                        <option value="8732A5AA-6A73-4645-8F2A-87AB2E314F78">AOA</option>
+                                                        <option value="97BBF4B3-79AB-4DAC-9D69-3E7C85AFFE84">XCD</option>
+                                                        <option value="EC0C7726-CFDA-4577-A233-71CECE892BFC">XCD</option>
+                                                        <option value="BD48A215-5CB8-4C52-8CFC-AFA325BAEE13">ARS</option>
+                                                        <option value="4CA09A43-511A-4EFE-9B95-544E028B8E72">AMD</option>
+                                                        <option value="A5637D25-024E-4FB8-AF41-436FF310D006">AWG</option>
+                                                        <option value="A7096D0B-1793-4B4F-A4F4-2214FD4A784C">AUD</option>
+                                                        <option value="ADBB4053-6663-4E8C-B48C-6F56F47479CC">EUR</option>
+                                                        <option value="9DD2B367-FA46-4B6E-B8C3-3A3DEF1DDCD9">AZN</option>
+                                                        <option value="5033FE90-AAB4-41A2-A1F7-2AA9119E0BA8">BSD</option>
+                                                        <option value="044C10AB-47C8-46D8-B500-98F261C15697">BHD</option>
+                                                        <option value="E6273A7A-06CF-469C-8F6A-F3D0F067B171">BDT</option>
+                                                        <option value="CCD6EE2B-C2FA-4BFD-AED8-138231513695">BBD</option>
+                                                        <option value="9CFC7D29-F0A1-456E-BE0A-FE33AE995462">BYR</option>
+                                                        <option value="5F108256-6496-4D6A-B92E-F8D2D858378E">EUR</option>
+                                                        <option value="F2ABAF04-C63F-4237-B043-67ACAEB1237A">BZD</option>
+                                                        <option value="64013DED-AF42-4E3D-BE05-C47D36E83F7D">XOF</option>
+                                                        <option value="BF4044D8-C43A-475A-98C1-88E5E1E39E65">BMD</option>
+                                                        <option value="90162DA8-613D-4D8D-BC3C-E62BB9708E4C">BTN</option>
+                                                        <option value="8525ECE1-C02F-4CCC-BC6A-87E45FCFE5C3">BOB</option>
+                                                        <option value="C9D9A868-3AEE-471F-890B-1BFF6352160B">BAM</option>
+                                                        <option value="81EC571B-86AA-43A4-8BA7-EB43AC5F7CFD">BWP</option>
+                                                        <option value="DF15A175-FA19-4EF1-81AF-C09EA5BB59F5">BRL</option>
+                                                        <option value="89EBA544-4F6F-42A8-B170-C28F3E7F961E">USD</option>
+                                                        <option value="1FB58C58-26A6-4615-9200-8B9A0BB7FBA0">BND</option>
+                                                        <option value="D437E0E4-DD23-4156-979A-4DF063D46291">BGN</option>
+                                                        <option value="8AD7B8EA-CEAF-4164-AF62-EAB841F613BD">XOF</option>
+                                                        <option value="B90CE738-A108-4732-9CFE-31B714D376E0">MMK</option>
+                                                        <option value="30D0ECE2-2642-4BBD-AB01-FF5C97923C14">BIF</option>
+                                                        <option value="F9D4D0ED-AD15-49E0-9F91-37865EEA01F6">KHR</option>
+                                                        <option value="CEB7C587-8016-455D-94C5-23FF298CB638">XAF</option>
+                                                        <option value="4C09AB46-CB94-4112-80D2-97326DC011FE">CAD</option>
+                                                        <option value="25D7F18E-5577-4D28-BF87-C04E084C52AB">CVE</option>
+                                                        <option value="C5273462-5875-4D59-99AF-BABA6646FAF2">KYD</option>
+                                                        <option value="8D39C51C-9789-4729-901D-76C07EBBAADE">XAF</option>
+                                                        <option value="1195E039-5CFB-49D9-B3D1-E43BBBA38B9F">XAF</option>
+                                                        <option value="6D4FF619-F310-474D-BA45-93DA03CA4177">CLP</option>
+                                                        <option value="4E542EF8-B4A9-4311-ACC1-99F823245969">CNY</option>
+                                                        <option value="BFCA8DFB-BDD3-4AC5-8019-7D291C1DEAE9">AUD</option>
+                                                        <option value="C453DABB-0BDF-43E7-A74D-DB2AFC3DB89B">AUD</option>
+                                                        <option value="25730881-8F90-498F-B6AB-C6C758147DFE">COP</option>
+                                                        <option value="5680A211-5164-451F-96F1-B0C283AEC3AF">KMF</option>
+                                                        <option value="4C006DAF-8AAE-404F-BE23-4038FBD19C6C">CDF</option>
+                                                        <option value="6E6E6CE8-59A7-4351-B676-B7DC69E3A2BF">CDF</option>
+                                                        <option value="99636683-FA6C-43B4-9964-D5CF1D7CBCF2">XAF</option>
+                                                        <option value="87D71099-20EE-434B-939D-566A6338EFCB">NZD</option>
+                                                        <option value="317B1F7C-1466-49CB-8590-390EB6B47A4F">CRC</option>
+                                                        <option value="9253DC58-03B5-4D17-90EB-1BE4AB8028C6">XOF</option>
+                                                        <option value="DB783AA7-B8F9-43B1-866C-D38F8E6A4C5F">Currency</option>
+                                                        <option value="55E05858-6B6F-41F0-8841-733F7CD852D5">Currency1</option>
+                                                        <option value="9836B563-9E7F-421E-B5F6-C032ECAD3FCF">Currency</option>
+                                                        <option value="5BC26D97-FFD5-403F-9E22-0FD41AA5216A">Currencyt</option>
+                                                        <option value="652CB328-5D66-4A9D-B116-9F8C088854A0">HRK</option>
+                                                        <option value="A6D10DC2-AAE9-41A0-9FCC-5AE6CF84D871">CUC</option>
+                                                        <option value="05035528-C76B-4041-9650-B371722C5181">Currency</option>
+                                                        <option value="72A27CAB-E2BC-4E7E-90BC-EA2AF2F7D943">EUR</option>
+                                                        <option value="534AFF73-F50A-4EFE-AD26-D7A2E5634C8B">CZK</option>
+                                                        <option value="6D935794-85E5-446E-87FF-941044F4BA7E">DKK</option>
+                                                        <option value="2233EBD5-7EEE-44EA-994F-919B22B6354D">DJF</option>
+                                                        <option value="6AE03C4B-D44D-4EE7-8AB7-ABB0AA37AC5C">XCD</option>
+                                                        <option value="F4E6E6FF-7BB8-4F01-AA25-A9ABCB20FA4F">DOP</option>
+                                                        <option value="11160780-C792-4A2B-8768-FC66ED8705B2">USD</option>
+                                                        <option value="3E43B796-1669-49FA-9B89-BE647D10EE49">EGP</option>
+                                                        <option value="0996DBB3-95FB-4673-8CD5-2228FBA77EF5">USD</option>
+                                                        <option value="2A59A489-5BF4-4797-84FE-5D150722E417">GQE</option>
+                                                        <option value="8C8E9101-2E9F-4352-878F-515ED0144828">ERN</option>
+                                                        <option value="1978C11E-4FD2-4CAB-96AF-7AA890B4205F">EEK</option>
+                                                        <option value="711C7EAA-2229-416B-A718-8C852AA6C90C">ETB</option>
+                                                        <option value="1FF1CE5D-65BE-4819-A624-F66B9E6FEE5D">FKP</option>
+                                                        <option value="5735FA6C-7E80-40DD-B32C-425AF38749EA">DKK</option>
+                                                        <option value="D3160B89-1E41-4B9E-AA3E-B562F90DA3DB">FJD</option>
+                                                        <option value="FCB749F0-78F2-42A2-AAF7-581D8F96CD58">EUR</option>
+                                                        <option value="78D56B7E-79EC-489D-B44E-C8EC246E561C">EUR</option>
+                                                        <option value="B855A6D6-2CF2-4E83-BEC3-F8A0271B6275">XPF</option>
+                                                        <option value="A0ADC593-A6F9-4447-B6B0-84232E829189">XAF</option>
+                                                        <option value="D20017CB-3825-4771-9DA4-4DE36422628D">GMD</option>
+                                                        <option value="6DFC05A3-EEA7-451D-8356-BD23C46B49E6">GMD</option>
+                                                        <option value="B6FB7352-2789-470D-B59C-5F89C1DAEDB7">GMD</option>
+                                                        <option value="209764BD-E762-471C-98F6-4206C69793DE">EGP</option>
+                                                        <option value="AF4FF4AE-C5E4-4D8F-96C2-99698D6A775F">GEL</option>
+                                                        <option value="7E217A73-0E79-460A-A264-6363180D0C12">EUR</option>
+                                                        <option value="04B4FBD1-FA7E-4361-837F-5CE5B87EF1D1">GHS</option>
+                                                        <option value="D0A89BEA-6122-4D72-8157-EAA1258BA71C">GIP</option>
+                                                        <option value="DFB00422-C3A9-45BD-988A-3B56826CD592">EUR</option>
+                                                        <option value="86E8BBBE-F312-461B-8865-9C43F362E738">DKK</option>
+                                                        <option value="B0185350-C441-4E1B-A800-1A73CA3AC1BB">XCD</option>
+                                                        <option value="DA122DD0-CF51-40E6-8611-32C8CEC6942E">USD</option>
+                                                        <option value="61320B6C-D396-4D9C-BE0B-02D44115DEED">GTQ</option>
+                                                        <option value="362A3DA5-507B-47C2-B464-E3D635A572F3">GBP</option>
+                                                        <option value="CE5E5785-63BD-416C-94D3-238F66913F0E">GNF</option>
+                                                        <option value="1AF2E789-4A3D-4431-899C-5467DC06B6BF">XOF</option>
+                                                        <option value="C9D3EBD3-EEBE-4A7E-A22D-DC40BDF68951">00</option>
+                                                        <option value="EE20BFC7-0A7F-4586-8A42-AB745328E59A">GYD</option>
+                                                        <option value="BEFD8236-48AB-455B-AA6D-BC48A90C4057">HTG</option>
+                                                        <option value="D921CFEE-4469-4B97-BBCF-FA8EDC506CC1">HNL</option>
+                                                        <option value="58D62876-71BA-4238-8C88-34E232F8093A">HKD</option>
+                                                        <option value="90143B8F-4F36-4E8E-B4A3-A1EBFF691CA0">HUF</option>
+                                                        <option value="819E9CDA-D5EF-4F34-938F-4217F7D6FC81">ISK</option>
+                                                        <option value="9D9DD56A-74DF-43CB-8813-CA1187DB0DAF">rupees</option>
+                                                        <option value="D1850C61-33B5-4B27-8E9E-CCC74604FB9D">INR</option>
+                                                        <option value="D9A517BA-4B57-4F0A-AF5B-00FA02A961FB">IDR</option>
+                                                        <option value="E78F1BD3-9245-4B2B-A121-67C9AC24EBAA">IRR</option>
+                                                        <option value="BBF19464-FFF9-4BC2-810A-49FE683A0F46">IQD</option>
+                                                        <option value="9D29BA7A-695A-45DE-A5F8-208766FF2723">EURO</option>
+                                                        <option value="BD12AA9B-B3BB-42A2-B377-FF80BB34075F">GBP</option>
+                                                        <option value="BE45C536-1346-4557-941E-5189D68C22EA">ILS</option>
+                                                        <option value="275421D1-DC2A-4EA2-AD5B-91F307913CD4">EUR</option>
+                                                        <option value="32E0B35B-F8E4-41BA-B265-36D25660BA72">JMD</option>
+                                                        <option value="57290384-8E1F-4DE7-8198-9E73EE3A7638">JPY</option>
+                                                        <option value="359BB716-3FF4-47F6-9255-3E0295C2033A">GBP</option>
+                                                        <option value="CC3F123F-0C67-4521-AFD9-CBEC591B6766">JOD</option>
+                                                        <option value="1EC5F210-F3DE-4B2B-910F-0382D77FBCB7">KZT</option>
+                                                        <option value="3D1EE1A5-E3E9-4B03-998E-13A239746061">KES</option>
+                                                        <option value="A553021E-4EC5-45B7-A427-785EC98B300E">AUD</option>
+                                                        <option value="E331828B-A88C-4604-8672-A6DC745D0636">KPW</option>
+                                                        <option value="191FFFF8-1A0E-4D83-9BA0-CF0C03BD65BA">KRW</option>
+                                                        <option value="17C747E3-FF40-45A7-9FD8-AD269F610FFB">EUR</option>
+                                                        <option value="E08EBC89-AC58-456C-B3A2-EBF1F80656CD">KWD</option>
+                                                        <option value="22A5381A-39DF-469B-B788-D0F73D9A958E">KGS</option>
+                                                        <option value="1BD62BEF-8933-45A9-B8ED-658A9C8177D4">LAK</option>
+                                                        <option value="98EB1913-243A-4921-910F-CB4D5E216214">LVL</option>
+                                                        <option value="C83EDD14-B6AC-4F9D-99A4-4D4AB915CA3C">LBP</option>
+                                                        <option value="AC99229C-FE05-45F5-AC4E-E72A06EA499E">LSL</option>
+                                                        <option value="AB9DFAD3-6CE7-4C0F-A2F9-0B096AA4C5C2">LRD</option>
+                                                        <option value="E8AFB107-4EE1-42C6-A6AC-6BC3E8FC0644">LYD</option>
+                                                        <option value="CC353E3C-1EA6-4888-8226-977FBC053495">CHF</option>
+                                                        <option value="56DF30C2-E8EB-49C0-8C69-BFF100B02B60">LTL</option>
+                                                        <option value="F03A219A-FCB5-4DA5-A298-35F335C73213">EUR</option>
+                                                        <option value="3F4EA5C5-96FA-4F2B-9D84-C7C17173F985">MOP</option>
+                                                        <option value="3901E552-64E6-4269-8649-498937F06C77">MGA</option>
+                                                        <option value="D0CB2056-F7FF-498D-B13C-D491C81492B4">MWK</option>
+                                                        <option value="58CD6215-43ED-4B2F-8EAD-47CA744D6C17">MYR</option>
+                                                        <option value="0C3B5D7D-7F58-4F4C-A005-72B798B24A35">MVR</option>
+                                                        <option value="961973EB-2B15-4DCF-9951-4D69356650CB">XOF</option>
+                                                        <option value="42325C62-9E46-4E4F-BB73-D5110B836F39">EUR</option>
+                                                        <option value="604FFCA3-E743-4849-930F-667D173D3B8F">USD</option>
+                                                        <option value="13318F1A-78CD-4E8B-AF70-255EAFECDB68">MRO</option>
+                                                        <option value="4F62C583-82C0-4240-B2CF-14FC5A73FE5F">MUR</option>
+                                                        <option value="EA8F2366-307E-4F9F-8B82-97C4060E54CD">EUR</option>
+                                                        <option value="C9695637-CAED-438B-8AAB-3C83ACD8EE76">MXN</option>
+                                                        <option value="217FBD2B-836B-41D5-83A7-C75FBC3CBD9A">USD</option>
+                                                        <option value="BFB042C0-9ACE-40CF-9E95-CE3B928C32AA">MDL</option>
+                                                        <option value="D4D82EFE-1487-4EA1-BC1E-FB86EF1F6724">EUR</option>
+                                                        <option value="967D7D57-8DE2-4FFD-B944-F6B4D123DF63">MNT</option>
+                                                        <option value="A4166887-B821-491E-B901-2FF12BA3A315">EUR</option>
+                                                        <option value="021B8590-1686-4A6F-BA96-7599A53F7617">XCD</option>
+                                                        <option value="A5E8D8E4-6D46-4A2F-8456-0C7B798C61CC">MAD</option>
+                                                        <option value="1CD3FCC4-4191-4C42-88C5-F1791758D175">MZM</option>
+                                                        <option value="95D21AE9-3A61-4451-B81E-A7BFAC32D5EE">MMK</option>
+                                                        <option value="120D0475-CC83-4697-BBAA-A95BF5995B49">NAD</option>
+                                                        <option value="723352FC-6DC2-4D7B-8C16-404528DDA086">AUD</option>
+                                                        <option value="792FDF4A-2DEA-45BE-B343-F1C927DD5DE8">NPR</option>
+                                                        <option value="E8560DA4-9DD7-4852-BDE3-BC9BFBC54E70">EUR</option>
+                                                        <option value="2012BE47-77D0-4718-9748-FFFC95C1C44E">NAG</option>
+                                                        <option value="DB17A1B0-E3B3-49A6-8351-B405694E2166">XPF</option>
+                                                        <option value="565A8F3E-395E-45B0-A654-526C7904AA89">NZD</option>
+                                                        <option value="08EEF044-2A2A-46B1-840D-B3A0DA18E528">NIO</option>
+                                                        <option value="0E9CACF6-0740-4708-999F-F3B7BFC26AF2">XOF</option>
+                                                        <option value="1108DEB0-BC0F-4A65-9EBC-2AA2DB9DC237">NGN</option>
+                                                        <option value="D7950640-55BB-431B-B35C-20BA01FDBCC9">NZD</option>
+                                                        <option value="ED3547F0-96C1-4165-A4E4-637693711DEC">AUD</option>
+                                                        <option value="F1449494-BABB-45AC-9EEA-8FEA6F843237">USD</option>
+                                                        <option value="7FC4AA6B-3EDD-43C2-8D78-5D5FC717AAD9">NOK</option>
+                                                        <option value="B4AF2743-F34B-4E06-8489-19B2407CB332">OMR</option>
+                                                        <option value="4A6EA5AB-D5B2-4E88-A6DD-C22DC76352D5">PKR</option>
+                                                        <option value="727A7386-AEE2-44E7-9A39-A1BDFBBEB620">USD</option>
+                                                        <option value="A2844DDD-ACEC-4794-8958-C465FE9E19D0">NIS</option>
+                                                        <option value="6C7EDBA2-D0CF-4C45-ADAB-9F33ACCDB62F">PAB</option>
+                                                        <option value="B9F52235-85D5-43E8-8653-8E500661BE3D">PGK</option>
+                                                        <option value="6B92606B-E84D-4935-9930-452DA7E51835">PYG</option>
+                                                        <option value="7AFDEC84-43CE-451A-A225-59564B960702">PEN</option>
+                                                        <option value="C6EEB7EF-AC09-4BEC-B6E1-51F525F4B995">PHP</option>
+                                                        <option value="DB7240C6-F81B-45B9-8489-ADC1DAA101FC">NZD</option>
+                                                        <option value="74192CE4-1789-4A20-B657-EBC35F807959">PLN</option>
+                                                        <option value="1F6C47BE-F296-42DC-A119-5E31C9C62FD4">EUR</option>
+                                                        <option value="EC8F5186-3A61-4934-976D-F0506FE40152">USD</option>
+                                                        <option value="416F089F-63A9-4682-8EDE-E18E5BABB2BF">QAR</option>
+                                                        <option value="02E95751-381E-42B7-9E6F-5711F8236F32">EUR</option>
+                                                        <option value="D4AD2C16-3245-4BDE-BE9E-F4C2F9955381">CAF</option>
+                                                        <option value="1F855252-2E53-42D1-82EC-C8A5C4857913">GMD</option>
+                                                        <option value="2041F789-CCA5-45A8-BE80-84FA06D4AAB4">RON</option>
+                                                        <option value="0623C614-D002-4074-B732-A4CCACB8DF63">RUB</option>
+                                                        <option value="97049C82-71E0-4AA8-8A79-EE93A9EED739">RWF</option>
+                                                        <option value="75F5E26B-2248-4E12-B24A-0130BD473AD2">SHP</option>
+                                                        <option value="E8DF1BA9-FCC4-4082-B921-85CEDEC86C3E">XCD</option>
+                                                        <option value="24D69226-5970-4D83-9F60-BBCF9CC13193">XCD</option>
+                                                        <option value="2623F8C5-B111-4405-9DB1-E0D773EE83C2">EUR</option>
+                                                        <option value="B2EA003A-E5DD-44DC-913E-DB51353CC8F9">XCD</option>
+                                                        <option value="60108AEE-6226-4247-99D5-761483541127">WST</option>
+                                                        <option value="6055B7D0-2A51-4ED0-8A7F-4EDA37BFA958">EUR</option>
+                                                        <option value="980D1AAE-C785-4592-93A3-030CEC902485">STD</option>
+                                                        <option value="6E2448B7-186D-4C9C-9C6F-93EB5E86A493">SAR</option>
+                                                        <option value="CBC263C7-C834-4D2D-BCE5-D121B4D017CA">GBP</option>
+                                                        <option value="DD306445-B9BC-4566-A528-AB23EA2F0EAA">XOF</option>
+                                                        <option value="DEFD630A-2F6E-4665-8BD6-190804EA691E">RSD</option>
+                                                        <option value="AFF18DBC-58B9-4FF7-AD2C-E34279E72AE6">YUM</option>
+                                                        <option value="C574E87B-1516-4A42-A7A8-F61F07E70AB8">SCR</option>
+                                                        <option value="7AD72503-744B-41A4-90EB-B3150DCCB093">RS</option>
+                                                        <option value="7B2B78CD-398E-460F-9ABA-5CCC67D33773">RS</option>
+                                                        <option value="F29FF9CA-29C3-42A1-A4F2-A2F249B064FE">SLL</option>
+                                                        <option value="259F9E7E-A931-41DD-BFEC-7FB7B5C92DF7">SGD</option>
+                                                        <option value="7A3F2896-3B0D-4E5C-8718-7596A26ADB01">EUR</option>
+                                                        <option value="0341DBF2-447C-4F95-BC8E-64774654D676">EUR</option>
+                                                        <option value="24997D57-102C-4803-9B18-7545D58468B2">SBD</option>
+                                                        <option value="4BC3FCB8-2001-4D36-9606-8819CFD0412B">SOS</option>
+                                                        <option value="8008398C-A7A4-4ACA-B233-3067A8CA1208">SLSH</option>
+                                                        <option value="573EBC08-F5F6-48F1-ADDD-E30207C94EBC">ZAR</option>
+                                                        <option value="67BC9087-B5EA-42D4-A528-6BF718E08C41">GBP</option>
+                                                        <option value="4FEEE878-4605-41E7-9255-67459521CD04">SSP</option>
+                                                        <option value="DC1198E1-8024-4973-8B23-427BDF317199">EUR</option>
+                                                        <option value="A6035D3D-5BF8-4B87-BD31-F0EB8F46576D">LKR</option>
+                                                        <option value="1EAF2A14-6298-4AA7-A6AD-37641761E507">SDG</option>
+                                                        <option value="6DC8DFD0-1303-486D-A0C7-2A9DCC167035">SRD</option>
+                                                        <option value="A097F611-052A-41DA-B123-67F226F9E9CD">NOK</option>
+                                                        <option value="D09167AD-86CA-4982-A74A-80B06C8C5F8A">SZL</option>
+                                                        <option value="E2D32230-9851-4854-A54B-44F984C70953">SEK</option>
+                                                        <option value="C630F637-836F-4143-8B50-09C850700F8A">CHF</option>
+                                                        <option value="3072DD36-6E71-4E31-9473-4716C513AE27">SYP</option>
+                                                        <option value="A6B52A89-1272-40F2-9438-8BEE4A43A54F">TWD</option>
+                                                        <option value="F3A20879-9AD4-4E03-9BC3-8E523F0311AC">TJS</option>
+                                                        <option value="19D49362-E1B7-48AB-8E95-EAE795AA771C">TZS</option>
+                                                        <option value="CC5BA0A6-5910-4625-B4F6-C8C3334E23C9">12</option>
+                                                        <option value="6C57DE55-1B79-408A-B6B9-255F76451990">test</option>
+                                                        <option value="6A762079-84F6-4771-A78E-CA7B78F14209">12</option>
+                                                        <option value="7A073954-C8A0-4CDC-A13C-1653E6499B3C">21</option>
+                                                        <option value="E3C4A8A2-F5EC-4AC4-8F38-79AD203BA5FF">THB</option>
+                                                        <option value="EAD0642C-F291-4973-8A2F-F68622955244">USD</option>
+                                                        <option value="A53332A3-C6E3-42A4-900A-C36AC74589DC">XOF</option>
+                                                        <option value="5742AF0C-A40E-4677-A746-8572EE2387FA">NZD</option>
+                                                        <option value="D4F80435-794D-4812-A6B7-0B6AA7BDBF16">TOP</option>
+                                                        <option value="4D0B0E61-DA79-4BD0-BAFC-6D1585E51138">TTD</option>
+                                                        <option value="9B15ABC7-8CD6-4F3E-821C-DA48ACC0CB72">TND</option>
+                                                        <option value="32926C4F-5F61-4F3A-BFED-DB3A7FC54CC7">TRY</option>
+                                                        <option value="0A7107F5-1D41-49B3-A062-8E0434594B7F">TMT</option>
+                                                        <option value="B9142BCE-AB77-4475-B118-41CD1B378FE5">USD</option>
+                                                        <option value="C975CDAC-D42E-4F3C-9538-0C85EDE10077">AUD</option>
+                                                        <option value="72515329-7487-4D6B-81F6-79CF61F85300">UGX</option>
+                                                        <option value="8194A26D-EC17-4D21-A6CA-71308879078C">UAH</option>
+                                                        <option value="4193672F-2247-4418-96EE-AB018A892E46">AED</option>
+                                                        <option value="353FD1B1-8393-4390-B278-C4EB0A6A4FC6">DIRHAM</option>
+                                                        <option value="EEE8239E-E28B-4CC6-BC67-445040575F60">GBP</option>
+                                                        <option value="2A4EAA21-8C90-414F-9270-CF4BEFD660DE">USD</option>
+                                                        <option value="B71453A5-4F90-4AFC-9DE4-4146EA93A801">UYU</option>
+                                                        <option value="98F6B622-BB83-4204-8807-7D69232DD47A">UZS</option>
+                                                        <option value="C64E684C-FD8B-4300-8946-F1A16C73ED7F">VUV</option>
+                                                        <option value="D0502BCF-84E3-4F20-B429-DB2C2C7D9627">VEB</option>
+                                                        <option value="34488325-977A-4A7D-ACC0-7FABC939D0A0">VND</option>
+                                                        <option value="17AE85C0-A5A6-4E72-A249-FED68BF8A5E0">XPF</option>
+                                                        <option value="8F2F67B4-43D8-4BAE-B518-3C20CBE99E3D">MAD</option>
+                                                        <option value="5124D686-C1B7-4A89-A016-4105821357ED">YER</option>
+                                                        <option value="2E27C84C-19C8-45F6-8535-882235CBA210">ZMK</option>
+                                                        <option value="286D6488-244B-4F3F-9712-A5FFF40F42F6">ZWD</option>
+
+                                                    </select>
+
+                                                    <input name="ctl00$ContentPlaceHolder1$txttotalfees" type="text" maxlength="6" onchange="" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ContentPlaceHolder1_txttotalfees" class="form-control" />
+
+                                                    <span id="ContentPlaceHolder1_RequiredFieldValidator3" class="validators" ErrorMessawge="*" style="display:none;">*</span>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <select name="ctl00$ContentPlaceHolder1$ddlcurncy" onchange="" id="ContentPlaceHolder1_ddlcurncy" class="form-control-transparent">
+                                                    <option selected="selected" value="BBE910C5-72CD-4699-8C61-B7AD20223D1A">Euro </option>
+                                                    <option value="50FA1783-6CF4-4A74-A022-9EDB64F56894">ALL</option>
+                                                    <option value="C7A48F27-861E-485B-B552-D5EF0E2C1E76">DZD</option>
+                                                    <option value="6E700E07-ACBE-4E6B-8BC0-F9B244CE8C71">USD</option>
+                                                    <option value="66916D2A-FD49-4BAB-9268-8D6A64C9BAE6">EUR</option>
+                                                    <option value="8732A5AA-6A73-4645-8F2A-87AB2E314F78">AOA</option>
+                                                    <option value="97BBF4B3-79AB-4DAC-9D69-3E7C85AFFE84">XCD</option>
+                                                    <option value="EC0C7726-CFDA-4577-A233-71CECE892BFC">XCD</option>
+                                                    <option value="BD48A215-5CB8-4C52-8CFC-AFA325BAEE13">ARS</option>
+                                                    <option value="4CA09A43-511A-4EFE-9B95-544E028B8E72">AMD</option>
+                                                    <option value="A5637D25-024E-4FB8-AF41-436FF310D006">AWG</option>
+                                                    <option value="A7096D0B-1793-4B4F-A4F4-2214FD4A784C">AUD</option>
+                                                    <option value="ADBB4053-6663-4E8C-B48C-6F56F47479CC">EUR</option>
+                                                    <option value="9DD2B367-FA46-4B6E-B8C3-3A3DEF1DDCD9">AZN</option>
+                                                    <option value="5033FE90-AAB4-41A2-A1F7-2AA9119E0BA8">BSD</option>
+                                                    <option value="044C10AB-47C8-46D8-B500-98F261C15697">BHD</option>
+                                                    <option value="E6273A7A-06CF-469C-8F6A-F3D0F067B171">BDT</option>
+                                                    <option value="CCD6EE2B-C2FA-4BFD-AED8-138231513695">BBD</option>
+                                                    <option value="9CFC7D29-F0A1-456E-BE0A-FE33AE995462">BYR</option>
+                                                    <option value="5F108256-6496-4D6A-B92E-F8D2D858378E">EUR</option>
+                                                    <option value="F2ABAF04-C63F-4237-B043-67ACAEB1237A">BZD</option>
+                                                    <option value="64013DED-AF42-4E3D-BE05-C47D36E83F7D">XOF</option>
+                                                    <option value="BF4044D8-C43A-475A-98C1-88E5E1E39E65">BMD</option>
+                                                    <option value="90162DA8-613D-4D8D-BC3C-E62BB9708E4C">BTN</option>
+                                                    <option value="8525ECE1-C02F-4CCC-BC6A-87E45FCFE5C3">BOB</option>
+                                                    <option value="C9D9A868-3AEE-471F-890B-1BFF6352160B">BAM</option>
+                                                    <option value="81EC571B-86AA-43A4-8BA7-EB43AC5F7CFD">BWP</option>
+                                                    <option value="DF15A175-FA19-4EF1-81AF-C09EA5BB59F5">BRL</option>
+                                                    <option value="89EBA544-4F6F-42A8-B170-C28F3E7F961E">USD</option>
+                                                    <option value="1FB58C58-26A6-4615-9200-8B9A0BB7FBA0">BND</option>
+                                                    <option value="D437E0E4-DD23-4156-979A-4DF063D46291">BGN</option>
+                                                    <option value="8AD7B8EA-CEAF-4164-AF62-EAB841F613BD">XOF</option>
+                                                    <option value="B90CE738-A108-4732-9CFE-31B714D376E0">MMK</option>
+                                                    <option value="30D0ECE2-2642-4BBD-AB01-FF5C97923C14">BIF</option>
+                                                    <option value="F9D4D0ED-AD15-49E0-9F91-37865EEA01F6">KHR</option>
+                                                    <option value="CEB7C587-8016-455D-94C5-23FF298CB638">XAF</option>
+                                                    <option value="4C09AB46-CB94-4112-80D2-97326DC011FE">CAD</option>
+                                                    <option value="25D7F18E-5577-4D28-BF87-C04E084C52AB">CVE</option>
+                                                    <option value="C5273462-5875-4D59-99AF-BABA6646FAF2">KYD</option>
+                                                    <option value="8D39C51C-9789-4729-901D-76C07EBBAADE">XAF</option>
+                                                    <option value="1195E039-5CFB-49D9-B3D1-E43BBBA38B9F">XAF</option>
+                                                    <option value="6D4FF619-F310-474D-BA45-93DA03CA4177">CLP</option>
+                                                    <option value="4E542EF8-B4A9-4311-ACC1-99F823245969">CNY</option>
+                                                    <option value="BFCA8DFB-BDD3-4AC5-8019-7D291C1DEAE9">AUD</option>
+                                                    <option value="C453DABB-0BDF-43E7-A74D-DB2AFC3DB89B">AUD</option>
+                                                    <option value="25730881-8F90-498F-B6AB-C6C758147DFE">COP</option>
+                                                    <option value="5680A211-5164-451F-96F1-B0C283AEC3AF">KMF</option>
+                                                    <option value="4C006DAF-8AAE-404F-BE23-4038FBD19C6C">CDF</option>
+                                                    <option value="6E6E6CE8-59A7-4351-B676-B7DC69E3A2BF">CDF</option>
+                                                    <option value="99636683-FA6C-43B4-9964-D5CF1D7CBCF2">XAF</option>
+                                                    <option value="87D71099-20EE-434B-939D-566A6338EFCB">NZD</option>
+                                                    <option value="317B1F7C-1466-49CB-8590-390EB6B47A4F">CRC</option>
+                                                    <option value="9253DC58-03B5-4D17-90EB-1BE4AB8028C6">XOF</option>
+                                                    <option value="DB783AA7-B8F9-43B1-866C-D38F8E6A4C5F">Currency</option>
+                                                    <option value="55E05858-6B6F-41F0-8841-733F7CD852D5">Currency1</option>
+                                                    <option value="9836B563-9E7F-421E-B5F6-C032ECAD3FCF">Currency</option>
+                                                    <option value="5BC26D97-FFD5-403F-9E22-0FD41AA5216A">Currencyt</option>
+                                                    <option value="652CB328-5D66-4A9D-B116-9F8C088854A0">HRK</option>
+                                                    <option value="A6D10DC2-AAE9-41A0-9FCC-5AE6CF84D871">CUC</option>
+                                                    <option value="05035528-C76B-4041-9650-B371722C5181">Currency</option>
+                                                    <option value="72A27CAB-E2BC-4E7E-90BC-EA2AF2F7D943">EUR</option>
+                                                    <option value="534AFF73-F50A-4EFE-AD26-D7A2E5634C8B">CZK</option>
+                                                    <option value="6D935794-85E5-446E-87FF-941044F4BA7E">DKK</option>
+                                                    <option value="2233EBD5-7EEE-44EA-994F-919B22B6354D">DJF</option>
+                                                    <option value="6AE03C4B-D44D-4EE7-8AB7-ABB0AA37AC5C">XCD</option>
+                                                    <option value="F4E6E6FF-7BB8-4F01-AA25-A9ABCB20FA4F">DOP</option>
+                                                    <option value="11160780-C792-4A2B-8768-FC66ED8705B2">USD</option>
+                                                    <option value="3E43B796-1669-49FA-9B89-BE647D10EE49">EGP</option>
+                                                    <option value="0996DBB3-95FB-4673-8CD5-2228FBA77EF5">USD</option>
+                                                    <option value="2A59A489-5BF4-4797-84FE-5D150722E417">GQE</option>
+                                                    <option value="8C8E9101-2E9F-4352-878F-515ED0144828">ERN</option>
+                                                    <option value="1978C11E-4FD2-4CAB-96AF-7AA890B4205F">EEK</option>
+                                                    <option value="711C7EAA-2229-416B-A718-8C852AA6C90C">ETB</option>
+                                                    <option value="1FF1CE5D-65BE-4819-A624-F66B9E6FEE5D">FKP</option>
+                                                    <option value="5735FA6C-7E80-40DD-B32C-425AF38749EA">DKK</option>
+                                                    <option value="D3160B89-1E41-4B9E-AA3E-B562F90DA3DB">FJD</option>
+                                                    <option value="FCB749F0-78F2-42A2-AAF7-581D8F96CD58">EUR</option>
+                                                    <option value="78D56B7E-79EC-489D-B44E-C8EC246E561C">EUR</option>
+                                                    <option value="B855A6D6-2CF2-4E83-BEC3-F8A0271B6275">XPF</option>
+                                                    <option value="A0ADC593-A6F9-4447-B6B0-84232E829189">XAF</option>
+                                                    <option value="D20017CB-3825-4771-9DA4-4DE36422628D">GMD</option>
+                                                    <option value="6DFC05A3-EEA7-451D-8356-BD23C46B49E6">GMD</option>
+                                                    <option value="B6FB7352-2789-470D-B59C-5F89C1DAEDB7">GMD</option>
+                                                    <option value="209764BD-E762-471C-98F6-4206C69793DE">EGP</option>
+                                                    <option value="AF4FF4AE-C5E4-4D8F-96C2-99698D6A775F">GEL</option>
+                                                    <option value="7E217A73-0E79-460A-A264-6363180D0C12">EUR</option>
+                                                    <option value="04B4FBD1-FA7E-4361-837F-5CE5B87EF1D1">GHS</option>
+                                                    <option value="D0A89BEA-6122-4D72-8157-EAA1258BA71C">GIP</option>
+                                                    <option value="DFB00422-C3A9-45BD-988A-3B56826CD592">EUR</option>
+                                                    <option value="86E8BBBE-F312-461B-8865-9C43F362E738">DKK</option>
+                                                    <option value="B0185350-C441-4E1B-A800-1A73CA3AC1BB">XCD</option>
+                                                    <option value="DA122DD0-CF51-40E6-8611-32C8CEC6942E">USD</option>
+                                                    <option value="61320B6C-D396-4D9C-BE0B-02D44115DEED">GTQ</option>
+                                                    <option value="362A3DA5-507B-47C2-B464-E3D635A572F3">GBP</option>
+                                                    <option value="CE5E5785-63BD-416C-94D3-238F66913F0E">GNF</option>
+                                                    <option value="1AF2E789-4A3D-4431-899C-5467DC06B6BF">XOF</option>
+                                                    <option value="C9D3EBD3-EEBE-4A7E-A22D-DC40BDF68951">00</option>
+                                                    <option value="EE20BFC7-0A7F-4586-8A42-AB745328E59A">GYD</option>
+                                                    <option value="BEFD8236-48AB-455B-AA6D-BC48A90C4057">HTG</option>
+                                                    <option value="D921CFEE-4469-4B97-BBCF-FA8EDC506CC1">HNL</option>
+                                                    <option value="58D62876-71BA-4238-8C88-34E232F8093A">HKD</option>
+                                                    <option value="90143B8F-4F36-4E8E-B4A3-A1EBFF691CA0">HUF</option>
+                                                    <option value="819E9CDA-D5EF-4F34-938F-4217F7D6FC81">ISK</option>
+                                                    <option value="9D9DD56A-74DF-43CB-8813-CA1187DB0DAF">rupees</option>
+                                                    <option value="D1850C61-33B5-4B27-8E9E-CCC74604FB9D">INR</option>
+                                                    <option value="D9A517BA-4B57-4F0A-AF5B-00FA02A961FB">IDR</option>
+                                                    <option value="E78F1BD3-9245-4B2B-A121-67C9AC24EBAA">IRR</option>
+                                                    <option value="BBF19464-FFF9-4BC2-810A-49FE683A0F46">IQD</option>
+                                                    <option value="9D29BA7A-695A-45DE-A5F8-208766FF2723">EURO</option>
+                                                    <option value="BD12AA9B-B3BB-42A2-B377-FF80BB34075F">GBP</option>
+                                                    <option value="BE45C536-1346-4557-941E-5189D68C22EA">ILS</option>
+                                                    <option value="275421D1-DC2A-4EA2-AD5B-91F307913CD4">EUR</option>
+                                                    <option value="32E0B35B-F8E4-41BA-B265-36D25660BA72">JMD</option>
+                                                    <option value="57290384-8E1F-4DE7-8198-9E73EE3A7638">JPY</option>
+                                                    <option value="359BB716-3FF4-47F6-9255-3E0295C2033A">GBP</option>
+                                                    <option value="CC3F123F-0C67-4521-AFD9-CBEC591B6766">JOD</option>
+                                                    <option value="1EC5F210-F3DE-4B2B-910F-0382D77FBCB7">KZT</option>
+                                                    <option value="3D1EE1A5-E3E9-4B03-998E-13A239746061">KES</option>
+                                                    <option value="A553021E-4EC5-45B7-A427-785EC98B300E">AUD</option>
+                                                    <option value="E331828B-A88C-4604-8672-A6DC745D0636">KPW</option>
+                                                    <option value="191FFFF8-1A0E-4D83-9BA0-CF0C03BD65BA">KRW</option>
+                                                    <option value="17C747E3-FF40-45A7-9FD8-AD269F610FFB">EUR</option>
+                                                    <option value="E08EBC89-AC58-456C-B3A2-EBF1F80656CD">KWD</option>
+                                                    <option value="22A5381A-39DF-469B-B788-D0F73D9A958E">KGS</option>
+                                                    <option value="1BD62BEF-8933-45A9-B8ED-658A9C8177D4">LAK</option>
+                                                    <option value="98EB1913-243A-4921-910F-CB4D5E216214">LVL</option>
+                                                    <option value="C83EDD14-B6AC-4F9D-99A4-4D4AB915CA3C">LBP</option>
+                                                    <option value="AC99229C-FE05-45F5-AC4E-E72A06EA499E">LSL</option>
+                                                    <option value="AB9DFAD3-6CE7-4C0F-A2F9-0B096AA4C5C2">LRD</option>
+                                                    <option value="E8AFB107-4EE1-42C6-A6AC-6BC3E8FC0644">LYD</option>
+                                                    <option value="CC353E3C-1EA6-4888-8226-977FBC053495">CHF</option>
+                                                    <option value="56DF30C2-E8EB-49C0-8C69-BFF100B02B60">LTL</option>
+                                                    <option value="F03A219A-FCB5-4DA5-A298-35F335C73213">EUR</option>
+                                                    <option value="3F4EA5C5-96FA-4F2B-9D84-C7C17173F985">MOP</option>
+                                                    <option value="3901E552-64E6-4269-8649-498937F06C77">MGA</option>
+                                                    <option value="D0CB2056-F7FF-498D-B13C-D491C81492B4">MWK</option>
+                                                    <option value="58CD6215-43ED-4B2F-8EAD-47CA744D6C17">MYR</option>
+                                                    <option value="0C3B5D7D-7F58-4F4C-A005-72B798B24A35">MVR</option>
+                                                    <option value="961973EB-2B15-4DCF-9951-4D69356650CB">XOF</option>
+                                                    <option value="42325C62-9E46-4E4F-BB73-D5110B836F39">EUR</option>
+                                                    <option value="604FFCA3-E743-4849-930F-667D173D3B8F">USD</option>
+                                                    <option value="13318F1A-78CD-4E8B-AF70-255EAFECDB68">MRO</option>
+                                                    <option value="4F62C583-82C0-4240-B2CF-14FC5A73FE5F">MUR</option>
+                                                    <option value="EA8F2366-307E-4F9F-8B82-97C4060E54CD">EUR</option>
+                                                    <option value="C9695637-CAED-438B-8AAB-3C83ACD8EE76">MXN</option>
+                                                    <option value="217FBD2B-836B-41D5-83A7-C75FBC3CBD9A">USD</option>
+                                                    <option value="BFB042C0-9ACE-40CF-9E95-CE3B928C32AA">MDL</option>
+                                                    <option value="D4D82EFE-1487-4EA1-BC1E-FB86EF1F6724">EUR</option>
+                                                    <option value="967D7D57-8DE2-4FFD-B944-F6B4D123DF63">MNT</option>
+                                                    <option value="A4166887-B821-491E-B901-2FF12BA3A315">EUR</option>
+                                                    <option value="021B8590-1686-4A6F-BA96-7599A53F7617">XCD</option>
+                                                    <option value="A5E8D8E4-6D46-4A2F-8456-0C7B798C61CC">MAD</option>
+                                                    <option value="1CD3FCC4-4191-4C42-88C5-F1791758D175">MZM</option>
+                                                    <option value="95D21AE9-3A61-4451-B81E-A7BFAC32D5EE">MMK</option>
+                                                    <option value="120D0475-CC83-4697-BBAA-A95BF5995B49">NAD</option>
+                                                    <option value="723352FC-6DC2-4D7B-8C16-404528DDA086">AUD</option>
+                                                    <option value="792FDF4A-2DEA-45BE-B343-F1C927DD5DE8">NPR</option>
+                                                    <option value="E8560DA4-9DD7-4852-BDE3-BC9BFBC54E70">EUR</option>
+                                                    <option value="2012BE47-77D0-4718-9748-FFFC95C1C44E">NAG</option>
+                                                    <option value="DB17A1B0-E3B3-49A6-8351-B405694E2166">XPF</option>
+                                                    <option value="565A8F3E-395E-45B0-A654-526C7904AA89">NZD</option>
+                                                    <option value="08EEF044-2A2A-46B1-840D-B3A0DA18E528">NIO</option>
+                                                    <option value="0E9CACF6-0740-4708-999F-F3B7BFC26AF2">XOF</option>
+                                                    <option value="1108DEB0-BC0F-4A65-9EBC-2AA2DB9DC237">NGN</option>
+                                                    <option value="D7950640-55BB-431B-B35C-20BA01FDBCC9">NZD</option>
+                                                    <option value="ED3547F0-96C1-4165-A4E4-637693711DEC">AUD</option>
+                                                    <option value="F1449494-BABB-45AC-9EEA-8FEA6F843237">USD</option>
+                                                    <option value="7FC4AA6B-3EDD-43C2-8D78-5D5FC717AAD9">NOK</option>
+                                                    <option value="B4AF2743-F34B-4E06-8489-19B2407CB332">OMR</option>
+                                                    <option value="4A6EA5AB-D5B2-4E88-A6DD-C22DC76352D5">PKR</option>
+                                                    <option value="727A7386-AEE2-44E7-9A39-A1BDFBBEB620">USD</option>
+                                                    <option value="A2844DDD-ACEC-4794-8958-C465FE9E19D0">NIS</option>
+                                                    <option value="6C7EDBA2-D0CF-4C45-ADAB-9F33ACCDB62F">PAB</option>
+                                                    <option value="B9F52235-85D5-43E8-8653-8E500661BE3D">PGK</option>
+                                                    <option value="6B92606B-E84D-4935-9930-452DA7E51835">PYG</option>
+                                                    <option value="7AFDEC84-43CE-451A-A225-59564B960702">PEN</option>
+                                                    <option value="C6EEB7EF-AC09-4BEC-B6E1-51F525F4B995">PHP</option>
+                                                    <option value="DB7240C6-F81B-45B9-8489-ADC1DAA101FC">NZD</option>
+                                                    <option value="74192CE4-1789-4A20-B657-EBC35F807959">PLN</option>
+                                                    <option value="1F6C47BE-F296-42DC-A119-5E31C9C62FD4">EUR</option>
+                                                    <option value="EC8F5186-3A61-4934-976D-F0506FE40152">USD</option>
+                                                    <option value="416F089F-63A9-4682-8EDE-E18E5BABB2BF">QAR</option>
+                                                    <option value="02E95751-381E-42B7-9E6F-5711F8236F32">EUR</option>
+                                                    <option value="D4AD2C16-3245-4BDE-BE9E-F4C2F9955381">CAF</option>
+                                                    <option value="1F855252-2E53-42D1-82EC-C8A5C4857913">GMD</option>
+                                                    <option value="2041F789-CCA5-45A8-BE80-84FA06D4AAB4">RON</option>
+                                                    <option value="0623C614-D002-4074-B732-A4CCACB8DF63">RUB</option>
+                                                    <option value="97049C82-71E0-4AA8-8A79-EE93A9EED739">RWF</option>
+                                                    <option value="75F5E26B-2248-4E12-B24A-0130BD473AD2">SHP</option>
+                                                    <option value="E8DF1BA9-FCC4-4082-B921-85CEDEC86C3E">XCD</option>
+                                                    <option value="24D69226-5970-4D83-9F60-BBCF9CC13193">XCD</option>
+                                                    <option value="2623F8C5-B111-4405-9DB1-E0D773EE83C2">EUR</option>
+                                                    <option value="B2EA003A-E5DD-44DC-913E-DB51353CC8F9">XCD</option>
+                                                    <option value="60108AEE-6226-4247-99D5-761483541127">WST</option>
+                                                    <option value="6055B7D0-2A51-4ED0-8A7F-4EDA37BFA958">EUR</option>
+                                                    <option value="980D1AAE-C785-4592-93A3-030CEC902485">STD</option>
+                                                    <option value="6E2448B7-186D-4C9C-9C6F-93EB5E86A493">SAR</option>
+                                                    <option value="CBC263C7-C834-4D2D-BCE5-D121B4D017CA">GBP</option>
+                                                    <option value="DD306445-B9BC-4566-A528-AB23EA2F0EAA">XOF</option>
+                                                    <option value="DEFD630A-2F6E-4665-8BD6-190804EA691E">RSD</option>
+                                                    <option value="AFF18DBC-58B9-4FF7-AD2C-E34279E72AE6">YUM</option>
+                                                    <option value="C574E87B-1516-4A42-A7A8-F61F07E70AB8">SCR</option>
+                                                    <option value="7AD72503-744B-41A4-90EB-B3150DCCB093">RS</option>
+                                                    <option value="7B2B78CD-398E-460F-9ABA-5CCC67D33773">RS</option>
+                                                    <option value="F29FF9CA-29C3-42A1-A4F2-A2F249B064FE">SLL</option>
+                                                    <option value="259F9E7E-A931-41DD-BFEC-7FB7B5C92DF7">SGD</option>
+                                                    <option value="7A3F2896-3B0D-4E5C-8718-7596A26ADB01">EUR</option>
+                                                    <option value="0341DBF2-447C-4F95-BC8E-64774654D676">EUR</option>
+                                                    <option value="24997D57-102C-4803-9B18-7545D58468B2">SBD</option>
+                                                    <option value="4BC3FCB8-2001-4D36-9606-8819CFD0412B">SOS</option>
+                                                    <option value="8008398C-A7A4-4ACA-B233-3067A8CA1208">SLSH</option>
+                                                    <option value="573EBC08-F5F6-48F1-ADDD-E30207C94EBC">ZAR</option>
+                                                    <option value="67BC9087-B5EA-42D4-A528-6BF718E08C41">GBP</option>
+                                                    <option value="4FEEE878-4605-41E7-9255-67459521CD04">SSP</option>
+                                                    <option value="DC1198E1-8024-4973-8B23-427BDF317199">EUR</option>
+                                                    <option value="A6035D3D-5BF8-4B87-BD31-F0EB8F46576D">LKR</option>
+                                                    <option value="1EAF2A14-6298-4AA7-A6AD-37641761E507">SDG</option>
+                                                    <option value="6DC8DFD0-1303-486D-A0C7-2A9DCC167035">SRD</option>
+                                                    <option value="A097F611-052A-41DA-B123-67F226F9E9CD">NOK</option>
+                                                    <option value="D09167AD-86CA-4982-A74A-80B06C8C5F8A">SZL</option>
+                                                    <option value="E2D32230-9851-4854-A54B-44F984C70953">SEK</option>
+                                                    <option value="C630F637-836F-4143-8B50-09C850700F8A">CHF</option>
+                                                    <option value="3072DD36-6E71-4E31-9473-4716C513AE27">SYP</option>
+                                                    <option value="A6B52A89-1272-40F2-9438-8BEE4A43A54F">TWD</option>
+                                                    <option value="F3A20879-9AD4-4E03-9BC3-8E523F0311AC">TJS</option>
+                                                    <option value="19D49362-E1B7-48AB-8E95-EAE795AA771C">TZS</option>
+                                                    <option value="CC5BA0A6-5910-4625-B4F6-C8C3334E23C9">12</option>
+                                                    <option value="6C57DE55-1B79-408A-B6B9-255F76451990">test</option>
+                                                    <option value="6A762079-84F6-4771-A78E-CA7B78F14209">12</option>
+                                                    <option value="7A073954-C8A0-4CDC-A13C-1653E6499B3C">21</option>
+                                                    <option value="E3C4A8A2-F5EC-4AC4-8F38-79AD203BA5FF">THB</option>
+                                                    <option value="EAD0642C-F291-4973-8A2F-F68622955244">USD</option>
+                                                    <option value="A53332A3-C6E3-42A4-900A-C36AC74589DC">XOF</option>
+                                                    <option value="5742AF0C-A40E-4677-A746-8572EE2387FA">NZD</option>
+                                                    <option value="D4F80435-794D-4812-A6B7-0B6AA7BDBF16">TOP</option>
+                                                    <option value="4D0B0E61-DA79-4BD0-BAFC-6D1585E51138">TTD</option>
+                                                    <option value="9B15ABC7-8CD6-4F3E-821C-DA48ACC0CB72">TND</option>
+                                                    <option value="32926C4F-5F61-4F3A-BFED-DB3A7FC54CC7">TRY</option>
+                                                    <option value="0A7107F5-1D41-49B3-A062-8E0434594B7F">TMT</option>
+                                                    <option value="B9142BCE-AB77-4475-B118-41CD1B378FE5">USD</option>
+                                                    <option value="C975CDAC-D42E-4F3C-9538-0C85EDE10077">AUD</option>
+                                                    <option value="72515329-7487-4D6B-81F6-79CF61F85300">UGX</option>
+                                                    <option value="8194A26D-EC17-4D21-A6CA-71308879078C">UAH</option>
+                                                    <option value="4193672F-2247-4418-96EE-AB018A892E46">AED</option>
+                                                    <option value="353FD1B1-8393-4390-B278-C4EB0A6A4FC6">DIRHAM</option>
+                                                    <option value="EEE8239E-E28B-4CC6-BC67-445040575F60">GBP</option>
+                                                    <option value="2A4EAA21-8C90-414F-9270-CF4BEFD660DE">USD</option>
+                                                    <option value="B71453A5-4F90-4AFC-9DE4-4146EA93A801">UYU</option>
+                                                    <option value="98F6B622-BB83-4204-8807-7D69232DD47A">UZS</option>
+                                                    <option value="C64E684C-FD8B-4300-8946-F1A16C73ED7F">VUV</option>
+                                                    <option value="D0502BCF-84E3-4F20-B429-DB2C2C7D9627">VEB</option>
+                                                    <option value="34488325-977A-4A7D-ACC0-7FABC939D0A0">VND</option>
+                                                    <option value="17AE85C0-A5A6-4E72-A249-FED68BF8A5E0">XPF</option>
+                                                    <option value="8F2F67B4-43D8-4BAE-B518-3C20CBE99E3D">MAD</option>
+                                                    <option value="5124D686-C1B7-4A89-A016-4105821357ED">YER</option>
+                                                    <option value="2E27C84C-19C8-45F6-8535-882235CBA210">ZMK</option>
+                                                    <option value="286D6488-244B-4F3F-9712-A5FFF40F42F6">ZWD</option>
+
+                                                    </select>
+
+                                                    <input name="ctl00$ContentPlaceHolder1$txttotlfee" type="text" maxlength="6" id="ContentPlaceHolder1_txttotlfee" disabled="disabled" class="aspNetDisabled form-control" />
+
+                                                </div>
+                                                <div class="panel-title-currency">Currency Converter</div>
+
+                                            </div><!-- /.row -->
+
+                                        </div><!-- /.Calulator- -->
+
+                                    </div><!-- /.widget-wrapper -->
+                                    <!--/ End Calulator widget -->
+
+                                    <div class="divider"></div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div><!-- /.row -->
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <!-- Start sample table -->
+                            <div class="table-responsive rounded mb-20">
+
+                                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfvregindexno" id="ContentPlaceHolder1_hfvregindexno" />
+                                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfvsubject" id="ContentPlaceHolder1_hfvsubject" value="&#39;35EB29F8-4C83-4A28-9478-BAC96E9E3E4E&#39;,&#39;2903A288-3112-443D-AE3B-12097DC03E79&#39;,&#39;FA80899A-55A4-4CC5-A01E-E66134EB81A8&#39;,&#39;B1C85F4E-C6D2-4120-B99E-9F12A81530F7&#39;,&#39;0D766076-B99D-4FEF-A253-DC95F2376BF0&#39;,&#39;44592250-2141-488E-9E88-F266860204F8&#39;,&#39;01EFD680-3AAC-4EF8-8FA1-F6BCF0CC7FD0&#39;,&#39;58D428B2-B3F5-4EB7-9E80-F58EFE84E20C&#39;,&#39;4E32312B-AEC0-430B-8116-E07FBB960841&#39;,&#39;FE736257-5281-4D05-9C18-55094F28CA66&#39;,&#39;0BFB51FC-B7D3-4F42-8EA1-DCBC07A4B06F&#39;,&#39;EDD45976-A9C1-428E-AAF4-F4FFA73CC8BA&#39;,&#39;9052FDE0-D3EC-41D3-AB37-BBFAD281A0D3&#39;,&#39;A6483380-3546-4880-8F20-BA22F5A96AE5&#39;,&#39;66A6185F-C0A8-42E5-9F5E-FCB39CAE4983&#39;,&#39;77232236-3B98-486A-B997-AD15E9A260E8&#39;,&#39;1A65D9DA-4554-4A74-8946-7A7631484640&#39;,&#39;2426B111-8711-464F-B72D-4C9399F28119&#39;,&#39;3D1CE253-4AD8-4714-BDF9-017E16490A1D&#39;" />
+                                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfv_lectid" id="ContentPlaceHolder1_hfv_lectid" value="70641c73-a791-4dba-8de0-06354455d693" />
+
+
+
+                            </div><!-- /.table-responsive -->
+                            <!--/ End sample table -->
+
+
+
+                        </div>
+                        <div class="col-md-3">
+
+
+
+                        </div>
+                    </div><!-- /.row -->
+
+                </div><!-- /.body-content -->
+                <!--/ End body content -->
+
+
+
+            </section>
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfvid" id="ContentPlaceHolder1_hfvid" value="LUCIT3" />
+        </div>
+
+        <script src="../dashboard/js/handlebars.js"></script>
+        <script src="../dashboard/js/typeahead.bundle.min.js"></script>
+        <script src="../dashboard/js/jquery.nicescroll.min.js"></script>
+        <script src="../dashboard/js/index.js"></script>
+        <script src="../dashboard/js/jquery.easing.1.3.min.js"></script>
+        <script src="../dashboard/js/ion.sound.min.js"></script>
+        <script src="../dashboard/js/bootbox.js"></script>
+     
+        <!--/ END CORE PLUGINS -->
+
+        <script src="../dashboard/js/bootstrap-session-timeout.min.js"></script>
+        <script src="../dashboard/js/jquery.flot.js"></script>
+        <script src="../dashboard/js/jquery.flot.spline.min.js"></script>
+        <script src="../dashboard/js/jquery.flot.categories.js"></script>
+        <script src="../dashboard/js/jquery.flot.tooltip.min.js"></script>
+   
+        <script src="../dashboard/js/jquery.flot.pie.js"></script>
+        <script src="../dashboard/js/dropzone.min.js"></script>
+        <script src="../dashboard/js/jquery.gritter.min.js"></script>
+        <script src="../dashboard/js/skycons.js"></script>
+        <script src="../dashboard/js/jquery.waypoints.min.js"></script>
+        <script src="../dashboard/js/jquery.counterup.min.js"></script>
+        <script src="../dashboard/js/bootstrap-tour.min.js"></script>
+
+        <script src="../dashboard/js/apps.js"></script>
+        <script src="../dashboard/js/blankon.dashboard.js"></script>
+        <script src="../dashboard/js/demo.js"></script>
+        <!--/ END PAGE LEVEL SCRIPTS -->
+
+        <div>
+            <input type="hidden" name="ctl00$hdnlink" id="hdnlink" value="http://chat.lincoln.edu.my/ChatView.aspx?id=TFVDSVQz-euI%2bvIwExhM%3d" />
+            <script>
+                $(function () {
+                    $(".openchat").click(function () {
+                        window.open($("#hdnlink").val(), "Chat Window", "width=420,height=370,scrollbars=no,toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=no,addressbar=no,copyhistory=no");
+                    });
+                });
+            </script>
+
+
+
+
+        </div>
+
+        <script type="text/javascript">
+
+var Page_Validators =  new Array(document.getElementById("RequiredFieldValidator1"), document.getElementById("RequiredFieldValidator2"), document.getElementById("RequiredFieldValidator3"), document.getElementById("RequiredFieldValidator4"), document.getElementById("rfvloc"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator3"));
+
+        </script>
+
+        <script type="text/javascript">
+
+var RequiredFieldValidator1 = document.all ? document.all["RequiredFieldValidator1"] : document.getElementById("RequiredFieldValidator1");
+RequiredFieldValidator1.controltovalidate = "txtsch";
+RequiredFieldValidator1.focusOnError = "t";
+RequiredFieldValidator1.errormessage = "*";
+RequiredFieldValidator1.display = "Dynamic";
+RequiredFieldValidator1.validationGroup = "std";
+RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator1.initialvalue = "";
+var RequiredFieldValidator2 = document.all ? document.all["RequiredFieldValidator2"] : document.getElementById("RequiredFieldValidator2");
+RequiredFieldValidator2.controltovalidate = "txtschapplication";
+RequiredFieldValidator2.focusOnError = "t";
+RequiredFieldValidator2.errormessage = "*";
+RequiredFieldValidator2.display = "Dynamic";
+RequiredFieldValidator2.validationGroup = "appl";
+RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator2.initialvalue = "";
+var RequiredFieldValidator3 = document.all ? document.all["RequiredFieldValidator3"] : document.getElementById("RequiredFieldValidator3");
+RequiredFieldValidator3.controltovalidate = "txtempsch";
+RequiredFieldValidator3.focusOnError = "t";
+RequiredFieldValidator3.errormessage = "*";
+RequiredFieldValidator3.display = "Dynamic";
+RequiredFieldValidator3.validationGroup = "empl";
+RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator3.initialvalue = "";
+var RequiredFieldValidator4 = document.all ? document.all["RequiredFieldValidator4"] : document.getElementById("RequiredFieldValidator4");
+RequiredFieldValidator4.controltovalidate = "txtunivrep";
+RequiredFieldValidator4.focusOnError = "t";
+RequiredFieldValidator4.errormessage = "*";
+RequiredFieldValidator4.display = "Dynamic";
+RequiredFieldValidator4.validationGroup = "agt";
+RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator4.initialvalue = "";
+var rfvloc = document.all ? document.all["rfvloc"] : document.getElementById("rfvloc");
+rfvloc.controltovalidate = "txtlocate";
+rfvloc.focusOnError = "t";
+rfvloc.errormessage = "*";
+rfvloc.display = "Dynamic";
+rfvloc.validationGroup = "lct";
+rfvloc.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvloc.initialvalue = "";
+var ContentPlaceHolder1_RequiredFieldValidator3 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator3"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator3");
+ContentPlaceHolder1_RequiredFieldValidator3.controltovalidate = "ContentPlaceHolder1_txttotalfees";
+ContentPlaceHolder1_RequiredFieldValidator3.focusOnError = "t";
+ContentPlaceHolder1_RequiredFieldValidator3.display = "Dynamic";
+ContentPlaceHolder1_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldValidator3.initialvalue = "";
+
+        </script>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F75E61EE" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+        </div>
+        <script type="text/javascript">
+
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+
+        </script>
+        <script type="text/javascript">
+
+        </script>
+       
+            <asp:HiddenField ID="hfvid"/>
+
+       
+        <script src="~/dashboard/js/handlebars.js"></script>
+        <script src="~/dashboard/js/typeahead.bundle.min.js"></script>
+        <script src="~/dashboard/js/jquery.nicescroll.min.js"></script>
+        <script src="~/dashboard/js/index.js"></script>
+        <script src="~/dashboard/js/jquery.easing.1.3.min.js"></script>
+        <script src="~/dashboard/js/ion.sound.min.js"></script>
+        <script src="~/dashboard/js/bootbox.js"></script>
+  
+
+        <script src="~/dashboard/js/bootstrap-session-timeout.min.js"></script>
+        <script src="~/dashboard/js/jquery.flot.js"></script>
+        <script src="~/dashboard/js/jquery.flot.spline.min.js"></script>
+        <script src="~/dashboard/js/jquery.flot.categories.js"></script>
+        <script src="~/dashboard/js/jquery.flot.tooltip.min.js"></script>
+        <script src="~/dashboard/js/jquery.flot.pie.js"></script>
+        <script src="~/dashboard/js/dropzone.min.js"></script>
+        <script src="~/dashboard/js/jquery.gritter.min.js"></script>
+        <script src="~/dashboard/js/skycons.js"></script>
+        <script src="~/dashboard/js/jquery.waypoints.min.js"></script>
+        <script src="~/dashboard/js/jquery.counterup.min.js"></script>
+        <script src="~/dashboard/js/bootstrap-tour.min.js"></script>
+  
+        <script src="~/dashboard/js/apps.js"></script>
+        <script src="~/dashboard/js/blankon.dashboard.js"></script>
+        <script src="~/dashboard/js/demo.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js"></script>
+        <script>
+            document.getElementById("printed-date").innerHTML = moment().format('dddd, MMMM Do, YYYY');
+        </script>
+      
+    </asp:Panel>
+</asp:Content>
+

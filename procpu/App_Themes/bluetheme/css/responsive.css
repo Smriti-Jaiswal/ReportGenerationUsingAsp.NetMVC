@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Styles for screen 980px and lower*/
+@media screen and (max-width:980px) {
+	#login_wraper{margin:13% auto;}
+	#login_wraper .inputbox_holder{width:88%;}
+	#login_wraper{width:70%; padding:40px 50px;}
+	#login_wraper .logo_box{width:93%; padding:12px 10px;}
+	#login_wraper .logo_box img{width:auto;}
+	
+	input.textEntry{width:42%; margin:0;}
+	input.passwordEntry{width:42%; margin:0;}
+	
+	#login_wraper .submit_holder{width:8%;}
+	#login_wraper .go_btn{-webkit-border-radius:0 4px 4px 0; -moz-border-radius:0 4px 4px 0; border-radius:0 4px 4px 0; padding:10px 9px;}
+
+}
+
+/*Styles for screen 768px and lower*/
+@media screen and (max-width: 768px) {
+	#login_wraper{margin:13% auto;}
+	#login_wraper .inputbox_holder{width:88%;}
+	#login_wraper{width:85%; padding:40px 15px;}
+	#login_wraper .logo_box{width:93%; padding:12px 10px;}
+	#login_wraper .logo_box img{width:auto;}
+	
+	input.textEntry{width:42%; margin:0;}
+	input.passwordEntry{width:42%; margin:0;}
+	
+	#login_wraper .submit_holder{width:8%;}
+	#login_wraper .go_btn{-webkit-border-radius:0 4px 4px 0; -moz-border-radius:0 4px 4px 0; border-radius:0 4px 4px 0; padding:10px 9px;}
+		
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+	
+}
+
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+	
+}
+
+/*Styles for screen 360px and lower*/
+@media only screen and (max-width : 360px) {
+	#login_wraper{margin:5% auto;}
+	#login_wraper .inputbox_holder{width:91%;}
+	#login_wraper{width:85%; padding:40px 15px;}
+	#login_wraper .logo_box{width:93%; padding:12px 10px;}
+	#login_wraper .logo_box img{width:100%;}
+	
+	input.textEntry{width:83%; margin:0 0 5px 0;}
+	input.passwordEntry{width:83%; margin:0;}
+	
+	#login_wraper .submit_holder{width:100%;}
+	#login_wraper .go_btn{-webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; padding:10px 25px;}
+	
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	#login_wraper{margin:5% auto;}
+	#login_wraper .inputbox_holder{width:91%;}
+	#login_wraper{width:85%; padding:40px 15px;}
+	#login_wraper .logo_box{width:93%; padding:12px 10px;}
+	#login_wraper .logo_box img{width:100%;}
+	
+	input.textEntry{width:83%; margin:0 0 5px 0;}
+	input.passwordEntry{width:83%; margin:0;}
+	
+	#login_wraper .submit_holder{width:100%;}
+	#login_wraper .go_btn{-webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; padding:10px 25px;}
+
+}

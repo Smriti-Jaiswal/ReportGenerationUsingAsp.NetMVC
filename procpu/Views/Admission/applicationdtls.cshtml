@@ -1,0 +1,120 @@
+﻿@model IEnumerable<procpu.Models.AdmissionViewModel>
+
+@{
+    ViewBag.Title = "applicationdtls";
+    Layout = "~/Views/Shared/_CPULayout.cshtml";
+}
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/base/jquery-ui.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<style>
+    .button-cu {
+        border-style: none;
+        border-color: inherit;
+        border-width: 0;
+        background-color: #000;
+        background: #000 url(../images/send.png) no-repeat scroll 0% 0%;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        position: relative;
+        behavior: url(PIE.htc);
+        padding: 5px 30px 5px;
+        margin: 0;
+        font-family: 'Conv_Helvetica-Condensed',Sans-Serif;
+        font-size: 18px;
+        color: #fff;
+        font-weight: normal;
+        line-height: 25px;
+        cursor: pointer;
+        top: 0px;
+        left: 0px;
+    }
+
+    body {
+        background-color: white;
+    }
+</style>
+<h2 class="text-center"><b>Application Details</b></h2>
+<div class="container">
+    <div class="col-lg-12">
+        <div class="col-sm-offset-3 col-sm-6">
+            <p>Citizenship ID:</p>
+            <input type="hidden" id="lblmsg" />
+            <input type="text" id="Entervalue" style="margin-top:21px;" class="form-control" /><br />
+        </div>
+        <br />
+        <br />
+        <input type="submit" id="search" onclick="searchbyid();" class="button-cu pull-right" style="margin-bottom:50px; margin-right:100px;" value="Search" />
+    </div>
+</div>
+<div class="container" id="allid" style="margin-bottom:500px;">
+
+
+</div>
+<div id="divid" class="container" style="margin-bottom:500px;">
+    <ul>
+        <li><a href="#tabs-1">Student Details</a></li>
+        <li><a href="#tabs-2">Parent Details</a></li>
+        <li><a href="#tabs-3">Document Details </a></li>
+    </ul>
+
+    <div id="tabs-1" style="text-align:left">
+
+    </div>
+    <div id="tabs-2">
+
+    </div>
+    <div id="tabs-3">
+
+    </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
+<script>
+        function searchbyid() {
+            debugger;
+            if (Entervalue.value == "") {
+                alert("Please enter a ID.")
+            }
+            else {
+                var viewbyid = $("#Entervalue").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/Admission/applicationdtlsbyid",
+                    data: {
+                        'value': viewbyid
+                    },
+                    success: function (msg) {
+                        debugger;
+                        if (msg[0] == 'error') {
+                            alert(msg[1]);
+                            $("#lblmsg").val("Error");
+                        }
+                        else {
+                            $('#divid').show();
+                            var viewbyid = "@Url.Action("applicationdtlsbyid", "Admission")?value=" + $("#Entervalue").val();
+                            $('#tabs-1').load(viewbyid);
+                            var pviewbyid = "@Url.Action("parentdtls", "Admission")?value=" + $("#Entervalue").val();
+                            $('#tabs-2').load(pviewbyid);
+                            var docbyid = "@Url.Action("documentslsbyid", "Admission")?value=" + $("#Entervalue").val();
+                            $('#tabs-3').load(docbyid);
+                            $('#allid').hide();
+                        }
+
+                    }
+
+                })
+
+            }
+        }
+        $(document).ready(function () {
+            $('#allid').load('@Url.Action("allids", "Admission")');
+            $('#divid').hide();
+        })
+        $(function () {
+            $("#divid").tabs();
+        });
+</script>
+

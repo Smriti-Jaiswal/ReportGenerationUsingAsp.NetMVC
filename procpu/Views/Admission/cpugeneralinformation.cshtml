@@ -1,0 +1,180 @@
+﻿@model procpu.Models.GeneralViewModel
+@{
+    Layout = "~/Views/Shared/_CPULayout.cshtml";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .chosen-container-single .chosen-single {
+            color: #000 !important;
+        }
+
+        .button-cu {
+            border-style: none;
+            border-color: inherit;
+            border-width: 0;
+            background-color: #000;
+            background: #A00 url(../images/send.png) no-repeat scroll 0% 0%;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            position: relative;
+            behavior: url(PIE.htc);
+            padding: 5px 30px 5px;
+            margin: 0;
+            font-family: 'Conv_Helvetica-Condensed',Sans-Serif;
+            font-size: 18px;
+            color: #fff;
+            font-weight: normal;
+            line-height: 25px;
+            cursor: pointer;
+            top: 0px;
+            left: 0px;
+        }
+
+        .tab-content {
+            height: 100% !important;
+        }
+
+        body {
+            background-color: white;
+        }
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="Submit" style="text-align:left">
+        @Html.AntiForgeryToken()
+        <div class="container" style="color:black">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-horizontal">
+
+                        <h2 style="margin:auto; text-align: center; margin-bottom: 30px; margin-top: 30px;"><b>CPU GENERAL INFORMATION</b></h2>
+                        @*@Html.HiddenFor(m => m.transid, new { @id = "ID" })*@
+                        <input type="hidden" id="ID" name="transid" />
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.cpugeninfo, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-sm-4">
+                                @Html.EditorFor(model => model.cpugeninfo, new { htmlAttributes = new { @class = "form-control", @id = "txtcpugeninfo" } })
+                                @Html.ValidationMessageFor(model => model.cpugeninfo, "", new { @class = "text-danger" })
+                            </div>
+                            @Html.LabelFor(model => model.cpugeninfodesc, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-sm-4">
+                                @Html.TextAreaFor(model => model.cpugeninfodesc, new { htmlAttributes = new { @class = "form-control", @id = "txtcpugeninfodesc" } })
+                                @Html.ValidationMessageFor(model => model.cpugeninfodesc, "", new { @class = "text-danger" })
+                            </div>
+                            <br />
+                            <br />
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.geninfoupld, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-sm-4">
+                                    <input type="file" name="geninfoupld" id="geninfoupld" class="form-control" required title="Please upload a file."/>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-12 mb-5">
+
+                                <input type="button" class="button-cu pull-right" value="Submit" id="SaveGeneralRecord" onclick="gensave(this.form);" style="background-color:black" />
+
+                            </div>
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="modal fade" id="DeleteConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 100%;">
+                <div class="modal-header">
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                    <h4 style="color:#808080">Delete Record</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 style="color:#808080">Are you sure want to delete this record?</h4>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+                    <a href="#" class="btn btn-danger" onclick="ConfirmDelete()">Confirm</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="view" style="margin-bottom:150px;">
+
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        function gensave(form) {
+            debugger;       
+            $.validator.unobtrusive.parse($("#Submit"));
+            $("#Submit").validate();
+            if ($("#Submit").valid()) {
+                var data = new FormData(form);
+
+                $.ajax({
+                    type: 'POST',
+                    url: "/Admission/SaveData",
+                    data: data,
+                    contentType: false,
+                    processData: false,
+                    success: function (msg) {
+                        debugger;
+                        if (msg[0] == "true") {
+                            alert(msg[1]);
+                            window.location.href = "/Admission/cpugeneralinformation";
+
+                        }
+                        else {
+                            alert(msg[1]);
+                        }
+                    }
+                })
+
+            }
+
+        }
+        $(document).ready(function () {
+            $('#view').load('@Url.Action("generalinformationview", "Admission")');
+        })
+
+        function DeleteRecord(transid) {
+            $("#ID").val(transid);
+            $("#DeleteConfirmation").modal("show")
+        }
+        function ConfirmDelete() {
+            var ID = $("#ID").val();
+            $.ajax({
+                typr: "POST",
+                url: "/Admission/DeleteRecord?transid=" + ID,
+                success: function (msg) {
+                    if (msg[0] == "success")
+                        {
+                    $("#DeleteConfirmation").modal("hide");
+                    $('#view').load('@Url.Action("generalinformationview", "Admission")');
+                        alert(msg[1]);
+                    }
+                    else {
+                        alert(msg[1]);
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>

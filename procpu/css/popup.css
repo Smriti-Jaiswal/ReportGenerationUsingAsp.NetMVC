@@ -1,0 +1,110 @@
+.modalBackground {
+background-color: Black;
+filter: alpha(opacity=70);
+opacity: 0.7;
+}
+.modalPopup {
+background-color: #FFFFFF;
+width: 50%;
+border-radius: 12px;
+padding: 2px;
+overflow: auto;
+margin: 0 auto;
+border: 1px solid rgba(0,0,0,.2);
+border-radius: 6px;
+outline: 0;
+-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5) !important;
+box-shadow: 0 3px 9px rgba(0,0,0,.5) !important;
+
+}
+.modalPopup .panel
+{
+    max-height:450px;
+    overflow:auto;
+        margin-top: 24px !important;
+    }
+
+.modalPopup:before
+{
+    left: 0px !important;
+    } 
+
+ 
+.clsbtn {
+float: right;
+position: absolute;
+right: 6px;
+top: 0;
+color: #bdabab;
+}
+        
+        
+.clsbtn i
+{
+font-size:17px;
+}
+.clsbtn input[type="submit"]
+{
+border: none;
+background: transparent;
+width: 21px;
+position: relative;
+margin-right: -23px;
+}
+/*table>tbody>tr>td>div
+{
+   left: 0px !important;
+    }*/
+.close {
+
+    filter: alpha(opacity=80);
+    opacity: .8;
+    /*margin-top: -6px;*/
+    margin-right: 5px;
+}
+.panel-success > .panel-heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+.modal-content, .modalPopup .panel{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.modal-content label, .modalPopup label
+{
+    font-size:12px;
+    }
+.modal-content .panel-title {
+    font-size: 22px;
+}
+.modalPopup .panel-heading{
+    font-size: 22px;
+}
+.modal-content .panel-body {
+    background: #fdf4f4;
+}
+.Font-17
+{
+    font-size:14px;
+    
+    }
+    
+  #GridView3_MPE1_0_foregroundElement
+  {
+      position: fixed;
+    z-index: 999999999999999999;
+    left: 527.5px;
+    top: 58%;
+    background-color: white;
+    margin-left: 40%;
+  }    
+  
+  .rearrange
+{
+        margin-left: 42%;
+    width: 100%;
+
+}    
+.popup-text-1
+{
+    color:#000;
+    }   

@@ -1,0 +1,160 @@
+﻿@model procpu.Models.DucomentsUploadModel
+@{
+    ViewBag.Title = "StudentDetails";
+    Layout = "~/Views/Shared/_CPULayout.cshtml";
+}
+<style>
+    footer {
+        background: #e12d3e url(../images/mosaic-pattern.png) repeat;
+        background-color: #e12d3e !important;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        bottom: 0px;
+        color: #fff;
+        margin-top: 20% !important;
+    }
+
+    .button-cu {
+        border-style: none;
+        border-color: inherit;
+        border-width: 0;
+        background-color: #000;
+        background: #000 url(../images/send.png) no-repeat scroll 0% 0%;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        position: relative;
+        behavior: url(PIE.htc);
+        padding: 5px 30px 5px;
+        margin: 0;
+        font-family: 'Conv_Helvetica-Condensed',Sans-Serif;
+        font-size: 18px;
+        color: #fff;
+        font-weight: normal;
+        line-height: 25px;
+        cursor: pointer;
+        top: 0px;
+        left: 0px;
+    }
+</style>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<h2 style="text-align:center"><b>Document Upload</b></h2>
+<div class="container">
+    <div class="col-lg-12">
+        <div class="col-sm-offset-3 col-sm-6">
+                    <p>Citizenship ID:</p>
+            <input type="hidden" id="lblmsg" />
+                    <input type="text" class="form-control" id="txtsearch" style="margin-top:21px;" /><br />
+                </div>
+                <br />
+                <br />
+                    <button type="button" id="btnsearch" class="button-cu pull-right" style="margin-bottom:50px; margin-right:100px;">Search</button>
+                </div>
+            </div>
+            <br />
+
+
+
+            <div class="form-group">
+
+                <div id="details">
+
+
+                </div>
+
+            </div>
+            <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
+            <script src="~/Scripts/jquery.validate.js"></script>
+            <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+            <script>
+                $(document).ready(function () {
+                    $("#btnsearch").click(function () {
+                        if (txtsearch.value == "") {
+                            alert("Please enter a ID.")
+                        }
+                        else{
+                            var url = $("#txtsearch").val();
+                            $.ajax({
+                                type: "POST",
+                                url: "/Admission/UploadDucoments",
+                                data: {
+                                    'citizenship_id': url
+                                },
+                                success: function (msg) {
+                                    debugger;
+                                    if (msg[0] == 'Error') {
+                                        alert(msg[1]);
+                                        $("#lblmsg").val("Error");
+                                    }
+                                    else {
+                                        var url = '@Url.Action("UploadDucoments", "Admission")?citizenship_id=' + $("#txtsearch").val();
+                                        $("#details").load(url);
+                                    }
+                                }
+                                })
+    
+                                }
+                    })
+                       
+                        })
+
+          
+
+                    function deletedoc(id) {
+                        debugger;
+                        $.ajax({
+                            type: "POST",
+                            url: "/Admission/DeleteDocument?id=" + id,
+                            success: function (msg) {
+                                if (msg[0]) {
+                                    alert(msg[1]);
+                                    $("#btnsearch").click();
+
+                                }
+
+                            }
+                        })
+                    
+                }
+                function uploadfile(form) {
+                    debugger;
+
+                    var ddl = $("#ddldoctype").val();
+                    var file1 = document.getElementById('upload');
+
+                    if (ddl != "" && file1.files.length > 0) {
+                        var formdata = new FormData(form)
+                        $.ajax({
+                            type: "POST",
+                            url: "/Admission/UploadDucomentsbyid",
+                            data: formdata,
+                            contentType: false,
+                            processData: false,
+                            success: function (msg) {
+                                debugger;
+                                if (msg[0]) {
+                                    alert(msg[1]);
+                                    $("#myModal").modal("hide");
+                                    $('#submitform')[0].reset();
+                                    $("#btnsearch").click();
+                                    $(".modal-backdrop").hide();
+                                    $("body").addClass("modal-close");
+                                    $("body").removeClass("modal-open");
+                                }
+
+                            }
+                        })
+                    }
+                    else {
+                        alert("Please select document and upload file. ")
+                    }
+                }
+            </script>

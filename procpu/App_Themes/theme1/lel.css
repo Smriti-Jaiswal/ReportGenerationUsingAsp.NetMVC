@@ -1,0 +1,307 @@
+﻿.style2
+        {
+            
+            border: 1px solid #019A68;
+        }
+        
+        
+ .style3
+        {
+            width: 173px;
+             border: thin solid #019A68;
+             background-repeat: no-repeat;
+        } 
+
+
+
+
+.txtbox
+{
+    padding: 2px 3px 2px 2px;
+    font-family: verdana;
+    font-size: 12px;
+    color: #000000;
+    border: 0.5px solid #BBE5D7;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 3px;
+    width: 190px;
+    height: 17px;
+}
+
+.text
+{
+    border-color: #019A68;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15pt;
+}
+
+
+
+
+
+
+
+
+.pnl_dataentry
+{
+    border: 2px solid #9CDFCE;
+    width: 100%;
+    height: 100%;
+}
+
+.pnl_dataentry_border
+{
+    border: 2px solid #9CDFCE;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.button
+{
+    padding: 2px 3px 2px 2px;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #F0F0F0;
+    border: 0.5px solid #D8D8D8;
+    vertical-align: middle;
+    text-align: center;
+    width: 57px;
+    font-weight: bolder;
+    background-color: #9CDFCE;
+}
+
+.label_big
+{
+    padding: 2px 3px 2px 2px;
+    font-family: verdana;
+    font-size: 12px;
+    color: #000000;
+    border: 0.5px solid #BBE5D7;
+    vertical-align: middle;
+    text-align: right;
+    width: 300px;
+    display: inline-block;
+    height: 17px;
+}
+
+.label_error
+{
+    padding: 2px 3px 2px 2px;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000000;
+    border: 0.5px solid #D8D8D8;
+    vertical-align: middle;
+    text-align: left;
+    width: 57px;
+    background-color: #F75B35;
+    font-weight: 600;
+}
+
+.LABL_fblack
+{
+    padding: 2px 3px 2px 2px;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000000;
+    border: 0.5px solid #D8D8D8;
+    vertical-align: middle;
+    text-align: right;
+    width: 70px;
+    background-color: #9CDFCE;
+}
+
+.button_fblack
+{
+    padding: 2px 3px 2px 2px;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000000;
+    border: 0.5px solid #D8D8D8;
+    vertical-align: middle;
+    text-align: center;
+    width: 57px;
+    background-color: #9CDFCE;
+}
+.button_white
+{
+    padding: 2px 3px 2px 2px;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000000;
+    border: 0.5px solid #FFFFFF;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+    background-color: White;
+}
+
+.buttonbig
+{
+    padding: 2px 3px 2px 2px;
+    font-family: Verdana;
+    font-size: 13px;
+    color: #000000;
+    border: 0.5px solid #D8D8D8;
+    vertical-align: middle;
+    text-align: center;
+    width: 90px;
+    background-color: #74C7A8;
+}
+
+.master_LFT
+{
+    border-color: #74C7A8;
+    border-width: 0px;
+     width: 10%;
+   
+    }
+.master_RGHT
+{
+    border-color: #74C7A8;
+    border-width: 0px;
+    width: 10%;
+}
+.label
+{
+    padding: 2px 3px 2px 2px;
+    font-family: verdana;
+    font-size: 12px;
+    color: #000000;
+    border: 0.5px solid #BBE5D7;
+    vertical-align: middle;
+    text-align: right;
+    width: 190px;
+    display: inline-block;
+    height: 17px;
+}
+
+
+
+ .ddl
+{
+    border: 0.5pt groove #D6D3CE;
+    padding: 2px 3px 2px 2px;
+    font-family: verdana;
+    font-size: 12px;
+    color: #000000;
+    vertical-align: middle;
+    text-align: left;
+    width: 270px;
+    display: inline-block;
+    height: 23px;
+}
+      
+.table table-striped table-bordered table-hover
+{
+    font-family: calibri;
+    font-size: medium;
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+.table table-striped table-bordered table-hover td { padding: 2px; border: solid 1px #c1c1c1; color: #717171; }
+.table table-striped table-bordered table-hover th { padding: 4px 2px; color: #fff; background: #424242 url('~/App_Themes/Theme1/images/grd_head.png') repeat-x top; border-left: solid 1px #525252; font-size: 0.9em; }
+.table table-striped table-bordered table-hover .alt { background: #fcfcfc url('~/App_Themes/Theme1/images/grd_alt.png') repeat-x top; }
+.table table-striped table-bordered table-hover .pgr {background: #424242 url('~/App_Themes/Theme1/images/grd_pgr.png') repeat-x top; }
+.table table-striped table-bordered table-hover .pgr table { margin: 5px 0; }
+.table table-striped table-bordered table-hover .pgr td { border-width: 0; padding: 0 6px; border-left: solid 1px #666; font-weight: bold; color: #fff; line-height: 12px; }   
+.table table-striped table-bordered table-hover .pgr a { color: #666; text-decoration: none; }
+.table table-striped table-bordered table-hover .pgr a:hover { color: #000; text-decoration: none; }
+
+
+
+.fpagecaption
+{
+    padding: 10px;
+    font-family: Calibri;
+    color: #347464;
+    text-align: justify;
+    overflow: scroll;
+}
+.fpagepagecaption
+{
+     font-family: Calibri;
+     color: #347464;
+     font-size: large;
+     overflow: scroll;
+}
+    
+.fpagepagecaptionborder
+{
+    border: thin dotted #347464;
+    
+}
+
+
+.fipagepagecaption
+{
+    font-family: Calibri;
+    color: #347464;
+    font-size: large;
+    background-color: #E1FFFF;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #347464;
+}
+    
+.links
+{
+    font-family: verdana;
+    color: #347464;
+    font-weight: lighter;
+}
+
+.lblsubjectcaption
+{
+    font-family: Verdana;
+    font-size: large;
+    font-weight: bolder;
+    color: #BD0031;
+}
+
+
+.lblsubjectcaptionmedium
+{
+    font-family: Verdana;
+    font-size: medium;
+    font-weight: bolder;
+    color: #A55594;
+}
+
+.lblsubjectcaptionmedium1
+{
+    font-family: Verdana;
+    font-size: medium;
+    font-weight: bolder;
+    color: #FF9218;
+}
+
+.lblsubjectcaptionmedium2
+{
+    font-family: Verdana;
+    font-size: medium;
+    font-weight: bolder;
+    color: #847D7B;
+}
+
+.labellong
+{
+    padding: 2px 3px 2px 2px;
+    font-family: verdana;
+    font-size: 12px;
+    color: #000000;
+    border: 0.5px solid #BBE5D7;
+    vertical-align: middle;
+    text-align: right;
+    width: 420px;
+    display: inline-block;
+    height: 17px;
+}

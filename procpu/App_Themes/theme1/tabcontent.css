@@ -1,0 +1,94 @@
+﻿
+BODY{padding:0; margin:0; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#212121;}
+.tab_holder{width:50%; margin: 0 auto; padding: 120px 0 40px;}
+ul.tabs
+{
+    padding: 7px 0 1px;
+    font-size: 0;
+    margin:0;
+    list-style-type: none;
+    text-align: left; /*set to left, center, or right to align the tabs as desired*/
+    line-height: 40px;
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;
+    margin-right:3px; /*distance between tabs*/
+}
+        
+ul.tabs li a
+{
+    font: normal 12px Verdana;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 7px 16px;
+    border: 1px solid #CCC;
+    border-bottom-color:#026db1;
+    color: #fff;
+    background:#212121;
+    border-radius: 2px 2px 0 0;
+    outline:none;
+}
+        
+ul.tabs li a:visited
+{
+    color: #fff;
+}
+        
+ul.tabs li a:hover
+{
+    border: 1px solid #026db1;
+    background:#E04545;
+}
+        
+ul.tabs li.selected a
+{
+    /*selected tab style */
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    background:#E04545;
+    border: 1px solid #026db1;
+    border-bottom-color: white;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    /*selected tab style */
+    text-decoration: none;
+}
+        
+div.tabcontent
+{
+    display: block;
+}
+
+div.tabcontents
+{
+    border: 1px solid #E04545; padding: 30px;
+    background-color:#FFF;
+    border-radius: 0 2px 2px 2px;
+     content: "";
+  clear: both;
+  display: table;
+  width:100%;
+}
+
+@media (min-width: 200px) and (max-width: 640px) 
+{
+ ul.tabs li {
+    display: inline-flex;
+    margin: 0px 3px 0px 0px;
+    width: 100%;
+}
+
+ul.tabs li a{ width:100%;}
+div.tabcontents {
+    overflow: scroll;
+}
+    
+    }

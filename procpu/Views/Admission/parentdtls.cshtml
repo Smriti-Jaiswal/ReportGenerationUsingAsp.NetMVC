@@ -1,0 +1,24 @@
+﻿@model procpu.Models.ParentViewModel
+@{
+    Layout = null;
+}
+
+@foreach (var item in ViewBag.pdetailsby_id)
+{
+    <label><b>Parent Name: </b>@(item.fname + " " + item.lname)</label><br />
+    <label><b>ID Number: </b>@item.idnumber</label><br />
+                <label><b>Email Address: </b>@item.email</label><br />
+                <label><b>Relationship to Student: </b>@item.relation</label><br />
+                <label><b>Home Address: </b>@item.homeaddress</label><br />
+                <label><b>Mobile / Home Phone: </b>@item.mobile</label><br />
+                <label><b>Centre Name: </b>@item.cname</label><br />
+                <label><b>Centre Address: </b>@item.caddress</label><br />
+                <label><b>Apt / Suite#: </b>@item.suite</label><br />
+                <label><b>State: </b>@item.state</label><br />
+                <label><b>Postal / Zip: </b>@item.postalcode</label><br />
+                <label><b>City: </b>@item.city</label><br />
+                <label><b>Country: </b>@item.cuntry</label><br />
+                <label><b>Centre Phone: </b>@item.cphno</label><br />
+                <label><b>How did you hear about us?: </b>@item.howdidyouhearaboutus</label><br />
+                <label><b>Signed by Parent /Guardian/ Teacher: </b><a style="color:blue" href="@item.fileupload" target="_blank">View</a></label><br />
+}

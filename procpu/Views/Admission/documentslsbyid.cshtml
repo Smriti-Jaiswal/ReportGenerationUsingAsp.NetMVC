@@ -1,0 +1,42 @@
+﻿@model procpu.Models.DucomentsUploadModel
+@{
+    Layout = null;
+}
+<style>
+    div.dataTables_wrapper div.dataTables_filter input {
+        margin-left: .5em;
+        display: inline-block;
+        width: auto;
+        width: 77% !important;
+    }
+</style>
+<div class="col-lg-12">
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Document Type</th>
+                <th>Upload By</th>
+                <th>View</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.docdtls)
+            {
+                <tr>
+                    <td>@(item.frmmodtransid)</td>
+                    <td>@item.docid</td>
+                    <td>@item.rco</td>
+                    <td><a style="color:blue" href="@item.uploaddocs" target="_blank">View</a></td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+</script>

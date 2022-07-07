@@ -1,0 +1,426 @@
+﻿
+@model procpu.Models.AdmissionViewModel
+@{
+    Layout = "~/Views/Shared/_CPULayout.cshtml";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Wizard Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        body {
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+        .sw-btn-next {
+            color: #fff;
+            background-color: #5bc0de;
+            border-color: #000000 !important;
+        }
+
+        .sw-btn-prev {
+            color: #000000 !important;
+            background-color: #fff;
+            border-color: #000000 !important;
+        }
+    </style>
+
+    <style>
+        .chosen-container-single .chosen-single {
+            color: #000 !important;
+        }
+
+        .button-cu {
+            border-style: none;
+            border-color: inherit;
+            border-width: 0;
+            background-color: #000;
+            background: #A00 url(../images/send.png) no-repeat scroll 0% 0%;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            position: relative;
+            behavior: url(PIE.htc);
+            padding: 5px 30px 5px;
+            margin: 0;
+            font-family: 'Conv_Helvetica-Condensed',Sans-Serif;
+            font-size: 18px;
+            color: #fff;
+            font-weight: normal;
+            line-height: 25px;
+            cursor: pointer;
+            top: 0px;
+            left: 0px;
+        }
+        .tab-content{
+            height:100% !important;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="smartwizard">
+
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#step-1">
+                    <strong>Student Information</strong>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#step-2">
+                    <strong>Parent, Teacher Or Tutor Student Application Form</strong>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#step-3">
+                    <strong>Finish</strong>
+                </a>
+            </li>
+        </ul>
+        <form id="SubmitForm" class="svfrm" style="text-align:left">
+           
+            @Html.AntiForgeryToken()
+            <div class="tab-content">
+                <div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1">
+                    <div class="container" style="color:black">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-horizontal">
+                            
+                                    <h2 style="margin:auto; text-align: center;"><b>STUDENT INFORMATION</b></h2>
+                                    <hr />
+                                
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.stdfname, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-2">
+                                            @Html.EditorFor(model => model.stdfname, new { htmlAttributes = new { @class = "form-control", @id = "txtstdfname" } })
+                                            @Html.ValidationMessageFor(model => model.stdfname, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.stdmname, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-2">
+                                            @Html.EditorFor(model => model.stdmname, new { htmlAttributes = new { @class = "form-control", @id = "txtstdmname" } })
+                                        </div>
+                                        @Html.LabelFor(model => model.stdlname, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-2">
+                                            @Html.EditorFor(model => model.stdlname, new { htmlAttributes = new { @class = "form-control", @id = "txtstdlname" } })
+                                            @Html.ValidationMessageFor(model => model.stdlname, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.dob, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.dob, new { htmlAttributes = new { @class = "form-control", @type = "date", @id = "txtdob" } })
+                                            @Html.ValidationMessageFor(model => model.dob, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.citizenship_id, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.citizenship_id, new { htmlAttributes = new { @class = "form-control", @id = "txtstdid" } })
+                                            @Html.ValidationMessageFor(model => model.citizenship_id, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.RadioButtonFor(model => model.gender, "Male", htmlAttributes: new { @id = "male", @type = "radio" })
+                                            Male
+                                            @Html.RadioButtonFor(model => model.gender, "Female", htmlAttributes: new { @id = "female", @type = "radio" })
+                                            Female
+                                            @Html.ValidationMessageFor(model => model.gender, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.address, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.address, new { htmlAttributes = new { @class = "form-control", @id = "txtaddress" } })
+                                            @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.country, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.DropDownListFor(m => m.country, ViewBag.ListOfCountry as SelectList, "---Select Country---", new { @class = "DropDown", @id = "txtcountry" })
+                                            @Html.ValidationMessageFor(model => model.country, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.phno, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.phno, new { htmlAttributes = new { @class = "form-control" }, @id = "txtphno" })
+                                            @Html.ValidationMessageFor(model => model.phno, "", new { @class = "text-danger" })
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.grade, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.grade, new { htmlAttributes = new { @class = "form-control", @id = "txtgrade" } })
+                                            @Html.ValidationMessageFor(model => model.grade, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.subjectstaken, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.subjectstaken, new { htmlAttributes = new { @class = "form-control", @id = "txtsubjectstaken" } })
+                                            @Html.ValidationMessageFor(model => model.subjectstaken, "", new { @class = "text-danger" })
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.pathway, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.pathway, new { htmlAttributes = new { @class = "form-control", @id = "txtpathway" } })
+                                            @Html.ValidationMessageFor(model => model.pathway, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.centrename, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.centrename, new { htmlAttributes = new { @class = "form-control", @id = "txtcentrename" } })
+                                            @Html.ValidationMessageFor(model => model.centrename, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.centreaddress, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.centreaddress, new { htmlAttributes = new { @class = "form-control", @id = "txtcentreaddress" } })
+                                            @Html.ValidationMessageFor(model => model.centreaddress, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.centrephno, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.centrephno, new { htmlAttributes = new { @class = "form-control" }, @id = "txtcentrephno" })
+                                            @Html.ValidationMessageFor(model => model.centrephno, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <br />
+                                 
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-2" class="tab-pane" role="tabpanel" aria-labelledby="step-2">
+                    <div class="container" style="color:black">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-horizontal">
+                                   
+                                    <h2 style="margin:auto; text-align: center;"><b>PARENT, TEACHER OR TUTOR STUDENT APPLICATION FORM</b></h2>
+                                    <hr />
+                                 
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.fname, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.fname, new { htmlAttributes = new { @class = "form-control", @id = "txtfname" } })
+                                            @Html.ValidationMessageFor(model => model.fname, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.lname, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.lname, new { htmlAttributes = new { @class = "form-control", @id = "txtlname" } })
+                                            @Html.ValidationMessageFor(model => model.lname, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.idnumber, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.idnumber, new { htmlAttributes = new { @class = "form-control", @id = "txtidnumber" } })
+                                            @Html.ValidationMessageFor(model => model.idnumber, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.email, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control", @id = "txtemail" } })
+                                            @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.relation, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.relation, new { htmlAttributes = new { @class = "form-control", @id = "txtrelation" } })
+                                            @Html.ValidationMessageFor(model => model.relation, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.homeaddress, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.homeaddress, new { htmlAttributes = new { @class = "form-control", @id = "txthomeaddress" } })
+                                            @Html.ValidationMessageFor(model => model.homeaddress, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.mobile, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.mobile, new { htmlAttributes = new { @class = "form-control", @id = "txtmobile" } })
+                                            @Html.ValidationMessageFor(model => model.mobile, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.cname, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.cname, new { htmlAttributes = new { @class = "form-control", @id = "txtcname" } })
+                                            @Html.ValidationMessageFor(model => model.cname, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.caddress, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.caddress, new { htmlAttributes = new { @class = "form-control", @id = "txtcaddress" } })
+                                            @Html.ValidationMessageFor(model => model.caddress, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        @Html.LabelFor(model => model.suite, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.suite, new { htmlAttributes = new { @class = "form-control", @id = "txtsuite" } })
+                                            @Html.ValidationMessageFor(model => model.suite, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.state, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.state, new { htmlAttributes = new { @class = "form-control", @id = "txtstate" } })
+                                            @Html.ValidationMessageFor(model => model.state, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.postalcode, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.postalcode, new { htmlAttributes = new { @class = "form-control", @id = "txtpostalcode" } })
+                                            @Html.ValidationMessageFor(model => model.postalcode, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.city, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.city, new { htmlAttributes = new { @class = "form-control", @id = "txtcity" } })
+                                            @Html.ValidationMessageFor(model => model.city, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.cuntry, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.DropDownListFor(m => m.cuntry, ViewBag.ListOfCountry as SelectList, "---Select Country---", new { @class = "DropDown", @id = "txtcuntry" })
+                                            @Html.ValidationMessageFor(model => model.cuntry, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.cphno, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.cphno, new { htmlAttributes = new { @class = "form-control", @id = "txtcphno" } })
+                                            @Html.ValidationMessageFor(model => model.cphno, "", new { @class = "text-danger" })
+                                        </div>
+                                        @Html.LabelFor(model => model.howdidyouhearaboutus, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-sm-4">
+                                            @Html.TextAreaFor(model => model.howdidyouhearaboutus, new { htmlAttributes = new { @class = "form-control", @id = "txthowdidyouhearaboutus" } })
+                                            @Html.ValidationMessageFor(model => model.howdidyouhearaboutus, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    @Html.LabelFor(model => model.fileupload, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-4">
+                                        <input type="file" name="fileupload" id="fileupload" class="form-control" />
+                                    </div>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3" style="padding-bottom:80px;">
+                    <h2 style="margin:auto; text-align: center;"><b>Declaration</b></h2>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                            <div class="form-group">
+                                <input id="Remember" type="checkbox" value="true" name="Remember" />I hereby declare that the details and information given are complete and true to the best of my knowledge.
+
+                                <div class="form-group">
+                                    <div class="col-md-12 mb-5">
+             
+                                        <input type="button" class="button-cu pull-right" value="Submit" id="SaveStudentRecord" style="background-color:black" />
+                                     
+                                </div>
+                                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</form>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>*@
+        @*<script src="~/Scripts/jquery.validate.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
+     
+      
+    <script>
+  
+
+
+    $(function () {
+        $(".DropDown").chosen({
+            disable_search_threshold: 5,
+            no_results_text: "Oops, nothing found!",
+        });
+    });
+
+// **********************************START**********************************
+    //function save() {
+    //    debugger;
+    //    if (Remember.checked == true) {
+    //        debugger;
+    //        $.validator.unobtrusive.parse($("#SubmitForm"));
+    //        $("#SubmitForm").validate();
+    //        if ($("#SubmitForm").valid()) {
+    //            debugger;
+    //            var data = $("#SubmitForm").serialize();
+    //            $.ajax({
+    //                type: "POST",
+    //                url: "/Admission/SaveDataInDatabase",
+    //                data: data,
+    //                //ProcessData: false,
+    //                //contentType: false,        
+    //                success: function (msg) {
+    //                    debugger;
+    //                    if (msg[0]) {
+    //                        alert(msg[1]);
+
+    //                    }
+    //                }
+
+    //            })
+    //        }
+    //    }
+    //    else {
+    //        alert("Please click on checkbox!");
+    //    }
+
+    //}
+
+//*********************************END**********************************
+
+
+    $("#SaveStudentRecord").click(function () {
+        debugger;
+        if (Remember.checked == true) {
+            var massage = $("input[name='__RequestVerificationToken']").val();            $.validator.unobtrusive.parse($("#SubmitForm"));            $("#SubmitForm").validate();            if ($("#SubmitForm").valid()) {
+                debugger;                var formData = new FormData();                var files = $("#fileupload").get(0).files;                formData.append("__RequestVerificationToken", $("input[name='__RequestVerificationToken']").val());                formData.append("fileupload", files[0]);                formData.append("stdfname", $('#txtstdfname').val());                formData.append("stdmname", $('#txtstdmname').val());                formData.append("stdlname", $('#txtstdlname').val());                formData.append("dob", $('#txtdob').val());                formData.append("citizenship_id", $('#txtstdid').val());                formData.append("gender", $("input[name='gender']:checked").val());                formData.append("address", $('#address').val());                formData.append("country", $('#txtcountry').val());                formData.append("phno", $('#phno').val());                formData.append("grade", $('#grade').val());                formData.append("subjectstaken", $('#subjectstaken').val());                formData.append("pathway", $('#pathway').val());                formData.append("centrename", $('#centrename').val());                formData.append("centreaddress", $('#centreaddress').val());                formData.append("centrephno", $('#centrephno').val());                formData.append("fname", $('#txtfname').val());                formData.append("lname", $('#txtlname').val());                formData.append("idnumber", $('#txtidnumber').val());                formData.append("email", $('#txtemail').val());                formData.append("relation", $('#txtrelation').val());                formData.append("homeaddress", $('#homeaddress').val());                formData.append("mobile", $('#txtmobile').val());                formData.append("cname", $('#cname').val());                formData.append("caddress", $('#caddress').val());                formData.append("suite", $('#suite').val());                formData.append("state", $('#txtstate').val());                formData.append("postalcode", $('#txtpostalcode').val());                formData.append("city", $('#txtcity').val());                formData.append("cuntry", $('#txtcuntry').val());                formData.append("cphno", $('#txtcphno').val());                formData.append("howdidyouhearaboutus", $('#howdidyouhearaboutus').val());                $.ajax({
+                    type: 'POST',                    url: "/Admission/SaveDataInDatabase",                    data: formData,                    contentType: false,                    processData: false,                    success: function (msg) {
+                        debugger;                        if (msg[0] == "true") {
+                            alert(msg[1]);
+                            window.location.href = "/Admission/stdadmissiondtls";                                   }
+                        else {
+                            alert(msg[1]);
+                        }
+                    }
+                })
+            }
+        }
+        else {
+            alert("Please click on checkbox!");
+        }
+    })
+    </script>
+        </div>
+
+        </body>
+</html>

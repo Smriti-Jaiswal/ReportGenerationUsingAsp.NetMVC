@@ -1,0 +1,185 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+BODY{
+	padding:0;
+	margin:0;
+	background:url(../images/login_bg.jpg) center  fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#ffffff;
+	line-height:18px;
+	}
+.flt_lft{float:left;}
+.flt_rgt{float:right;}
+.clr{clear:both;}
+
+img{border:0; padding:0; margin:0;}
+
+a{font-size:14px; color:#ffae00; text-decoration:none;}
+a:hover{font-size:14px; color:#ff6600; text-decoration:none; -moz-transition: all 0.4s ease-in; -webkit-transition: all 0.4s ease-in; -o-transition: all 0.4s ease-in; transition: all 0.4s ease-in;}
+
+#login_wraper{
+	background:url(../images/shadow_bg.png) repeat;
+	width:50%; 
+	padding:40px 50px; 
+	margin:13% auto;
+	display:block; 
+	text-align:center;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:0 1px 0 #002438;
+	-moz-box-shadow:0 1px 0 #002438;
+	box-shadow:0 2px 0 #212121;
+	behavior:url(../PIE.htc);
+	position:relative;
+	}
+#login_wraper .logo_box{background-color:#ff0000; width:54%; padding:12px 20px; margin:0 auto 22px; font-family:"Times New Roman", Times, serif; font-size:22px; color:#f6ff00; text-transform:uppercase;}
+
+.login_big_txt{font-size:18px; font-weight:normal; color:#fff; text-shadow:#212121 0px 0px 0px; text-decoration:none;}
+.login_big_txt a{font-size:18px; font-weight:600; color:#fff; text-decoration:underline;}
+.login_big_txt a:hover{color:#000; text-decoration:none;}
+
+.pad1{padding:0; margin:0 0 18px 0;}
+.pad2{padding:0; margin:0 0 48px 0;}
+
+#login_wraper .inputbox_holder{
+	width:87%;
+	float:left;
+	background-color:#e0e2e7;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	behavior:url(../PIE.htc);
+	position:relative;
+	padding:8px 12px;
+	margin:0;
+	}
+input.textEntry 
+{
+    background-color:#f5f6f7;
+    border: 1px solid #b1b3b8;
+    -webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	padding:12px 16px;
+	margin:0 5px;
+    width:37%;
+    height:30px;
+	font-size:18px;
+	font-weight:normal;
+	color:#767c8b;
+	line-height:25px;
+}
+input.passwordEntry{
+    background-color:#f5f6f7;
+    border: 1px solid #b1b3b8;
+    -webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	padding:12px 16px;
+	margin:0 5px;
+    width:41%;
+    height:30px;
+	font-size:18px;
+	font-weight:normal;
+	color:#767c8b;
+	line-height:25px;
+}
+
+#login_wraper .submit_holder{width:8%; float:left; padding:14px 0; margin:0;}
+#login_wraper .go_btn{
+	background-color:#ff6600;
+	border:0;
+	-webkit-border-radius:0 4px 4px 0;
+	-moz-border-radius:0 4px 4px 0;
+	border-radius:0 4px 4px 0;
+	-webkit-box-shadow:0 1px 0 #002438;
+	-moz-box-shadow:0 1px 0 #002438;
+	box-shadow:0 2px 0 #212121;
+	behavior:url(../PIE.htc);
+	position:relative;
+	padding:10px 9px;
+	margin:0;
+	font-size:18px;
+	color:#fff;
+	text-shadow:#212121 0px 1px 0px;
+	cursor:pointer;
+	text-transform:uppercase;
+	}
+#login_wraper .go_btn:hover{background-color:#000; color:#ff6600; -moz-transition: all 0.4s ease-in; -webkit-transition: all 0.4s ease-in; -o-transition: all 0.4s ease-in; transition: all 0.4s ease-in;}
+
+.position
+{
+    background-color:#e0e2e7;
+    border:1px solid #fff;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	behavior:url(../PIE.htc);
+	position:relative;
+	padding:18px;
+	margin:20px 0 0 0;
+	color:#212121;
+    }
+.validators
+{
+    font-size:14px;
+    font-weight:bold;
+    color:Red;
+    }
+.black_overlay{
+display: none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.white_content {
+display: none;
+position: absolute;
+top: 15%;
+left: 25%;
+width: 50%;
+height: 67%;
+padding: 0 16px;
+border: 16px solid orange;
+background-color: white;
+z-index:1002;
+overflow: auto;
+}
+
+.cross
+{
+    position:absolute;
+    top:0;
+    right:0;
+    }
+    
+.pnl_submit
+{
+    margin:15px 0 0 0;
+    text-align:center;
+    }
+.bgcolr
+{
+    background-color:#000;
+    -webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	behavior:url(../PIE.htc);
+	position:relative;
+    padding:3px 4px;
+    color:Yellow;
+    }

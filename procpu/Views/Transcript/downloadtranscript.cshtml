@@ -1,0 +1,23 @@
+﻿@model procpu.Models.TableViewModel
+@{
+    ViewBag.Title = "downloadtranscript";
+    Layout = "~/Views/Shared/_CPULayout.cshtml";
+}
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/base/jquery-ui.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+
+<h2 style="text-align:center; color:black"><b>TRANSCRIPT DOWNLOAD</b></h2>
+<div class="container" id="transall" style="margin-bottom:500px;">
+
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#transall').load('@Url.Action("alltranscript", "Transcript")');
+    })
+</script>
+
+

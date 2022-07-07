@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_luccpuModelStoreContainer" CdmEntityContainer="db_luccpuEntities">
+    <EntitySetMapping Name="tblcpugeninfoes">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblcpugeninfo">
+        <MappingFragment StoreEntitySet="tblcpugeninfo">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="cpugeninfo" ColumnName="cpugeninfo" />
+          <ScalarProperty Name="cpugeninfodesc" ColumnName="cpugeninfodesc" />
+          <ScalarProperty Name="geninfoupld" ColumnName="geninfoupld" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lcm" ColumnName="lcm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblcpupartmoudtls">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblcpupartmoudtl">
+        <MappingFragment StoreEntitySet="tblcpupartmoudtls">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="partnerid" ColumnName="partnerid" />
+          <ScalarProperty Name="partnername" ColumnName="partnername" />
+          <ScalarProperty Name="partneremail" ColumnName="partneremail" />
+          <ScalarProperty Name="partnercnumber" ColumnName="partnercnumber" />
+          <ScalarProperty Name="partnercountry" ColumnName="partnercountry" />
+          <ScalarProperty Name="partnermouupld" ColumnName="partnermouupld" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lcm" ColumnName="lcm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstdacademicgradedtls">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblstdacademicgradedtl">
+        <MappingFragment StoreEntitySet="tblstdacademicgradedtls">
+          <ScalarProperty Name="studenttransid" ColumnName="studenttransid" />
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+          <ScalarProperty Name="schoolyear" ColumnName="schoolyear" />
+          <ScalarProperty Name="gradelvl" ColumnName="gradelvl" />
+          <ScalarProperty Name="totalcredits" ColumnName="totalcredits" />
+          <ScalarProperty Name="gpa" ColumnName="gpa" />
+          <ScalarProperty Name="cumulativegpa" ColumnName="cumulativegpa" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstdacademicrecords">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblstdacademicrecord">
+        <MappingFragment StoreEntitySet="tblstdacademicrecord">
+          <ScalarProperty Name="totalmarks" ColumnName="totalmarks" />
+          <ScalarProperty Name="marksobtained" ColumnName="marksobtained" />
+          <ScalarProperty Name="quizzes" ColumnName="quizzes" />
+          <ScalarProperty Name="assignments" ColumnName="assignments" />
+          <ScalarProperty Name="studenttransid" ColumnName="studenttransid" />
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+          <ScalarProperty Name="coursetitle" ColumnName="coursetitle" />
+          <ScalarProperty Name="creditattempted" ColumnName="creditattempted" />
+          <ScalarProperty Name="creditearned" ColumnName="creditearned" />
+          <ScalarProperty Name="finalgrade" ColumnName="finalgrade" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstdacademicsummaries">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblstdacademicsummary">
+        <MappingFragment StoreEntitySet="tblstdacademicsummary">
+          <ScalarProperty Name="totalpercentage" ColumnName="totalpercentage" />
+          <ScalarProperty Name="totalmarksobtained" ColumnName="totalmarksobtained" />
+          <ScalarProperty Name="totalmarksattempted" ColumnName="totalmarksattempted" />
+          <ScalarProperty Name="totalsubjects" ColumnName="totalsubjects" />
+          <ScalarProperty Name="studenttransid" ColumnName="studenttransid" />
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+          <ScalarProperty Name="cumugpa" ColumnName="cumugpa" />
+          <ScalarProperty Name="creditsattempted" ColumnName="creditsattempted" />
+          <ScalarProperty Name="creditsearned" ColumnName="creditsearned" />
+          <ScalarProperty Name="diplomaearned" ColumnName="diplomaearned" />
+          <ScalarProperty Name="graduationdate" ColumnName="graduationdate" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstdapplicationdtls">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblstdapplicationdtl">
+        <MappingFragment StoreEntitySet="tblstdapplicationdtls">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="stdfname" ColumnName="stdfname" />
+          <ScalarProperty Name="stdmname" ColumnName="stdmname" />
+          <ScalarProperty Name="stdlname" ColumnName="stdlname" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="citizenship_id" ColumnName="citizenship_id" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="phno" ColumnName="phno" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="subjectstaken" ColumnName="subjectstaken" />
+          <ScalarProperty Name="pathway" ColumnName="pathway" />
+          <ScalarProperty Name="centrename" ColumnName="centrename" />
+          <ScalarProperty Name="centreaddress" ColumnName="centreaddress" />
+          <ScalarProperty Name="centrephno" ColumnName="centrephno" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstdattachments">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblstdattachment">
+        <MappingFragment StoreEntitySet="tblstdattachment">
+          <ScalarProperty Name="studenttransid" ColumnName="studenttransid" />
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+          <ScalarProperty Name="attachmenttype" ColumnName="attachmenttype" />
+          <ScalarProperty Name="attachmentotherdtls" ColumnName="attachmentotherdtls" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstddocuploads">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblstddocupload">
+        <MappingFragment StoreEntitySet="tblstddocupload">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+          <ScalarProperty Name="docid" ColumnName="docid" />
+          <ScalarProperty Name="uploaddocs" ColumnName="uploaddocs" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstdparentdtls">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblstdparentdtl">
+        <MappingFragment StoreEntitySet="tblstdparentdtls">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="idnumber" ColumnName="idnumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="relation" ColumnName="relation" />
+          <ScalarProperty Name="homeaddress" ColumnName="homeaddress" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="cname" ColumnName="cname" />
+          <ScalarProperty Name="caddress" ColumnName="caddress" />
+          <ScalarProperty Name="suite" ColumnName="suite" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="postalcode" ColumnName="postalcode" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="cuntry" ColumnName="cuntry" />
+          <ScalarProperty Name="cphno" ColumnName="cphno" />
+          <ScalarProperty Name="howdidyouhearaboutus" ColumnName="howdidyouhearaboutus" />
+          <ScalarProperty Name="fileupload" ColumnName="fileupload" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lcm" ColumnName="lcm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblcountrymasts">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblcountrymast">
+        <MappingFragment StoreEntitySet="tblcountrymast">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="country_name" ColumnName="country_name" />
+          <ScalarProperty Name="currency" ColumnName="currency" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="del_sts" ColumnName="del_sts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+          <ScalarProperty Name="callcode" ColumnName="callcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbldoctypemasts">
+      <EntityTypeMapping TypeName="db_luccpuModel.tbldoctypemast">
+        <MappingFragment StoreEntitySet="tbldoctypemast">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="doctype" ColumnName="doctype" />
+          <ScalarProperty Name="docgroup" ColumnName="docgroup" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstdtranscripts">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblstdtranscript">
+        <MappingFragment StoreEntitySet="tblstdtranscript">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="frmmodtransid" ColumnName="frmmodtransid" />
+          <ScalarProperty Name="transcriptnumber" ColumnName="transcriptnumber" />
+          <ScalarProperty Name="transgendt" ColumnName="transgendt" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="lum" ColumnName="lum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="db_luccpuModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="db_luccpuModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="db_luccpuModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="db_luccpuModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="db_luccpuModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="db_luccpuModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tblattachmenttypes">
+      <EntityTypeMapping TypeName="db_luccpuModel.tblattachmenttype">
+        <MappingFragment StoreEntitySet="tblattachmenttype">
+          <ScalarProperty Name="lum" ColumnName="lum" />
+          <ScalarProperty Name="luo" ColumnName="luo" />
+          <ScalarProperty Name="delsts" ColumnName="delsts" />
+          <ScalarProperty Name="rcm" ColumnName="rcm" />
+          <ScalarProperty Name="rco" ColumnName="rco" />
+          <ScalarProperty Name="attachmentname" ColumnName="attachmentname" />
+          <ScalarProperty Name="transid" ColumnName="transid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

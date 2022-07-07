@@ -1,0 +1,107 @@
+﻿@using procpu.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "";
+}
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<head>
+    <title>Login || CPU</title>
+
+
+    <link rel="stylesheet" href="~/los_login/css/o5h17VFPfC0P3eJEX7K5Ng.css">
+    <link rel="stylesheet" href="~/los_login/css/qFJ5jYLGaW303e0LF4PjrQ.css">
+    <link href="~/css/popup.css" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/theme1/LincolnOnlineV1StyleSheet.css" rel="stylesheet"
+          type="text/css" />
+ 
+    <style>
+        .text-danger{
+            color:#ff0000;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            margin-top: .8em;
+            line-height: 20px;
+        }
+    </style>
+    </head>
+<body class="dark ">
+    <div id="fb-root">
+    </div>
+    <form method="post" id="signupForm" style="margin-top: -258.5px;" class="signupForm" autocomplete="off">
+        <h2>
+            CPU
+        </h2>
+        <fieldset id="message" class="message"></fieldset>
+        <fieldset class="errors"></fieldset>
+        <fieldset id="intro" class="">
+            <p>
+                <a target="_blank" href="#" class="button buttonBlock buttonFacebook">
+                    Follow us on Facebook
+                </a>
+            </p>
+            <p>
+                <a target="_blank" class="button buttonBlock buttonGoogle" href="#">
+                    Employee Registration
+                </a>
+            </p>
+            <p class="or">
+                Staff Login
+            </p>
+        </fieldset>
+
+        <fieldset id="emailSignup">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+            
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @*@Html.LabelFor(m => m.username, new { @class = "col-md-2 control-label" })*@
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.username, new { @class = "form-control textInput", @placeholder = "Username" })
+                        @Html.ValidationMessageFor(m => m.username, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @*@Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })*@
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control textInput", @placeholder = "Password" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Log In" class="button buttonBlock buttonSubmit" />
+                    </div>
+                </div>
+            }
+            <div class="formFootnote ready" id="loginLinkWrapper">
+
+
+                <a href="#">Forgot your password? Click Here →</a>
+            </div>
+        </fieldset>
+        <div id="quotes" style="left: 55%;">
+            <p>
+                <span id="lblquote1">There are two motives for reading a book; one, that you enjoy it; the other, that you can boast about it [on Goodreads].</span>
+                <cite>–<span id="lblwrittenby1">Bertrand Russell</span></cite>
+            </p>
+
+
+
+        </div>
+      
+
+    </form>
+
+        <script src="~/los_login/js/ZJpkz-FOMAcDPAEeqn0icw.js" crossorigin="anonymous"></script>
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")*@
+    @*@RenderSection("scripts", required: false)*@
+</body>
+</html>

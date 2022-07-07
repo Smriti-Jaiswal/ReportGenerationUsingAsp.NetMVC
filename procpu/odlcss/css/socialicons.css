@@ -1,0 +1,389 @@
+@charset  utf-8;
+
+.right-new {
+    right: 44px;
+    top: 20px;
+    width: 166px;
+    height: 100px;
+}
+
+.social-right-new {
+    height: 34px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-left: 166px;
+    border: 4px solid #FFF;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.social-right-new:hover {
+    height: 34px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-left: 42px;
+    border: 4px solid #FFF;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+
+#facebook-right-new {
+    background-image: url(../images/socialicons/facebook.png);
+    background-color: #3B5998;
+    background-repeat: no-repeat;
+    background-position: 2% 53%;
+}
+
+#facebook-right-new:hover {
+    background-image: url(../images/socialicons/facebook.png);
+    background-color: #3B5998;
+    background-repeat: no-repeat;
+    background-position: 2% 53%;
+}
+
+.facebook-button-right-new {
+    margin-left: 50px;
+
+}
+
+
+
+
+/*-----------------------DO NOT INCLUDE(THIS IS LIVE DEMO CSS---------------------------------*/
+/*-----------------------YOUR CSS STARTS HERE---------------------------------*/
+/*-------WARNING-----------DO-NOT-TOUCH----------WARNING---------*/
+#socialnav {
+    position: fixed;
+    z-index: 3;
+}
+
+/*-------WARNING-----------DO-NOT-TOUCH----------WARNING---------*/
+/*----------------Position-Left-Top-------------------*/
+.left-top {
+    left: -74px;
+    top: 100px;
+    width: 166px;
+    height: 100px;
+}
+
+.social-left-top {
+    height: 34px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-left: -166px;
+    border: 4px solid #FFF;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-right-radius: 7px;
+    border-top-right-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.social-left-top:hover {
+    height: 78px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    border: 4px solid #FFF;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-right-radius: 7px;
+    border-top-right-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#facebook-left-top {
+    background-image: url(../images/socialicons/facebook.png);
+    background-color: #3B5998;
+    background-repeat: no-repeat;
+    background-position: 99% 53%;
+}
+
+#facebook-left-top:hover {
+    background: url(../images/socialicons/facebookbig.png) 103% 50% no-repeat, url(../images/socialicons/likeme.png) 87% 106% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #3B5998;
+}
+
+.facebook-iframe-left-top {
+    padding-left: 1px;
+    float: left;
+}
+
+#twitter-left-top {
+    background-image: url(../images/socialicons/twitter.png);
+    background-color: #87e1e6;
+    background-repeat: no-repeat;
+    background-position: 99% 53%;
+}
+
+#twitter-left-top:hover {
+    background: url(../images/socialicons/twitterbig.png) 99% 50% no-repeat, url(../images/socialicons/followme.png) 31% 12% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #87e1e6;
+}
+
+.twitter-button-left-top {
+    margin-left: 15px;
+    margin-top: 41px;
+}
+
+#pinterest-left-top {
+    background-image: url(../images/socialicons/pinterest.png);
+    background-color: #c92228;
+    background-repeat: no-repeat;
+    background-position: 99% 53%;
+}
+
+#pinterest-left-top:hover {
+    background: url(../images/socialicons/pinterestbig.png) 99% 50% no-repeat, url(../images/socialicons/followmepinterest.png) 16% 12% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #c92228;
+}
+
+.pinterest-button-left-top {
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+#youtube-left-top {
+    background-image: url(../images/socialicons/youtube.png);
+    background-color: #CD332D;
+    background-repeat: no-repeat;
+    background-position: 99% 53%;
+}
+
+#youtube-left-top:hover {
+    background: url(../images/socialicons/youtubebig.png) 99% 50% no-repeat, url(../images/socialicons/followmeyoutube.png) 20% 20% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #CD332D;
+}
+
+.youtube-button-left-top {
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+#googleplus-left-top {
+    background-image: url(../images/socialicons/googleplus.png);
+    background-color: #2b2b2b;
+    background-repeat: no-repeat;
+    background-position: 99% 53%;
+}
+
+#googleplus-left-top:hover {
+    background: url(../images/socialicons/googleplusbig.png) 99% 50% no-repeat, url(../images/socialicons/followmegoogle.png) 20% 20% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #2b2b2b;
+}
+
+.googleplus-button-left-top {
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+/*------------END--Position-Left-Top-------------------*/
+/*----------------Position-Right-Top-------------------*/
+.right-top {
+    right: 44px;
+    top: 100px;
+    width: 166px;
+    height: 100px;
+}
+
+.social-right-top {
+    height: 36px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-left: 166px;
+    /*border: 4px solid #FFF;*/
+    -moz-border-radius-topleft: 28px;
+    -webkit-border-top-left-radius: 28px;
+    border-top-left-radius: 28px;
+    -moz-border-radius-bottomleft: 28px;
+    -webkit-border-bottom-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.social-right-top:hover {
+    height: 37px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-left: -60px;
+    border: 4px solid #FFF;
+    -moz-border-radius-topleft: 28px;
+    -webkit-border-top-left-radius: 28px;
+    border-top-left-radius: 28px;
+    -moz-border-radius-bottomleft: 28px;
+    -webkit-border-bottom-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#facebook-right-top {
+    background-image: url(../images/socialicons/facebook.png);
+    background-color: #3B5998;
+    background-repeat: no-repeat;
+    background-position: 2% 53%;
+}
+
+#facebook-right-top:hover {
+    background: url(../images/socialicons/facebookbig.png) 23% 50%, url(../images/socialicons/likeme.png) -4% 29% no-repeat;
+    background-color: #e4e4e4;
+    /*background-color: #d6d6d6;*/
+    background-repeat: no-repeat;
+    border: 4px solid #3B5998;
+}
+
+.facebook-iframe-right-top {
+    margin-left: 87px;
+    float: left;
+}
+
+#twitter-right-top {
+    background-image: url(../images/smiley-face.png);
+    background-color: #87e1e6;
+    background-repeat: no-repeat;
+}
+
+#twitter-right-top:hover {
+    background: url(../images/smiley-face.png) 1% 50% no-repeat, url(../images/socialicons/followme.png) 72% 15% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #87e1e6;
+}
+
+.twitter-button-right-top {
+    margin-left: 57px;
+    margin-top: 4px;
+    cursor:pointer;
+}
+.twitter-button-right-top a{ cursor:pointer;}
+#pinterest-right-top {
+    background-image: url(../images/socialicons/pinterest.png);
+    background-color: #c92228;
+    background-repeat: no-repeat;
+    background-position: 2% 53%;
+}
+
+#pinterest-right-top:hover {
+    background: url(../images/socialicons/pinterestbig.png) 0 50% no-repeat, url(../images/socialicons/followmepinterest.png) 72% 15% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #c92228;
+}
+
+.pinterest-button-right-top {
+    margin-left: 57px;
+    margin-top: 35px;
+}
+
+#youtube-right-top {
+    background-image: url(../images/quistionIcon.png);
+    background-color: #CD332D;
+    background-repeat: no-repeat;
+    background-position: 2% 53%;
+}
+
+#youtube-right-top:hover {
+    background: url(../images/quistionIcon.png) 0 50% no-repeat, url(../images/socialicons/followmeyoutube.png) 72% 15% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #CD332D;
+    height: 37px;
+}
+
+.youtube-button-right-top {
+    margin-left: 57px;
+    margin-top: 0px;
+}
+
+#googleplus-right-top {
+    background-image: url(../images/HelpUsGrow.png);
+    background-color: #2b2b2b;
+    background-repeat: no-repeat;
+    background-position: 2% 53%;
+}
+
+#googleplus-right-top:hover {
+    background: url(../images/HelpUsGrow.png) 0 50% no-repeat, url(../images/socialicons/followmegoogle.png) 72% 15% no-repeat;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    border: 4px solid #2b2b2b;
+}
+
+.googleplus-button-right-top {
+    margin-left: 57px;
+    /*margin-top: 35px;*/
+}
+.twitter-button-right-top a{ font-weight:bold;}
+.twitter-button-right-top a:hover{ font-size:14px; font-weight:bold;}
+/*------------END--Position-Right-Top-------------------*/
+a.slidingbutton {
+    background: transparent url(../images/socialicons/button_right.png) no-repeat scroll top right;
+    display: block;
+    float: left;
+    height: 35px;
+    margin-right: 6px;
+    padding-right: 20px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    text-decoration:none;
+}
+
+a.slidingbutton span {
+    background: transparent url(../images/socialicons/button_left.png) no-repeat;
+    display: block;
+    line-height: 22px;
+    padding: 3px 0 5px 18px;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+/*a.slidingbutton:hover span {
+    text-decoration: underline;/*
+}
+
+/*----------------------YOUR CSS ENDS HERE---------------------------------*/

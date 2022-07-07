@@ -1,0 +1,1075 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url= "~/Views/Home/Index.cshtml" title="Home"  description="">
+<!--D:\Smriti's Project\procpu\procpu\Views\Home\Index.cshtml-->
+    <!--<siteMapNode  title="My Profile" roles="myprofile" description="" style="bold">
+      <siteMapNode title="Staff Handbook" url="~/hrmyprofile/staffhandbookack.aspx" description="" />
+      <siteMapNode title="My Particulars" roles="myprofile"  description="" >
+        <siteMapNode title="Staff Directory" url="~/empprofile_cv.aspx" Target="_blank"  description="" />
+        <siteMapNode title="My Particulars" url="~/hrmyprofile/frmemployeedetedit.aspx"  description="" />
+        <siteMapNode title="My Other Activities" url="~/hrmyprofile/academicprofile.aspx"  description="" />
+        <siteMapNode title="My Research Activities" url="~/hrmyprofile/vw_fac_quality.aspx"  description="" />
+        <siteMapNode title="My Documents" url="~/hrmyprofile/empdoc.aspx"  description="" />
+        <siteMapNode title="My Permit/Visa [View/Upload]" url="~/hrmyprofile/employeepermit.aspx"  description="" />
+        <siteMapNode title="My ORCID" url="~/hrmyprofile/empORCID.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode title="My Attendance" url="~/hrmyprofile/AttendanceExplanation.aspx"  description="" />
+      <siteMapNode title="My Leave" url="~/hrmyprofile/myleave.aspx"  description="" />
+      <siteMapNode title="Leave Application" url="~/hrmyprofile/empleaveform.aspx"  description="" />
+      <siteMapNode title="Mediclaim Application" url="~/hrmyprofile/medclaim.aspx"  description="" />
+      <siteMapNode title="Time Out Form" url="~/hrmyprofile/TimeOutForm.aspx"  description="" />
+      <siteMapNode title="Claims" url="~/hrmyprofile/efrmxpenseent.aspx"  description="" />
+      <siteMapNode title="Travel Requisition" url="~/hrmyprofile/frmtravelreq.aspx"  description="" />
+      <siteMapNode title="General Library" url="~/hrmyprofile/frmvwgenlibcontent.aspx"  description="" />
+      <siteMapNode title="Employee Request/Complain" url="~/hrmyprofile/frmempcomplain.aspx"  description="" />
+
+    </siteMapNode>-->
+
+    <siteMapNode url="" title="Settings" roles="master;examunit;chq;PTPTNCP;HOD;mkt;highermngmntdesk;HRMAST;cashier;crsadmin;warden;stk;clinicalmast;logistic" description="">
+      <siteMapNode  url ="" title="General" roles="master" description="">
+        <siteMapNode title="Salutation" url="~/Master/salmastnew.aspx" description="" />
+        <siteMapNode title="Race" url="~/Master/RaceMaster.aspx" description="" />
+        <siteMapNode title="Religion" url="~/Master/relMaster.aspx" description="" />
+        <siteMapNode title="Country" url="~/Master/countrymast.aspx"  description="" />
+        <siteMapNode title="Language" url="~/Master/languagemast.aspx"  description="" />
+        <siteMapNode title="State" url="~/Master/statemast.aspx"  description="" />
+        <siteMapNode title="Quotes" url="~/Master/QuoteForm.aspx"  description="" />
+        <siteMapNode title="Document Checklist" url="~/Master/chklstmaster.aspx"  description="" />
+        <siteMapNode title="Application Stage" url="~/Master/appl_stage_mast.aspx"  description="" />
+      </siteMapNode>
+
+      <!--<siteMapNode  url ="" title="Inventory" description="" roles="stk">
+        <siteMapNode title="Item" url="~/Master/ItemMaster.aspx"  description="" />
+        <siteMapNode title="Unit" url="~/Master/unit.aspx"  description="" />
+
+        <siteMapNode title="Supplier Nature Of business" url="~/Master/frmsuppbusinaturemast.aspx"  description="" />
+        <siteMapNode title="Supplier Details" url="~/Master/frmsupplydtls.aspx"  description="" />
+        <siteMapNode title="Supplier Nature Name-Department Config" url="~/Master/supplierdeptconfig.aspx"  description="" />
+      </siteMapNode>-->
+
+      <!--<siteMapNode  url ="" title="Programme Admin" roles="crsadmin" description="">
+        <siteMapNode title="Department" url="~/Master/deptmastnew.aspx"  description="" />
+        <siteMapNode title="Edit Department" url="~/Master/editdeptmastnew.aspx"  description="" />
+        <siteMapNode title="Program Version" url="~/academicmast/syllabusversionmast.aspx"  description="" />
+        <siteMapNode title="Programme" url="~/Master/coursemastnew.aspx"  description="" />
+        <siteMapNode title="Edit Programme" url="~/Master/edit_coursename.aspx"  description="" />
+        <siteMapNode title="Programme Report" url="~/Master/rpt_vw_crs.aspx"  description="" />
+        <siteMapNode title="Programme Status Update" url="~/Master/coursemastnew_upd.aspx"  description="" />
+        <siteMapNode title="Subject" url="~/academicmast/sunbmastnew.aspx"  description="" />
+        <siteMapNode title="Edit Subject" url="~/academicmast/sunbmastedt.aspx"  description="" />
+        <siteMapNode title="Subject Report" url="~/Master/rpt_crsalldetails.aspx"  description="" />
+        <siteMapNode title="Grade Version" url="~/academicmast/GradeversMaster.aspx"  description="" />
+        <siteMapNode title="Grade Scheme" url="~/academicmast/GradeMasternew.aspx"  description="" />
+        <siteMapNode title="Semester" url="~/academicmast/semdet.aspx"  description="" />
+        <siteMapNode title="Assessment" url="~/hodmast/assmastnew.aspx"  description="" crptrt_dept_chancellery=""/>
+        <siteMapNode title="Subject - Assessment Setup" url="~/hodmast/sub_assmastnew.aspx"  description="" />
+        <siteMapNode title="Subject - Assessment Update" url="~/hodmast/frm_subasstsupdt.aspx"  description="" />
+        <siteMapNode title="Subject Assessment Report" url="~/Master/rpt_subj_assmnt.aspx"  description="" />
+        <siteMapNode title="MQA-KPT Update" url="~/Master/frmmqakptsts.aspx"  description="" />
+        <siteMapNode title="Field Of Study" url="~/Master/field_of_study_mast.aspx"  description="" />
+        <siteMapNode title="Level Of Study" url="~/Master/lelel_of_study.aspx"  description="" />
+        <siteMapNode title="Mode Of Study" url="~/Master/modeofstudymast.aspx"  description="" />
+      </siteMapNode>-->
+
+      <!--<siteMapNode  url ="" title="Academic Admin" roles="acamast" description="">
+        <siteMapNode title="Programme-Intake Month" url="~/Master/crsintakeconfig.aspx"  description="" />
+        <siteMapNode title="Intake System" url="~/Master/intakemastnew.aspx"  description="" />
+        <siteMapNode title="Module System" url="~/Master/subreg_new.aspx"  description="" />
+        <siteMapNode title="Student Status/Catagory" url="~/Master/stdsts.aspx"  description="" />
+      </siteMapNode>-->
+
+      <!--<siteMapNode url =""  title="Dean/HOD" roles="dean" description="">
+        <siteMapNode title="Coordinator Allocation" url="~/dean/coordinator_config.aspx"  description="" />
+        <siteMapNode  url ="" title="Evaluation-SSI" roles="dean" description="">
+          <siteMapNode title="Report Student Evaluation" url="~/dean/frmevalreport.aspx"  description="" />
+          <siteMapNode title="Report Department Evaluation" url="~/dean/frmdeptevalreport.aspx"  description="" />
+          <siteMapNode title="Report Lecturer SSI" url="~/dean/frmevalreport_ssi.aspx"  description="" />
+          <siteMapNode title="Report Department SSI" url="~/dean/frmdeptevalreport_ssi.aspx"  description="" />
+        </siteMapNode>
+
+
+      </siteMapNode>-->
+
+      <!--<siteMapNode url =""  title="Programme Coordinator" roles="hod" description="">
+        <siteMapNode title="Subject Allocation" url="~/hodmast/all_sub_lect_DragAndDrop.aspx"  description="" />
+        <siteMapNode url =""  title="Continuous Assessment(CA)" roles="hod" description="">
+          <siteMapNode title="CA Marks" url="~/hodmast/frmmrksentryall.aspx"  description="" />
+          <siteMapNode title="Delete CA Marks" url="~/hodmast/del_cpa_all.aspx"  description="" />
+        </siteMapNode>
+        <siteMapNode url =""  title="Marks Compilation" roles="hod" description="">
+          <siteMapNode title="Subject wise" url="~/hodmast/rpt_marks_compilation.aspx"  description="" />
+          <siteMapNode title="Intake wise" url="~/hodmast/rpt_marks_compilation1.aspx"  description="" />
+        </siteMapNode>
+        <siteMapNode title="GPA/CGPA Report" url="~/hodmast/rpt_sgpa_sem_reg.aspx"  description="" />
+        <siteMapNode title="Attendance Sheet" url="~/hodmast/rpt_attndncreport_hod.aspx"  description="" />
+        <siteMapNode title="Update Student Attendance[MC]" url="~/hodmast/online_mc_attndnce_updt.aspx"  description="" />
+        <siteMapNode title="Lecturer Evaluation Report" url="~/hodmast/evalutnfeedback.aspx"  description="" />
+      </siteMapNode>-->
+
+      <!--<siteMapNode  url ="" title="Fees" roles="mgr" description="">
+        <siteMapNode title="Programme Fees Version" url="~/feesmast/feesversionmast.aspx"  description="" />
+        <siteMapNode title="Programme Fees Breakup" url="~/feesmast/feesbrkmast.aspx"  description="" />
+        <siteMapNode title="Administrative Fees" roles="mgr" url="~/feesmast/administrativefeesmast.aspx"  description="" />
+        <siteMapNode title="Miscellaneous Fees" url="~/feesmast/miscfeesmast.aspx"  description="" />
+        <siteMapNode title="Tution Fee" url="~/feesmast/feesmast.aspx"  description="" />
+        <siteMapNode title="Edit Tution Fee" url="~/feesmast/feesmast_edit.aspx"  description="" />
+        <siteMapNode title="Tution Fee Report" url="~/feesmast/rptfeesmast.aspx"  description="" />
+        <siteMapNode title="Financer" url="~/feesmast/frm_std_fees_financ_mast.aspx"  description="" />
+        <siteMapNode title="Country Wise Fees" url="~/feesmast/countrywiseFeesmast.aspx"  description="" />
+      </siteMapNode>-->
+
+      <!--<siteMapNode  url ="" title="A/c" roles="chq" description="">
+        <siteMapNode title = "Bank" url="~/accmaster/bnkmastnew.aspx"  description="" />
+        <siteMapNode title = "A/c" url="~/accmaster/acnomastnew.aspx"  description="" />
+        <siteMapNode title = "Cheque" url="~/accmaster/chequemaster.aspx"  description="" />
+        <siteMapNode title = "Creditor" url="~/accmaster/CREDITORMAST.aspx"  description="" />
+        <siteMapNode title = "Expense Type" url="~/accmaster/expensemast.aspx"  description="" />
+      </siteMapNode>-->
+
+      <!--<siteMapNode url =""  title="Exam Unit" roles="examunit" description="">
+        --><!--<siteMapNode title="Assessment Master" url="~/academicmast/assmastnew.aspx"  description="" />--><!--
+        <siteMapNode title="Convocation" url="~/academicmast/convocatiomast.aspx"  description="" />
+        <siteMapNode title="Exam Index" url="~/academic/exam_idx_mast.aspx"  description="" />
+        <siteMapNode title="Exam Month" url="~/academicmast/examinationmast.aspx"  description="" />
+        <siteMapNode title="Exam Venue" url="~/Master/venuemaster.aspx"  description="" />
+
+      </siteMapNode>-->
+
+      
+
+      <!--<siteMapNode url =""  title="Loan Body" roles="PTPTNCP" description="">
+        <siteMapNode title="Create Loan Body" url="~/ptptncp/createLoanBody.aspx"  description="" />
+        <siteMapNode title="Loan Configuration." url="~/PTPTNCP/loanConfig.aspx"  description="" />
+        <siteMapNode title="Student A/c Update" url="~/ptptncp/stdAcUpdate.aspx"  description="" />
+        <siteMapNode title="Give Student Allowance" url="~/ptptncp/stdAllownace.aspx"  description="" />
+        <siteMapNode title="PTPTN Misc Deduction Master " url="~/PTPTNCP/MiscDeductionMastnew.aspx"  description="" />
+      </siteMapNode>-->
+
+      <!--<siteMapNode url =""  title="Marketing" roles="mkt" description="">
+        <siteMapNode title = "Venue"  url="~/mkt/frmmarketingvenue.aspx"  description="" />
+        <siteMapNode title = "Agent Search"  url="~/mkt/vwaget.aspx"  description="" />
+        <siteMapNode title = "University Representative[UR]" url="~/mkt/cragent.aspx"  description="" />
+        --><!--<siteMapNode title = "Upload/Update MOU" url="~/mkt/uploadmou.aspx"  description="" />--><!--
+        <siteMapNode title = "UR List" url="~/mkt/agentlistall.aspx"  description="" />
+        <siteMapNode title = "Applied UR List" url="~/mkt/Appliedagentlistall.aspx"  description="" />
+        <siteMapNode title = "Print Agency Certificate" url="~/mkt/printcertificateALL.aspx"  description="" />
+        <siteMapNode title = "UR Memo" url="~/mkt/GroupMail.aspx"  description="" />
+        <siteMapNode title = "UR Memo [Group]" url="~/mkt/genGroupMail.aspx"  description="" />
+        <siteMapNode title = "Recruitment Report[Consolidated]" url="~/mkt/rpt_university_rep.aspx"  description="" />
+        <siteMapNode title = "Recruitment Report [Countrywise]" url="~/mkt/rpt_university_rep_ctry.aspx"  description="" />
+        <siteMapNode title = "Resend Greetings + MOU " url="~/mkt/rep_submit.aspx"  description="" />
+        <siteMapNode title = "Resend Software Kit " url="~/mkt/software_rep_access.aspx"  description="" />
+        <siteMapNode title = "Resend All " url="~/mkt/frmuniv_rep_mail_resend.aspx"  description="" />
+        <siteMapNode title = "Attachement Manage [UR Welcome Mail]" url="~/mkt/frm_upld_attach.aspx"  description="" />
+        <siteMapNode title = "Edit URM " url="~/mkt/Editurm.aspx"  description="" />
+        <siteMapNode title = "Edit URM E-Mail" url="~/mkt/Editurm_email.aspx"  description="" />
+        <siteMapNode title = "News Letter" url="~/mkt/newsletter.aspx"  description="" />
+        <siteMapNode title = "E-mail Subscription" url="~/mkt/emialsubscription.aspx"  description="" />
+        <siteMapNode title = "Activity Master" url="~/master/ActivityMaster.aspx"  description="" />
+        <siteMapNode title = "Agent Commission" url="~/mkt/urmcommissiondet.aspx"  description="" />
+        <siteMapNode title = "Country Report" url="~/mkt/RPT_RECUITMNT_CTRY.aspx"  description="" />
+      </siteMapNode>-->
+
+      <!--<siteMapNode url =""  title="HRM" roles="HRMAST" description="">
+        <siteMapNode title = "Designation" url="~/HRMast/desgmast.aspx"  description="" />
+        <siteMapNode title = "Benefit" url="~/HRMast/frm_BenefitMaster.aspx"  description="" />
+        <siteMapNode title = "Duty" url="~/HRMast/frm_DutyMaster.aspx"  description="" />
+        <siteMapNode title = "Statutory Liability" url="~/HRMast/statutory_liab_mast.aspx"  description="" />
+        <siteMapNode title = " General Policy" url="~/HRMast/frm_policymast.aspx"  description="" />
+        <siteMapNode title = "Location" url="~/HRMast/location.aspx"  description="" />
+        <siteMapNode title = "Public Holiday" url="~/HRMast/pub_hol_mast.aspx"  description="" />
+        <siteMapNode title = "Staff Category" url="~/HRMast/staffcategorymaster.aspx"  description="" />
+        <siteMapNode title = "Staff Grade" url="~/HRMast/Employecategorymast.aspx"  description="" />
+        <siteMapNode title = "Allowance" url="~/HRMast/frmallowancemast.aspx"  description="" />
+        <siteMapNode title = "Deduction" url="~/HRMast/frmdeductmast.aspx"  description="" />
+        <siteMapNode title="Leave Category" url="~/HRMast/frm_leave_cat_mast.aspx" description=""/>
+        <siteMapNode title = "Disciplinary Action" url="~/HRMast/DesciplineMasternew_hr.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url =""  title="Evaluation" roles="master" description="">
+
+        <siteMapNode title="Evaluation Name" url="~/master/frmevaluationtypemast.aspx"  description="" />
+        <siteMapNode title="Evaluation Section" url="~/master/frmevalsectionmast.aspx"  description="" />
+        <siteMapNode title="Evaluation Control" url="~/master/frmevalcontrolmast.aspx"  description="" />
+        <siteMapNode title="Evaluation Control(Update)" url="~/master/frmevalcontrolmast_updt.aspx"  description="" />
+        <siteMapNode title="Evaluation Questions" url="~/master/frmevaluation_questionbank.aspx"  description="" />
+
+      </siteMapNode>-->
+    </siteMapNode>
+    
+    <!--<siteMapNode url =""  title="LMS Settings" roles="elsmast" description="">
+      <siteMapNode  url ="" title="Subject Configurations" roles="elsmast" description="">
+        <siteMapNode title="Objective-Outcome-Synopsis" url="~/elsmast/sub_content.aspx"  description="" />
+        <siteMapNode title="Subject Topic" url="~/elsmast/sub_topics.aspx"  description="" />
+        --><!--<siteMapNode title="Subject Topic Configuration - 2" url="~/elsmast/sub_topicdesc.aspx"  description="" />--><!--
+        <siteMapNode title="Edit Topic" url="~/elsmast/sub_topics_edit.aspx"  description="" />
+        <siteMapNode title="Delete Topic" url="~/elsmast/del_sub_topics.aspx"  description="" />
+        <siteMapNode title="Learning Type" url="~/elsmast/learningtypemast.aspx"  description="" />
+        <siteMapNode title="Lecture Note" url="~/elsmast/Lecture_nts.aspx"  description="" />
+        <siteMapNode title="Journals" url="~/elsmast/jrnls.aspx"  description="" />
+        <siteMapNode title="Open Journals" url="~/elsmast/field_of_study_det.aspx"  description="" />
+        --><!--<siteMapNode title="Programme Detailed" url="~/elsmast/frmllsprgrmdet.aspx"  description="" />--><!--
+        <siteMapNode title="Quick Links" url="~/elsmast/bookmark.aspx"  description="" />
+        <siteMapNode title="Cross Reference" url="~/elsmast/book_mark_cross_referen.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode  url ="" title="e-Notices" roles="elsmast" description="">
+        <siteMapNode title="Campus Announcement" url="~/elsmast/campusannouncements.aspx"  description="" />
+        <siteMapNode title="Delete Announcement" url="~/elsmast/del_campusnotices.aspx"  description="" />
+        <siteMapNode title="Personal Announcement" url="~/elsmast/personalannouncements.aspx"  description="" />
+        <siteMapNode title="Group Announcements" url="~/elsmast/prsnlannouncemnt.aspx"  description="" />        
+      </siteMapNode>
+
+      --><!--<siteMapNode  url ="" title="e-Learning" roles="elsmast" description="">
+        <siteMapNode title="Publisher" url="~/elsmast/pubmast.aspx"  description="" />
+        <siteMapNode title="Book Settings" url="~/elsmast/bookmast.aspx"  description="" />
+        <siteMapNode title="Cover Page" url="~/elsmast/uploadcoverpage.aspx"  description="" />
+        <siteMapNode title="Author" url="~/elsmast/frmauthormast.aspx"  description="" />
+        <siteMapNode title="Upload Book" url="~/elsmast/upload.aspx"  description="" />
+        <siteMapNode title="Book Update" url="~/elsmast/frmeditupload.aspx"  description="" />
+        <siteMapNode title="General Library" url="~/elsmast/general_library.aspx"  description="" />
+        <siteMapNode title="Lecturer Library" url="~/elsmast/frm_lect_lib.aspx"  description="" />
+        <siteMapNode title="Subject Group" url="~/elsmast/sub_groupmast.aspx"  description="" />
+        <siteMapNode title="Group-Subject Combine" url="~/elsmast/sub_grprel.aspx"  description="" />
+      </siteMapNode>--><!--            
+    </siteMapNode>-->
+    
+       <!--<siteMapNode url =""  title="MOU Details" roles="elsmast" description="">
+         <siteMapNode title="Agent Mou Details"  url="~/mkt/uploadmou.aspx"  description="" />    
+    </siteMapNode>-->
+
+    <!--<siteMapNode title="Course Components" roles="faculty" description="">
+      --><!--<siteMapNode title="Assigned Programmes"  url="~/faculty/program_list.aspx" description="" />
+      <siteMapNode title="Subject Topic"  url="~/faculty/sub_topicdesc_fac.aspx" description="" />
+      <siteMapNode title="My Lecture Notes" url="~/faculty/Lecture_NTS_FAC.aspx" description="" />--><!--
+      
+    
+      	  
+      <siteMapNode title="Attendance" roles="faculty"   description="" >
+        --><!--<siteMapNode title="Intake Wise"  url="~/faculty/onlinestdatten_fac.aspx"  description="" />--><!--
+        <siteMapNode title="Subject Wise"  url="~/faculty/onlinestdatten_fac_grup1.aspx"  description="" />
+        <siteMapNode title="Attendance Sheet"  url="~/faculty/rpt_stdatten_regidx.aspx"  description="" />
+        <siteMapNode title="Subject Registered Student" url="~/faculty/rpt_subreg.aspx"  description="" />
+        --><!--<siteMapNode title="Consolidated Registered Student" url="~/faculty/rpt_subregistration_consolidated.aspx"  description="" />--><!--
+      </siteMapNode>
+            
+      <siteMapNode title="Student Marks" roles="faculty"   description="" >
+        <siteMapNode title="Mark Single Student" url="~/faculty/frmmrksentry_fac.aspx"  description="" />
+        --><!--<siteMapNode title="Mark Intake Wise" url="~/faculty/frmmarksentry.aspx"  description="" />--><!--
+        <siteMapNode title="Mark Subject Wise" url="~/faculty/onlinestdmarksentry.aspx"  description="" />
+        <siteMapNode title="Edit Marks" url="~/faculty/editcpavwlect_fac.aspx"  description="" />
+        <siteMapNode title="Compilation[Subject Wise]" url="~/faculty/rpt_marks_compilation.aspx"  description="" />
+        --><!--<siteMapNode title="Compilation[Intake Wise]" url="~/faculty/rpt_marks_compilation1.aspx"  description="" />--><!--
+        <siteMapNode title="Semester Wise Marks" url="~/faculty/rptmrksgrpwise.aspx"  description="" />
+      </siteMapNode>
+
+      --><!--<siteMapNode title="e-Notices" roles="faculty"  description="" >
+        <siteMapNode title="Student Portal" url="~/faculty/campusnotices_fac.aspx"  description="" />
+        <siteMapNode title="Individual Student" url="~/faculty/personalannouncements_fac.aspx" description="" />
+        <siteMapNode title="Announce to Intake" url="~/faculty/prsnlannouncemnt_fac.aspx" description="" />
+        <siteMapNode title="Announce to Department" url="~/faculty/deptprsnlancemnt_fac.aspx" description="" />
+      </siteMapNode>--><!--
+      
+      <siteMapNode title="Exam Eligibility" roles="faculty" description="" >
+        <siteMapNode title = "Intake Wise" url="~/faculty/std_onlinestdatten1.aspx"  description="" />
+        <siteMapNode title = "Subject Wise" url="~/faculty/std_onlinestdatten.aspx"  description="" />
+        <siteMapNode title = "Eligibilty List" url="~/faculty/std_onlinestdatten2.aspx"  description="" />
+      </siteMapNode>
+
+      --><!--<siteMapNode title="Disciplinary Action" roles="faculty" description="" >
+        <siteMapNode title="Action on Behavior" url="~/faculty/dispact_lect.aspx"  description="" />
+        <siteMapNode title="Warning Letter" url="~/faculty/rptwarningletter.aspx"  description="" />
+      </siteMapNode>--><!--
+    </siteMapNode>-->
+
+    <!--<siteMapNode title="Assignment" roles="faculty"  description="" >
+      <siteMapNode title="Allocation"   url="~/faculty/assignmet_fac.aspx"  description="" />
+      <siteMapNode title="Feedback"   url="~/faculty/frmassignmentfeedback.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode title="Forum" roles="forum-staff-std" description="">
+      <siteMapNode title="Forum|Create Topic" url="~/Forum_faculty/luc_Std_Discussion.aspx"  description="" />
+
+    </siteMapNode>-->
+    
+    <!--<siteMapNode url =""  title="Subject Registration" roles="subreg" description="">
+      <siteMapNode title="Add Subject." url="~/subreg/facsubreg.aspx"  description="" />
+      <siteMapNode title="Drop Subject." url="~/subreg/facsubregdel.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode    title="Calender-Timetable" roles="timetable" description="">
+      <siteMapNode title="Semester Update" url="~/timetable/SemesterDateUpdate.aspx"  description="" />
+      <siteMapNode title="Academic Calander" url="~/timetable/academiccalender.aspx"  description="" />
+      --><!--<siteMapNode title="Create Additional Subjects" url="~/timetable/AdditionalSubmast.aspx"  description="" />--><!--
+      <siteMapNode title="Class Time" url="~/timetable/timeslotmast.aspx"  description="" />
+      <siteMapNode title="Timetable" url="~/timetable/Timetable_Fnl_Sub.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Application" roles="admin" description="">
+      <siteMapNode title="Application Details" url="~/admin/vwappldet.aspx"  description="" />
+      <siteMapNode title="Application Edit" url="~/admin/vwappldet_edt.aspx"  description="" />
+      <siteMapNode title = "Upload Documents" url="~/admin/uploaddocuments.aspx"  description="" />
+       <siteMapNode title = "Upload Extra Documents" url="~/admin/frmextradoc.aspx"  description="" />
+      <siteMapNode title = "Delete Documents" url="~/admin/Delete_Document.aspx"  description="" />
+      <siteMapNode title = "All Student Application" url="~/educationalconsultant/All_applicant_stage.aspx"  description="" />
+      --><!--<siteMapNode title = "Offer Letter" url="~/dommkt/rpt_frmeligibofrlet_dom.aspx"  description="" />--><!--
+   
+      <siteMapNode title = "Offer Letter (ODL)" url="~/dommkt/rpt_frmeligibofrlet_dom_odl.aspx"  description="" />
+      <siteMapNode title = "Reprint Offer Letter (ODL)" url="~/dommkt/rpt_frmeligibofrlet_dom_Reprint_odl.aspx"  description="" />
+
+      <siteMapNode title = "Upload Bank Slip" url="~/admin/ApplicantBankTransaction.aspx"  description="" />
+      <siteMapNode title = "Delete Bank Slip" url="~/admin/applbnktrndelbyid.aspx"  description="" />
+      <siteMapNode title = "Upload Photo" url="~/admin/photoupld.aspx"  description="" />
+      <siteMapNode title = "Change Programme" url="~/admin/ProgrammeChange.aspx"  description="" />
+      <siteMapNode title = "Admission Letter" url="~/admin/admission_ltr.aspx"  description="" />
+    </siteMapNode>-->
+    
+    <!--<siteMapNode  url ="" title="Admission" roles="admin" description="">
+      <siteMapNode title="Admission Form" url="~/admin_stf/stdnew.aspx" roles="admin;admin_stf" description="" />
+
+      <siteMapNode title = "Tuition Fees Plan" url="~/dommkt/tutionfees_plan.aspx"  description="" />
+      --><!--<siteMapNode title="Payment Plan" roles="admin;admin_stf" url="~/admin_stf/rep_pymt_plan.aspx"  description="" />--><!--
+      <siteMapNode title="Edit Student Profile" roles="admin;admin_stf" url="~/admin_stf/StudentProfUpdate.aspx"  description="" />
+
+      <siteMapNode title="Course Change" url="~/admin/stdcrs_chng.aspx"  description="" />
+      <siteMapNode title="Demotion/Promotion" url="~/admin/stdpromdem.aspx"  description="" />
+    
+      --><!--<siteMapNode title = "Offer Letter (ODL)" url="~/dommkt/rpt_frmeligibofrlet_dom_odl.aspx"  description="" />
+      <siteMapNode title = "Reprint Offer Letter (ODL)" url="~/dommkt/rpt_frmeligibofrlet_dom_Reprint_odl.aspx"  description="" />--><!--
+      --><!--<siteMapNode title="Student A/c Update" roles="admin;admin_stf"  url="~/admin_stf/stdAcUpdate.aspx#"  description="" />--><!--
+      <siteMapNode title="Student status Update" url="~/admin/StudentStatus1.aspx"  description="" />
+      --><!--<siteMapNode title="Appl. For EMGS Money Refund[IM14]" url="~/admin/frmemgs_fees_refund.aspx" description="" />
+      <siteMapNode title="KPT Documentation" roles="admin;admin_stf" url="~/admin_stf/stdkptdoc.aspx"  description="" />
+      <siteMapNode title="Medical Fail" roles="admin;admin_stf" url="~/admin_stf/frmmedifail.aspx"  description="" />--><!--
+
+    </siteMapNode>-->
+
+
+    <!--<siteMapNode  url ="" title="Student Arrival Info" roles="ctrymanager;ctryarrinf" description="">
+      <siteMapNode title="Ministatement" url="~/ctrmngr_acc/rpt_printministatement_ctr.aspx"  description="" />
+      <siteMapNode title="Arrival Information" url="~/ctrmngr_acc/frm_arrival_inf.aspx"  description="" />
+      <siteMapNode title = "View A/c" url="~/ctrmngr_acc/rec_details.aspx"  description="" />
+    </siteMapNode>-->
+    
+
+    <!--<siteMapNode  url ="" title="Student Database" roles="commonrpt_locate" description="">
+      
+      <siteMapNode title = "Student List(Intake)" url="~/commonrpt_locate/rptstudentlist.aspx"  description="" />
+      <siteMapNode title = "Student List(Programme)" url="~/commonrpt_locate/rpt_prgrms_demography.aspx"  description="" />
+      --><!--<siteMapNode title="KPT Format" url="~/commonrpt_locate/rpt_custom_pt_stdlist_.aspx"  description="" />
+      <siteMapNode title = "Visa Expiry" url="~/commonrpt_locate/rpt_studentvisaL.aspx"  description="" />--><!--
+      <siteMapNode title="Yearly Enrollment" url="~/commonrpt_locate/rpt_YearlyEnrollment.aspx"  description="" />
+      --><!--<siteMapNode title="Application Process Report" url="~/commonrpt_locate/rpt_genprocdtls.aspx"  description="" />--><!--
+
+    </siteMapNode>-->
+
+    <!--<siteMapNode url =""  title="Student File" roles="stdfile_orgnl;stdfile_orgnl_staffs" description="">
+      <siteMapNode title = "Student File" url="~/stdfile_orgnl/stdinfcenter.aspx"  description="" />
+      <siteMapNode title = "Results[MQA]" url="~/stdfile_orgnl/vwresult.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Record and Filing" roles="recordandfiling" description="">
+      <siteMapNode title="Warning/Reminder Lett." url="~/recordandfiling/warningrecords.aspx"  description="" />
+      <siteMapNode title="Probation Lett." url="~/recordandfiling/probationrecords.aspx"  description="" />
+    </siteMapNode>
+
+    <siteMapNode  url ="" title="Search and Rescue" roles="searchandrescue" description="">
+      <siteMapNode title="Daily Attendance Monitoring" url="~/searchandrescue/remarks_monitoring_unit.aspx"  description="" />
+      <siteMapNode title="Warning Let. Follow-up" url="~/searchandrescue/SearchRescueWarningLetter.aspx"  description="" />
+      <siteMapNode title="Probation Let. Follow up" url="~/searchandrescue/RescueTeam_Filing.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Local Marketing" roles="dommkt" description="">
+      <siteMapNode title = "Online Application" url="~/dommkt/appldomestic.aspx"  description="" />
+      <siteMapNode title = "Upload Documents" url="~/dommkt/uploaddocumentsdom.aspx"  description="" />
+      <siteMapNode title = "Applicant Details" url="~/dommkt/vwappldet_dom.aspx"  description="" />
+      <siteMapNode title = "Offer Letter" url="~/dommkt/rpt_frmeligibofrlet_dom.aspx"  description="" />
+      <siteMapNode title = "Re-Print Offer Letter" url="~/dommkt/rpt_frmeligibofrlet_dom_Reprint.aspx"  description="" />
+      <siteMapNode title = "Arrival Information" url="~/dommkt/dom_arrival_inf.aspx"  description="" />
+
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="International Marketing" roles="educationalconsultant;coparrtner" description="">
+      <siteMapNode title="Online Application" url="~/educationalconsultant/applyonline.aspx"  description="" />
+      <siteMapNode title="Upload Documents" url="~/educationalconsultant/uploaddocuments.aspx"  description="" />
+      <siteMapNode title="Upload Bank In Slip" url="~/educationalconsultant/ApplicantBankTransaction.aspx"  description="" />
+      <siteMapNode title="Offer Letter" url="~/educationalconsultant/rpt_cfl.aspx"  description="" />
+      <siteMapNode title="Print Your Certificate" url="~/educationalconsultant/printcertificate.aspx"  description="" />
+      <siteMapNode title="DownLoad MOU" url="~/educationalconsultant/printcertificate1.aspx"  description="" />
+      --><!--<siteMapNode title="Download Brochure" url="~/educationalconsultant/vw_leaflet.aspx"  description="" />--><!--
+      --><!--<siteMapNode title="Student Arrival status" url="~/educationalconsultant/rpt_approvalstsyermnth_AGT.aspx"  description="" />--><!--
+      
+      <siteMapNode  url ="" title="Application Status" roles="mkt;educationalconsultant" description="">
+        --><!--<siteMapNode title="EMGS Updates" roles="mkt;educationalconsultant" url="~/educationalconsultant/stage2.aspx"  description="" />--><!--
+        <siteMapNode title="Application[List]" roles="mkt;educationalconsultant" url="~/educationalconsultant/stage1.aspx"  description="" />
+      </siteMapNode>
+      
+      <siteMapNode title="Applicant Details" roles="mkt;educationalconsultant" url="~/educationalconsultant/vwappldet.aspx"  description="" />
+      <siteMapNode title="Applicant Details[All]" roles="intlapplprocess" url="~/intlapplprocess/vwappldet_all.aspx"  description="" />
+      --><!--<siteMapNode title="Scholarship Award Letter" roles="mkt;educationalconsultant" url="~/educationalconsultant/frm_scholarship.aspx"  description="" />--><!--
+
+      --><!--<siteMapNode  url ="" title="Application Process" roles="intlapplprocess" description="">
+        <siteMapNode title="Complete Application[Country wise]" roles="intlapplprocess" url="~/intlapplprocess/completeappl.aspx"  description="" />
+        <siteMapNode title="Incomplete Application" roles="intlapplprocess" url="~/intlapplprocess/inCOMPLETE_ALL.aspx"  description="" />
+        <siteMapNode title="Complete Application [Mandatory Documents]" roles="intlapplprocess" url="~/intlapplprocess/COMPLETE_ALL_NEW.aspx"  description="" />
+        <siteMapNode title="Complete Application [Bank TT + Health Exam. Report ]" roles="intlapplprocess" url="~/intlapplprocess/COMPLETE_ALL1.aspx"  description="" />
+        <siteMapNode title="Complete Application [Bank TT Verified]" roles="intlapplprocess" url="~/intlapplprocess/COMPLETE_ALL_bnkslipverified.aspx"  description="" />
+        <siteMapNode title="Application : Irrelevant documents" roles="intlapplprocess" url="~/intlapplprocess/applirelevantdocuments.aspx"  description="" />
+        <siteMapNode title="Application : HOLD" roles="intlapplprocess" url="~/intlapplprocess/applhold.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Printing" roles="intlapplprocess" description="">
+        <siteMapNode title="Application Edit"  url="~/intlapplprocess/vwappldet_edt.aspx"  description="" />
+        <siteMapNode title="Application For Printing"  url="~/intlapplprocess/appl_printL.aspx"  description="" />
+        <siteMapNode title="Immi/KPT: 2 Admission + 2 cover + 1 Personal Bond "  url="~/intlapplprocess/rpt_immiletter.aspx"  description="" />
+        <siteMapNode title="Immi. Acknowledgement Letter"  url="~/intlapplprocess/imii_ack_letter.aspx"  description="" />
+        <siteMapNode title="Upload Photo"  url="~/intlapplprocess/photoupld.aspx"  description="" />
+        <siteMapNode title="Admission Letter"  url="~/intlapplprocess/admissionletter.aspx"  description="" />
+        <siteMapNode title="Admission Letter[Lot]"  url="~/intlapplprocess/admissionletterlot.aspx"  description="" />
+        <siteMapNode title="Final Call Notification"  url="~/intlapplprocess/finalcall.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Resubmit Application" roles="intlapplprocess" description="">
+        <siteMapNode title="Application For Resubmit"  url="~/intlapplprocess/resubmit.aspx"  description="" />
+        <siteMapNode title="Resubmit Immi/KPT: 2 Admission + 2 cover"  url="~/intlapplprocess/rpt_immiletter_resubmit.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Acknowledgement Upload***" roles="intlapplprocess" description="">
+        <siteMapNode title="Upload Immi. Acknowledgement" url="~/intlapplprocess/upd_ack_immi.aspx"  description="" />
+        <siteMapNode title="Upload Personal Bond[After Hasil Dept.]" url="~/intlapplprocess/pbnd_upld.aspx"  description="" />
+        <siteMapNode title="4>>>5" url="~/intlapplprocess/jump_appl.aspx"  description="" />
+        <siteMapNode title="View Ack. Letter" url="~/intlapplprocess/applimmiackletter.aspx"  description="" />
+        <siteMapNode title="Down Photo" url="~/intlapplprocess/vw_photobyletid.aspx"  description="" />
+        <siteMapNode title="Cheque Order" url="~/intlapplprocess/acknowledgementdetails.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Approvals" roles="intlapplprocess;admin_stf" description="">
+        <siteMapNode title="Waiting for Approval from immi.-1" roles="intlapplprocess;admin_stf"  url="~/approval/visaapprovalsts.aspx"  description="" />
+        <siteMapNode title="Waiting for Approval from immi.-2"  roles="intlapplprocess;admin_stf" url="~/approval/visaapprovalsts_drct.aspx"  description="" />
+        <siteMapNode title="Batal Applications" roles="intlapplprocess;admin_stf" url="~/approval/batalappl.aspx"  description="" />
+        <siteMapNode title="Tidak Disokong Applications" roles="intlapplprocess;admin_stf"  url="~/approval/tidadskapplication.aspx"  description="" />
+        <siteMapNode title="Rejected Applications"  roles="intlapplprocess;admin_stf" url="~/approval/rejectedappls.aspx"  description="" />
+        <siteMapNode title="Application Resubmit" roles="intlapplprocess;admin_stf"  url="~/approval/apLresubmit.aspx"  description="" />
+        <siteMapNode title="View VAL" roles="intlapplprocess;admin_stf"  url="~/approval/vw_approval.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="EMGS" roles="intlapplprocess" description="">
+        <siteMapNode title="EMGS Status Master"  url="~/intlapplprocess/emgs_sts_mast.aspx"  description="" />
+        <siteMapNode title="EMGS Update"  url="~/intlapplprocess/emgsupdate.aspx"  description="" />
+        <siteMapNode title="EMGS Report"  url="~/intlapplprocess/rpt_emgsdetrange.aspx"  description="" />
+        <siteMapNode title="EMGS Report[passport]"  url="~/intlapplprocess/rpt_emgsbypass.aspx"  description="" />
+        <siteMapNode title="EMGS Update[KL]"  url="~/intlapplprocess/frmemgssolnupdt.aspx"  description="" />
+        <siteMapNode title="EMGS Update[by refno]"  url="~/intlapplprocess/vwemgssts.aspx"  description="" />
+        <siteMapNode title="Application Submit Status"  url="~/intlapplprocess/frmapplsubmitlog.aspx"  description="" />
+        <siteMapNode title="Application Submit Status Report"  url="~/intlapplprocess/rpt_application_submit_status.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Welcome Kit" roles="intlapplprocess" description="">
+        <siteMapNode title="Upload VAL"  url="~/intlapplprocess/upld_approvals.aspx"  description="" />
+        <siteMapNode title="Extend VAL"  url="~/intlapplprocess/upld_approval_exts.aspx"  description="" />
+        <siteMapNode title="Deliver Welcome Kit"  url="~/intlapplprocess/appldespatch.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Arrivals" roles="intlapplprocess;admin_stf" description="">
+        <siteMapNode title="Arrivals On day"  roles="intlapplprocess;admin_stf" url="~/arrival/vwarrivalinf.aspx"  description="" />
+        <siteMapNode title="Arrivals Report" roles="intlapplprocess;admin_stf" url="~/arrival/rpt_arrivalinfo.aspx"  description="" />
+        <siteMapNode title="View A/C" roles="intlapplprocess;admin_stf" url="~/arrival/rec_details.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Reports" roles="intlapplprocess" description="">
+        <siteMapNode title="Application Staging"  roles="intlapplprocess" url="~/intlapplprocess/rpt_appl_stage.aspx"  description="" />
+        <siteMapNode title="Application Staging[Date Wise]"  roles="intlapplprocess" url="~/intlapplprocess/rpt_vw_applicationsts_3.aspx"  description="" />
+        <siteMapNode title="Application Staging1"  roles="intlapplprocess" url="~/intlapplprocess/rpt_vw_applicationsts.aspx"  description="" />
+        <siteMapNode title="Application Staging2"  roles="intlapplprocess" url="~/intlapplprocess/rpt_vw_applicationsts_1.aspx"  description="" />
+        <siteMapNode title="Application Staging3"  roles="intlapplprocess" url="~/intlapplprocess/rpt_vw_applicationsts_2.aspx"  description="" />
+        <siteMapNode title="Application Log"  roles="intlapplprocess" url="~/intlapplprocess/vwappldetlog.aspx"  description="" />
+        <siteMapNode title="VAL Report"  roles="intlapplprocess" url="~/intlapplprocess/rpt_approvalsts.aspx"  description="" />
+        <siteMapNode title="VAL Report[Expiry] "  roles="intlapplprocess" url="~/intlapplprocess/rpt_approvalstsyermnth.aspx"  description="" />
+        <siteMapNode title="List of Direct Application"  roles="intlapplprocess" url="~/intlapplprocess/frminstdlistda.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Process Manager" roles="intlapplprocessmngr" description="">
+        <siteMapNode title="Apply Online"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/ctrmngrapplyonline.aspx"  description="" />
+        <siteMapNode title="Conditional Offer Letter[Without Documents]"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/rpt_cfl__PRCSSMNGR.aspx"  description="" />
+        <siteMapNode title="Generate Admission Letter"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/admissionletter.aspx"  description="" />
+        <siteMapNode title="Immi/KPT: 2 Admission + 2 cover + 1 Personal Bond "  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/personalbnd_kptjack.aspx"  description="" />
+        <siteMapNode title="Programme Change "  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/ProgrammeChange.aspx"  description="" />
+        <siteMapNode title="Delete Application "  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/deleteappl.aspx"  description="" />
+        <siteMapNode title="Transfer Application "  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/frmappltrnsfarrepcod.aspx"  description="" />
+        <siteMapNode title="Change Status "  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/applicantstagechng.aspx"  description="" />
+        <siteMapNode title="Upload Documents"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/uploaddocumentsPRSMNGR.aspx"  description="" />
+        <siteMapNode title="Delete Bank in Slip"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/applbnktrndelbyid.aspx"  description="" />
+        <siteMapNode title="Delete Documents"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/Delete_Document.aspx"  description="" />
+        <siteMapNode title="EMGS A/c Name Master"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/EMGSaccnamemast.aspx"  description="" />
+        <siteMapNode title="Dummy Result"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/vwfrmdummyresultappl.aspx"  description="" />
+        <siteMapNode title="Update PBond Intake"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/upd_applimmiletter.aspx"  description="" />
+        <siteMapNode title="Update Course Duration (EMGS Site Wise)"  roles="intlapplprocessmngr" url="~/intlapplprocessmngr/frmemgscrsduredit.aspx"  description="" />
+        <siteMapNode title="Bank Receipt [Reprint]" roles="intlapplprocessmngr"  url="~/intlapplprocessmngr/reprintrec.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      <siteMapNode  url ="" title="Renewals" roles="passportrenewal" description="">
+        <siteMapNode title="Passport Details"  roles="passportrenewal" url="~/passportrenewal/pssportrec_det.aspx"  description="" />
+        <siteMapNode title="EMGS IMM 55"  roles="passportrenewal" url="~/passportrenewal/sp_4_1.aspx"  description="" />
+        <siteMapNode title="EMGS File Upload"  roles="passportrenewal" url="~/passportrenewal/stp_4all.aspx"  description="" />
+        <siteMapNode title="EMGS Lampiran 6"  roles="passportrenewal" url="~/passportrenewal/stp_4_2.aspx"  description="" />
+      </siteMapNode>
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Agent Invoice" roles="educationalconsultant;dommkt;coparrtner" description="">
+      <siteMapNode title="Invoice" roles="educationalconsultant;dommkt;coparrtner" url="~/educationa_consultant_inv/agtcommission.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Marketing Kit" roles="imgdwnload" description="">
+      <siteMapNode title = "Marketing Kit" url="~/imgdwnload/dwnload.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode url =""  title="Sub Agent" roles="subagt_crt" description="">
+      <siteMapNode title = "Create Sub Agent" url="~/subagt_crt/subagent.aspx"  description="" />
+      <siteMapNode title = "Sub Agent List" url="~/subagt_crt/sub_agentlistall.aspx"  description="" />
+      <siteMapNode title = "Online Application" url="~/subagt_crt/SUBAGTrapplyonline.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Marketing Activities" roles="dommkt" description="">
+      --><!--<siteMapNode title = "Data Entry(Education Fair/PLKN)" url="~/dommkt/ActivityDetails1.aspx"  description="" />--><!--
+      <siteMapNode title = "Self Activity Entry" url="~/dommkt/ActivityDetails2.aspx"  description="" />
+
+      --><!--<siteMapNode title = "Followup" url="" roles="dommkt"  description="">
+        <siteMapNode title = "Followup[Daily]" url="~/dommkt/followups.aspx"  description="" />
+        <siteMapNode title = "Followup[Date Wise]" url="~/dommkt/followup_activity.aspx"  description="" />
+        <siteMapNode title = "Followup[All]" url="~/dommkt/followups_all.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      <siteMapNode title = "Todays Followup[Print]" url="~/dommkt/rpt_todayfollowup.aspx"  description="" />
+      <siteMapNode title = "Activity Report[Print]" url="~/dommkt/rpt_activities_all.aspx"  description="" />
+      <siteMapNode title = "Program Enquiry Report" url="~/dommkt/rpt_ProgramEnqiury.aspx"  description="" />     
+      <siteMapNode title = "My Followup Report" url="~/dommkt/rpt_myfollowps.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Marketing Manager" roles="mktmngr" description="">
+      <siteMapNode title="Staff Management" url="~/mktmngr/frmmktstaff_list.aspx"  description="" />
+      --><!--<siteMapNode title="Marketing Staff List[New]" url="~/mktmngr/frmmktstaff_list_new.aspx"  description="" />--><!--
+      <siteMapNode title = "Application Forward" url="~/mktmngr/fwdomesticappl.aspx"  description="" />
+      <siteMapNode title = "Enquiry Forward" url="~/mktmngr/fwprgrmenq.aspx"  description="" />
+      <siteMapNode title = "Activity Forward" url="~/mktmngr/frmactivity_allocation.aspx"  description="" />
+      <siteMapNode title = "Activity Monitor" url="~/mktmngr/dailmonitor.aspx"  description="" />
+      <siteMapNode title = "Activity Report" url="~/mktmngr/rpt_activity_daily.aspx"  description="" />
+      --><!--<siteMapNode title = "Activity Report[Sales]" url="~/mktmngr/frm_activity_dtls_rpt_sales.aspx"  description="" />--><!--
+      <siteMapNode title = "Activity Date Range Report" url="~/mktmngr/rpt_dailyactivitydtrng.aspx"  description="" />
+      <siteMapNode title = "Application Allocation Report" url="~/mktmngr/rpt_applallocation.aspx"  description="" />
+      <siteMapNode title = "Enquiry Allocation Report" url="~/mktmngr/rpt_vw_onlcrsenq.aspx"  description="" />
+      <siteMapNode title = "Activity Followup Report" url="~/mktmngr/frm_activity_followp_dlts.aspx"  description="" />
+      <siteMapNode title = "Staff Followup Report" url="~/mktmngr/rpt_totalstaf_followps.aspx"  description="" />
+      <siteMapNode title = "Online Application-Enquiry Report" url="~/mktmngr/frmEnqryProgRpt.aspx"  description="" />
+    </siteMapNode>-->
+    
+    
+
+    <!--<siteMapNode  url ="" title="EU Manager" roles="eumgr" description="">
+      <siteMapNode url =""  title="Marks" roles="eumgr" description="">
+        <siteMapNode title="Delete Marks" url="~/academic/del_marksentry.aspx"  description="" />
+        <siteMapNode title="Grace Marks" url="~/academic/GraceMarks.aspx"  description="" />
+        <siteMapNode title="Publish Marks" url="~/academic/publish_res.aspx"  description="" />
+        <siteMapNode title="Publish Marks- Open Assessment" url="~/academic/publish_res_1.aspx"  description="" />
+        <siteMapNode title="Publish Marks Individual" url="~/academic/publish_res_indi.aspx"  description="" />
+        <siteMapNode title="Delete Continuos Assessment" url="~/academic/stdassesmentdelt.aspx"  description="" />
+        <siteMapNode title="Marks Audit" url="~/academic/mrksent.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url =""  title="Cert/Trans Print" roles="eumgr" description="">
+        <siteMapNode title="Transcript/Certificates" url="~/certificate/all_transcert_new.aspx"  description="" />
+        <siteMapNode title="Transcript/Certificates Collection Details" url="~/certificate/certtrans_collection.aspx"  description="" />        
+        <siteMapNode title="Reprint Transcript" url="~/certificate/transreprint.aspx"  description="" />
+        <siteMapNode title="Reprint Cerificate" url="~/certificate/reprintcertificate.aspx"  description="" />           
+        <siteMapNode title="Consolidated Result" url="~/certificate/RPT_CONSOLIDATEDRESULT.aspx"  description="" />       
+        <siteMapNode title="Delete Trascript/Certificate" url="~/certificate/del_cert_trans.aspx"  description="" />
+         <siteMapNode title="Certificate Of Completion" url="~/certificate/coc.aspx"  description="" />
+        <siteMapNode title = "Best Student Award" url="~/commonrpt/rpt_BestStudentAward.aspx"  description="" />
+        <siteMapNode title="First Class Degree Certificate" url="~/certificate/frmfirstclasscertificate.aspx"  description="" />
+      <siteMapNode title="Other Certificate/Awards" url="~/certificate/cop.aspx"  description="" />      
+      </siteMapNode>
+    
+      <siteMapNode url =""  title="Reports" roles="eumgr" description="">
+        <siteMapNode title="Report Certificate Printing" url="~/certificate/rpt_certdespatch.aspx"  description="" />
+        <siteMapNode title="Convocation Registrar List" url="~/certificate/rpt_convo_yr.aspx"  description="" />
+        <siteMapNode title="Certificate Delivery List" url="~/certificate/rpt_convo_sign.aspx"  description="" />
+      </siteMapNode>
+    </siteMapNode>-->   
+
+    <!--<siteMapNode url =""  title="Exam Unit" roles="examunit" description="">
+      <siteMapNode title="Edit Marks" url="~/academic/Marksentryedit.aspx"  description="" />
+      <siteMapNode title="Edit Marks[CPA]" url="~/academic/MarksCompile1edt.aspx"  description="" />
+      <siteMapNode title="Marks Compilation[Subject Wise]" url="~/academic/rpt_marks_compilation.aspx"  description="" />
+      <siteMapNode title="Marks Compilation[Intake wise]" url="~/academic/rpt_marks_compilation1.aspx"  description="" />
+      <siteMapNode title="Re-Print Marks Compilation" url="~/academic/rpt_reprint_mrks_compl.aspx"  description="" />     
+      <siteMapNode title="Sheet Number[Transcript] " url="~/academic/transsheetnumberr.aspx"  description="" />
+      <siteMapNode title="Sheet Number [Certificate]" url="~/academic/certisheetnumberr.aspx"  description="" />
+      <siteMapNode title="Failures List" url="~/academic/rpt_markslist.aspx"  description="" />
+      <siteMapNode title="Failures List[Subject Wise]" url="~/academic/markslist_subjectwise.aspx"  description="" />
+      <siteMapNode title="Report Marks Entry " url="~/academic/rpt_marksentry.aspx"  description="" />
+      <siteMapNode title="Report Exemption" url="~/academic/rpt_exemptionfrm.aspx"  description="" />
+      <siteMapNode title="Marks Entry ALL " url="~/academic/Marksentry_all.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode url =""  title="Examination" roles="eu_exam" description="">
+      <siteMapNode title="Final Marks Entry" url="~/eu_exam/MarksCompile1.aspx"  description="" />
+      <siteMapNode title="Eligibility List Submission Date" url="~/eu_exam/frmstdexameligiblst_permit.aspx"  description="" />
+      <siteMapNode title="Eligibility Student List" url="~/eu_exam/rpt_finalexamstdlist.aspx"  description="" />
+      <siteMapNode title="Eligibility Student List[Consolidated]" url="~/eu_exam/rpt_finalexamstdlist_con.aspx"  description="" />
+      <siteMapNode title="Print Exam Final Student List [Delete]" url="~/eu_exam/deletefinalexamstdlist.aspx"  description="" />
+      <siteMapNode title="Examination Name change" url="~/eu_exam/exammnth.aspx"  description="" />
+      <siteMapNode title="Exam Schedule Upload [Non-Allied]" url="~/eu_exam/frmexamschedule_subreg.aspx"  description="" />
+      <siteMapNode title="Exam Schedule Upload [Allied]" url="~/eu_exam/frmexamschedule_intake.aspx"  description="" />
+      <siteMapNode title="Exam Schedule Delete" url="~/eu_exam/delexamschedule.aspx"  description="" />
+      <siteMapNode title="Exam Venue Allocation" url="~/eu_exam/rpt_finalexamstdlistupdtvenue.aspx"  description="" />
+      <siteMapNode title="Delete Exam Venu Allocation" url="~/eu_exam/finl_xam_stdlist_updtvenue.aspx"  description="" />
+      <siteMapNode title="Exam Venu Allocation [Print Venue Wise]" url="~/eu_exam/rpt_finalstdist_byven.aspx"  description="" />
+      <siteMapNode title="Examination Attendance" url="~/eu_exam/rpt_finalexamstdlistupdtatten.aspx"  description="" />
+      <siteMapNode title="Result Publish Report" url="~/eu_exam/rpt_res_pub.aspx"  description="" />
+      <siteMapNode title="Examination Status Change [Exam Allow]" url="~/eu_exam/exam_allow.aspx"  description="" />    
+      <siteMapNode title="Report Examination Attendance" url="~/eu_exam/rpt_finalexam_attendance.aspx"  description="" />
+    
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Transcript" roles="Transcript" description="">
+      <siteMapNode title="View Student CGPA" url="~/transcript/vwcgpa.aspx"  description="" />
+      <siteMapNode title="View CGPA [Group Wise]" url="~/transcript/rptcgpagrpwise.aspx"  description="" />
+      <siteMapNode title="View Result" url="~/transcript/vwresult.aspx"  description="" />
+      <siteMapNode title="View Consolidated Transcript" url="~/transcript/vwacademictranscript.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="A/c Manager" roles="accmgr" description="">      
+
+      --><!--<siteMapNode  url ="" title="Student A/c" roles="accmgr" description="">
+        <siteMapNode title = "Refund" roles="accmgr" url="~/accmgr/frmrefund.aspx"  description="" />
+        <siteMapNode title = "Contra" roles="accmgr"  url="~/accmgr/stdcontradet.aspx"  description="" />
+        <siteMapNode title="Student Service Block" roles="accmgr"  url="~/accmgr/stdservblk.aspx"  description="" />
+        <siteMapNode title="Student Payment Plan" roles="accmgr"  url="~/accmgr/rpt_paymenyPlan.aspx"  description="" />
+        <siteMapNode title="Reprint Receipt" roles="accmgr"  url="~/accmgr/reprintrec.aspx"  description="" />
+        <siteMapNode title = "Exam Fees Consider" roles="accmgr"  url="~/accmgr/bypassacc_exam_allow.aspx"  description="" />
+        <siteMapNode title = "Convo. Fees Consideration" roles="accmgr"  url="~/accmgr/convfees_allow_bypas.aspx"  description="" />
+        <siteMapNode title = "Credit Transfer Application" roles="accmgr"  url="~/accmgr/frm_credit_transfer_apprvby_finance.aspx"  description="" />
+        <siteMapNode title = "EMGS Fees Realization" roles="accmgr"  url="~/accmgr/emgsfeesrealt.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="Scholarship" roles="accmgr" description="">
+        <siteMapNode title="Settings"  roles="accmgr" url="~/Master/scholarshipMaster.aspx"  description="" />
+        <siteMapNode title = "Scholarship"  roles="accmgr" url="~/accmgr/specialfeesStudent.aspx"  description="" />
+      </siteMapNode>--><!--
+
+      --><!--<siteMapNode  url ="" title="HQ A/c" roles="accmgr" description="">
+        <siteMapNode title = "Delete Transaction" roles="accmgr"  url="~/accmgr/delrecipt.aspx"  description="" />
+        <siteMapNode title = "Close Day Book" roles="accmgr"  url="~/accmgr/broughtforward.aspx"  description="" />
+        <siteMapNode title="Cheque Status" roles="accmgr"  url="~/accmgr/chqsts.aspx"  description="" />
+      </siteMapNode>--><!--    
+
+      --><!--<siteMapNode  url ="" title="Commission" roles="accmgr" description="">
+        <siteMapNode title="Commission Paid Status"  roles="accmgr" url="~/accmgr/agt_com_pdsts.aspx"  description="" />
+        <siteMapNode title = "Delete Comission"  roles="accmgr" url="~/accmgr/agt_com_DEL.aspx"  description="" />
+      </siteMapNode>--><!--
+      
+      --><!--<siteMapNode title="Expense Approval"  roles="accmgr"  url="~/accmgr/frmpayapproval.aspx"  description="" />--><!--
+      <siteMapNode title="Agent Commission Approval"  roles="accmgr"  url="~/accmgr/frmpaymntapprval_agt.aspx"  description="" />
+      --><!--<siteMapNode title="Mediclaim Approval" url="~/accmgr/apprvmediclaim.aspx"  description="" />--><!--
+
+    </siteMapNode>-->
+    
+    <!--<siteMapNode  url ="" title="Student A/c" roles="cashier" description="">
+      <siteMapNode title = "Tuition Fee" url="~/acccashier/feesbook.aspx"  description="" />
+      <siteMapNode title = "Exam Fees" url="~/acccashier/frm_stud_exam_fees_rcv.aspx"  description="" />
+      <siteMapNode title = "Exam Fees Name Change" url="~/acccashier/exam_name_change_new.aspx"  description="" />
+      <siteMapNode title = "Misc. Fees." url="~/acccashier/stdservfeesrec.aspx"  description="" />
+      <siteMapNode title = "Adv. Fees." url="~/acccashier/advfeesrec.aspx"  description="" />
+      --><!--<siteMapNode title = "Hostel Fees." url="~/acccashier/hostfeesrec.aspx"  description="" />--><!--
+      <siteMapNode title = "Convocation Fees." url="~/acccashier/convfeesrec.aspx"  description="" />
+      <siteMapNode title = "Resit Fees." url="~/acccashier/resit.aspx"  description="" />
+      <siteMapNode title = "Misc Income." url="~/acccashier/miscincome.aspx"  description="" />
+      <siteMapNode title = "Application Fees" url="~/acccashier/applfees.aspx"  description="" />
+      --><!--<siteMapNode title = "Applicant Bank Slip Verification" url="~/acccashier/frmbankvarify.aspx"  description="" />--><!--
+      <siteMapNode title = "Delete Transaction"  url="~/acccashier/delrecipt.aspx"  description="" />
+      <siteMapNode title = "Student Money Refund" url="~/acccashier/frmfees_refund_all_new.aspx"  description="" />
+      <siteMapNode title = "Day Reconcilation" url="~/acccashier/dayreconcashier.aspx"  description="" />
+      <siteMapNode title = "Day Reconcilation[Date Wise]" url="~/acccashier/dayreconcashier_datewise.aspx"  description="" />
+      <siteMapNode title = "Bank Transaction" url="~/acccashier/bankin.aspx"  description="" />
+      <siteMapNode title = "Agent Commision Reconcilation" url="~/acccashier/agt_commission.aspx"  description="" />
+      --><!--<siteMapNode title = "Bank Letter" url="~/letter/rpt_bnkletter.aspx"  description="" />--><!--
+      --><!--<siteMapNode title = "Part Time Job Letter" url="~/letter/rpt_PartTimeJobLetter.aspx"  description="" />
+      <siteMapNode title = "Confirmation Letter" url="~/letter/rpt_StudentConfirmation.aspx"  description="" />
+      <siteMapNode title = "Release Letter" url="~/letter/rpt_StudentReleaseLetter.aspx"  description="" />
+      <siteMapNode title = "Travel Letter" url="~/letter/rpt_StudentConfirm.aspx"  description="" />
+      <siteMapNode title = "Confirmation Letter" url="~/letter/rpt_TravelLetter.aspx"  description="" />
+      <siteMapNode title = "International ID Card" url="~/letter/rpt_sdtconfirm.aspx"  description="" />
+      <siteMapNode title = "EMGS Fees Rec." url="~/acccashier/applbnktrnDetails.aspx"  description="" />--><!--
+      <siteMapNode title = "Reprint Receipt" url="~/acccashier/reprintrec.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="A/c Reports" roles="accassist" description="">
+      <siteMapNode title = "Report Fees A/c Statement Group" url="~/accassist/rp_intakewiseacstatement.aspx"  description="" />
+      --><!--<siteMapNode title = "Hostel a/c" url="~/accassist/rpt_hostelfeecrec.aspx"  description="" />--><!--
+      <siteMapNode title = "Convocation A/c Statement" url="~/accassist/rpt_convocationlist.aspx"  description="" />
+      <siteMapNode title = "Student Paid Report[Enrollment]" url="~/accassist/rpt_feesrec.aspx"  description="" />
+      <siteMapNode title = "Student Paid Report Date Range" url="~/accassist/rpt_feesrec_dateranget.aspx"  description="" />
+      <siteMapNode title = "Day Book" url="~/accassist/rpt_daybook_lose.aspx"  description="" />
+      <siteMapNode title = "Day Book [Date Wise]" url="~/accassist/rpt_daybk.aspx"  description="" />
+      <siteMapNode title = "Day Book [Date Range]" url="~/accassist/rpt_daybook2.aspx"  description="" />
+      <siteMapNode title = "Day Book Consolidate [Date Range]" url="~/accassist/rpt_daybook_con.aspx"  description="" />
+
+      <siteMapNode title = "Expense Report [Expense Head Wise]" url="~/accassist/rpt_expense_dt.aspx"  description="" />
+      <siteMapNode title = "A/c Mini Statement" url="~/accassist/rpt_printministatement.aspx"  description="" />
+      <siteMapNode title = "Scholarship Report" url="~/accassist/rpt_scholarship.aspx"  description="" />
+      <siteMapNode title = "Appl. Fees Received" url="~/accassist/rpt_applfees.aspx"  description="" />
+      <siteMapNode title = "Appl. Fees Received[Passport]" url="~/accassist/rpt_applfeesbypassport.aspx"  description="" />
+      <siteMapNode title = "Adv. Received" url="~/accassist/rpt_stdadv.aspx"  description="" />
+      <siteMapNode title = "Adv. Received[Passport]" url="~/accassist/rpt_advfeesrec.aspx"  description="" />
+      <siteMapNode title = "Misc Income[Passport/IC]" url="~/accassist/rpt_miscincome.aspx"  description="" />
+      --><!--<siteMapNode title = "EMGS Fees Rec.[Agent/Student]" url="~/accassist/rpt_applBnkTrn.aspx"  description="" />--><!--
+      <siteMapNode title = "Report Balance Fees" url="~/accassist/rpt_feesunpaid.aspx"  description="" />
+      --><!--<siteMapNode title="Expense Report" url="~/accassist/rpt_pymtdetailsbydate.aspx"  description="" />
+      <siteMapNode title="Report|| Student list[Financer Wise]" url="~/accassist/frm_stdnt_rept.aspx"  description="" />--><!--
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Expenditure" roles="cashier" description="">
+      <siteMapNode  url ="" title="Reimburse" roles="cashier" description="">
+        <siteMapNode title = "Travelling Allowances" url="~/acccashier/paytravellingexpenses.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode title = "Expense Entry" url="~/acccashier/expenseent.aspx"  description="" />
+      <siteMapNode title = "Advance Entry" url="~/acccashier/advent.aspx"  description="" />
+      <siteMapNode title = "Advance Adjustment" url="~/acccashier/advadjustment.aspx"  description="" />
+      <siteMapNode title = "Approved Payment" url="~/acccashier/frmapprovpaymnt.aspx"  description="" />
+      <siteMapNode title = "Approved Agent Commission Payment" url="~/acccashier/frmpaymnt_agt.aspx"  description="" />
+      <siteMapNode title = "Approved Mediclaim Payment" url="~/acccashier/frmpayapprvmediclaim.aspx"  description="" />
+      <siteMapNode title = "Mediclaim Payment Report" url="~/acccashier/rpt_paidmediclaim.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Cheque Printing" roles="chq" description="">
+      <siteMapNode title = "Print Daily" url="~/chqprint/printchq.aspx"  description="" />
+      <siteMapNode title = "Pay Monthly Rental" url="~/chqprint/aprtmentrental.aspx"  description="" />
+      <siteMapNode title = "EMGS Cheque Print 1" url="~/chqprint/emgsprintchq.aspx"  description="" />
+      <siteMapNode title = "EMGS Cheque Print 2" url="~/chqprint/acknowledgementdetails.aspx"  description="" />
+      <siteMapNode title = "EMGS Cheque Print 3" url="~/chqprint/emgsprintchq_2.aspx"  description="" />
+      <siteMapNode title = "EMGS Cheque Print 3 [All]" url="~/chqprint/emgsprintchq_2all.aspx"  description="" />
+      <siteMapNode title = "EMGS Cheque Print [Renewal]" url="~/chqprint/emgsprintchq_ren.aspx"  description="" />
+      <siteMapNode title = "EMGS Cheque Print Report" url="~/chqprint/rpt_emgs_chq.aspx"  description="" />
+      <siteMapNode title = "Cheque Clearance" url="~/chqprint/chqreconcile.aspx"  description="" />
+      <siteMapNode title = "Cheque Issue Report" url="~/chqprint/rpt_chqissuereport.aspx"  description="" />
+      <siteMapNode title = "Cheque Issue Report[Uncleared]" url="~/chqprint/rpt_unclrchq.aspx"  description="" />
+      <siteMapNode title = "Re-Print Daily" url="~/chqprint/reprint_chq.aspx"  description="" />
+      <siteMapNode title = "Re-Print Daily [All]" url="~/chqprint/reprint_pymnt.aspx"  description="" />
+      <siteMapNode title = "TT" url="~/chqprint/frmtt.aspx"  description="" />
+      <siteMapNode title = "Un Realized Invoice" url="~/chqprint/invoicedetails.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="PTPTN" roles="PTPTNCP" description="">
+      <siteMapNode  url ="" title="Monthly Allowance" roles="PTPTNCP" description="">
+        <siteMapNode title="PTPTN Monthly allowance" url="~/PTPTNCP/PTPTNmnthallowancenew.aspx"  description="" />
+        <siteMapNode title="EPS Generator" url="~/PTPTNCP/EPSnew.aspx"  description="" />
+        <siteMapNode title="Misc Deduction Entry" url="~/PTPTNCP/miscdeducnew.aspx"  description="" />
+        <siteMapNode title="Monthly Allowance Increase" url="~/PTPTNCP/ptptnamtadd.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode  url ="" title="Delete" roles="PTPTNCP" description="">
+        <siteMapNode title="Delete Allowance" url="~/PTPTNCP/ptptnmonthlyallowancedel.aspx"  description="" />
+        <siteMapNode title="Delete Monthly Allowance Increase" url="~/PTPTNCP/delpprvincamt.aspx"  description="" />
+        <siteMapNode title="Delete current month Deduction Entry" url="~/PTPTNCP/MiscDeducTDEL.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode  url ="" title="Reports" roles="PTPTNCP" description="">
+        <siteMapNode title="PTPTN Transaction" url="~/PTPTNCP/rptptptnmonthlyallowancenew.aspx"  description="" />
+        <siteMapNode title="PTPTN Consolidated Report" url="~/PTPTNCP/rptconsolidatedptptn.aspx"  description="" />
+        <siteMapNode title="Allowance Not Paid" url="~/PTPTNCP/rpt_alwnsnotpaid.aspx"  description="" />
+        <siteMapNode title="PTPTN Allowance Individual Student" url="~/PTPTNCP/vwalwnsindividial.aspx"  description="" />
+        <siteMapNode title="PTPTN Monthly Paid Unpaid" url="~/PTPTNCP/rpt_ptptn_paid_notpaidnew.aspx"  description="" />
+        <siteMapNode title="PTPTN Loan Receipt[Intakewise]" url="~/PTPTNCP/rpt_ptptnloanrcpt_intakewise.aspx"  description="" />
+        <siteMapNode title="PTPTN Loan Receipt[Filewise]" url="~/PTPTNCP/rpt_ptptnloanrcpt_filewise.aspx"  description="" />
+        <siteMapNode title="PTPTN Student Wise Loan Receipt" url="~/PTPTNCP/studentwiseloanrec.aspx"  description="" />
+        <siteMapNode title="PTPTN Student Wise Loan Receipt[Print Out]" url="~/PTPTNCP/rpt_vwalwnrcptstd.aspx"  description="" />
+        <siteMapNode title="Deduction A/c [*****]" url="~/PTPTNCP/studentAC.aspx"  description="" />
+        <siteMapNode title="PTPTN Result Data Conversion " url="~/PTPTNCP/rpt_ptptnres_data.aspx"  description="" />
+        <siteMapNode title="PTPTN Result Data Conversion[cgpa] " url="~/PTPTNCP/rpt_ptptnres_data_CGPA.aspx"  description="" />
+        <siteMapNode title="Report Misc Deduction Breakup" url="~/PTPTNCP/rpt_miscdeddetails.aspx"  description="" />
+        <siteMapNode title="Bank Letter" url="~/PTPTNCP/rptbankletternew.aspx"  description="" />
+        <siteMapNode title="PTPTN Studentwise Loan Deduction " url="~/PTPTNCP/rpt_ptptnloanrcpt_filewise_studendt.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode  url ="" title="Data Conversion" roles="PTPTNCP" description="">
+        <siteMapNode title="Data Conversion(Bank Islam)" url="~/PTPTNCP/PTPTNDataConversion.aspx"  description="" />
+        <siteMapNode title="Result Data Conversion(PTPTN)" url="~/PTPTNCP/PTPTNDataConv_res.aspx"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+
+    <siteMapNode  url ="" title="Hostel" roles="warden" description="">
+      <siteMapNode title = "Hostel Check In" url="~/warden/stdaparthost.aspx"  description="" />
+      <siteMapNode title = "Hostel Check OUT/Transfer" url="~/warden/hostelchkout.aspx"  description="" />
+      <siteMapNode title = "Hostel Damage" url="~/warden/hosteldamage.aspx"  description="" />
+      <siteMapNode title = "Apartment Hosting Report" url="~/warden/rpt_stdhostaprt.aspx"  description="" />
+      <siteMapNode title = "Hostel Hosting Report" url="~/warden/rpt_stdhostaprt_1.aspx"  description="" />
+      <siteMapNode title = "Bill" url="~/warden/bill.aspx"  description="" />
+      <siteMapNode title="Hostel Expiry[Delete]" url="~/warden/hostel_del.aspx"  description="" />
+    </siteMapNode>
+
+ 
+
+    <siteMapNode    title="Stock" roles="stk" description="">
+      <siteMapNode title="Stock IN/Out" url="~/stk/frnstk.aspx"  description="" />
+    </siteMapNode>-->
+    
+    
+    
+    
+  
+
+    <!--<siteMapNode  url ="" title="Registrar Office" roles="asst_registrar" description="">
+
+      <siteMapNode title = "Student Service"  roles="asst_registrar" description="" >
+        <siteMapNode title="Student Handbook" url="~/asst_registrar/handbook.aspx"  description="" />
+        <siteMapNode title = "Student Withdrawl" url="~/asst_registrar/StudentStatus1.aspx"  description="" />        
+        <siteMapNode title = "Tran. and Cert. Appl.[Behalf of Student]" url="~/asst_registrar/stdtrans_reqst.aspx"  description="" />
+        <siteMapNode title = "Credit Transfer Appl.[Behalf of Student]" url="~/asst_registrar/frm_credit_transfer.aspx"  description="" />
+        <siteMapNode title = "Credit Transfer Approval" url="~/asst_registrar/frm_credit_transfer_apprvby_registrar.aspx"  description="" />
+        <siteMapNode title = "Conv. Registered List" url="~/asst_registrar/rpt_convo_yr.aspx"  description=""/>
+      </siteMapNode>
+      
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Student Affairs" roles="studentaffairs" description="">
+      <siteMapNode  url ="" title="Passport" roles="studentaffairs" description="">
+        <siteMapNode title = "Receive 1" url="~/studentaffairs/passportrec.aspx"  description="" />
+        <siteMapNode title = "Reprint Receipt" url="~/studentaffairs/passportrec_reprint.aspx"  description="" />
+        <siteMapNode title = "Passport Status+Delivery" url="~/studentaffairs/passportstatus.aspx"  description="" />
+        <siteMapNode title = "View Passport Status" url="~/studentaffairs/viewpassportstatus.aspx"  description="" />
+        <siteMapNode title = "Passport Sorting" url="~/studentaffairs/pssportrec_srt.aspx"  description="" />
+        <siteMapNode title = "EMGS Processed" url="~/studentaffairs/stp_5.aspx"  description="" />
+        <siteMapNode title = "Special Pass" url="~/studentaffairs/frmshortenpass.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode title = "Visa Entry/View" url="~/studentaffairs/visadetentry.aspx"  description="" />
+      <siteMapNode title = "Insurance Details Entry" url="~/studentaffairs/insurancedetentry.aspx"  description="" />
+      <siteMapNode title = "Report Insurance Details" url="~/studentaffairs/rpt_insurans.aspx"  description="" />
+      <siteMapNode title = "Report Insurance Details [Student Wise]" url="~/studentaffairs/rpt_insurans_individual.aspx"  description="" />
+      <siteMapNode title = "Report Visa Entry" url="~/studentaffairs/rpt_visaentry.aspx"  description="" />
+      <siteMapNode title = "Report Visa Expiry" url="~/studentaffairs/rpt_visaexp.aspx"  description="" />
+      <siteMapNode title = "I-KAD Details" url="~/studentaffairs/frmstdikad.aspx"  description="" />
+      <siteMapNode title = "Reports" roles="studentaffairs"  description="" >
+        <siteMapNode title = "Receive 1 Report" url="~/studentaffairs/frmrptpassportstsnewdtrange.aspx"  description="" />
+        <siteMapNode title = "Passport Status + Delivery Report" url="~/studentaffairs/frmrptpassportstsdtrange.aspx"  description="" />
+        <siteMapNode title = "Reprint Receive 1" url="~/studentaffairs/Reprint_Passport.aspx"  description="" />
+        <siteMapNode title = "Visa Exit/Cancel Report" url="~/studentaffairs/rpt_visa_status.aspx"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode  url ="" title="Immigration" roles="immi" description="">
+      <siteMapNode title = "Passport Submission" url="~/passportmng/passpotsub_imm.aspx"  description="" />
+      <siteMapNode title = "Passport Status" url="~/passportmng/passportsts.aspx"  description="" />
+    </siteMapNode>
+
+    <siteMapNode title="SAD[Manager]" roles="sad_mngr" description="">
+      <siteMapNode title="Complain Assign" url="~/sad_mngr/frm_complain_allocation.aspx"  description="" />
+      <siteMapNode title="Complain Report[Date wise]" url="~/sad_mngr/rpt_complain_dtls.aspx"  description="" />
+      <siteMapNode title="Complain Details[Individual]" url="~/sad_mngr/frm_std_view.aspx"  description="" />
+    </siteMapNode>
+
+    <siteMapNode title="SAD[Staff]" roles="sad_staff" description="">
+      <siteMapNode title="Complain Followup" url="~/sad_staff/frm_complain_solve.aspx"  description="" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode title="Student Service" roles="std_serv" description="">
+      <siteMapNode title="Student Service" roles="std_serv" description="">
+        <siteMapNode title="Student Service Feedback" url="~/std_serv/upd_applicationservice2.aspx"  description="" />
+        <siteMapNode title="Staff Feedback About Students" url="~/std_serv/vw_staffcmt_std2.aspx"  description="" />
+        <siteMapNode title="Tran.-Cert. Appl. Approval" url="~/std_serv/frmreqtranscertiffeedback.aspx"  description="" />
+        <siteMapNode title="Credit Transfer Approval" url="~/std_serv/frm_credit_transfer_apprvby_dean.aspx"  description="" />
+      </siteMapNode>
+    </siteMapNode>-->
+    
+    <!--<siteMapNode title="Alumni Management" roles="Alumni_admin" description="">
+      <siteMapNode  url ="" title="Alumni Website" roles="Alumni_admin" description="">
+        <siteMapNode title="Alumni Menu Master" url="~/Alumni_admin/Menu_mast_alumni.aspx"  description="" />
+        <siteMapNode title="Alumni Sub-Menu Master" url="~/Alumni_admin/submenucontent.aspx"  description="" />
+        <siteMapNode title="Alumni Menu [Update]" url="~/Alumni_admin/submenucontent_updt.aspx"  description="" />
+
+      </siteMapNode>
+
+      --><!--<siteMapNode  url ="" title="Alumni Admin" roles="Alumni_admin" description="">
+        <siteMapNode title="Alumni Group Mail" url="~/Alumni_admin/groupmail.aspx"  description="" />
+        <siteMapNode title="Alumni Student List[Report]" url="~/Alumni_admin/Alumni_list.aspx"  description="" />
+
+      </siteMapNode>--><!--
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="HRM Control" roles="hrm" description="">
+      <siteMapNode title = "Register And Generate Employee Code" url="~/hr/gen_ecode.aspx"  description="" />
+      <siteMapNode title = "Generate Appointment Letter" url="~/hr/empappntletter.aspx"  description="" />
+      <siteMapNode title = "New Staff Email Creation Approval" url="~/hr/frmhrvwemail.aspx"  description="" />
+      <siteMapNode  url ="" title="My Employee Details [Edit/Update]" roles="hrm" description="">
+        <siteMapNode title = "Employee Code[Edit]" url="~/hr/hrmemployeedtlsedit.aspx"  description="" />
+        <siteMapNode title = "Employee File [View/Upload]" url="~/hr/empdocview.aspx"  description="" />
+        <siteMapNode title = "Employee Visa/Permit[View/Upload]" url="~/hr/employeepermit.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url ="" title="New Employee Recruitment Process" roles="hrm" description="">
+        <siteMapNode title = "New Employee Request [View]" url="~/hr/vw_job.aspx"  description="" />
+        <siteMapNode title = "Publish A Job in Careers" url="~/hr/publish_post-job.aspx"  description="" />
+        <siteMapNode title = "New Job Applications [View]" url="~/hr/vw_job-applications.aspx"  description="" />
+        <siteMapNode title = "Reschedule Interview" url="~/hr/reschedule_interview.aspx"  description="" />
+        <siteMapNode title = "Forward Application for Approval" url="~/hr/selected_appl.aspx"  description="" />
+        <siteMapNode title = "Print Offer Letter" url="~/hr/print_offer.aspx"  description="" />
+        <siteMapNode title = "Generate Offer Letter" url="~/hr/Offer_ltr.aspx"  description="" />
+        <siteMapNode title = "Offer Letter Confirmation[Upload]" url="~/hr/Offer_confirm.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode  url ="" title="Service Letters" roles="hrm" description="">
+        <siteMapNode title = "Resignation/Termination" url="~/hr/frmresig.aspx"  description="" />
+        <siteMapNode title = "Delete Employee" url="~/hr/empl_delete.aspx"  description="" />
+        <siteMapNode title = "Increment Letter" url="~/hr/incriment_lttr.aspx"  description="" />
+        <siteMapNode title = "Promotion Letter" url="~/hr/rpt_appntltr_progcord_dean.aspx"  description="" />
+        <siteMapNode title = "Transfer/Confirmation/Contract/Services Letter" url="~/hr/rpt_transfer_lttr.aspx"  description="" />
+        <siteMapNode title = "Warning Letter" url="~/hr/empwarning_lttr.aspx"  description="" />
+        <siteMapNode title = "Letter Service[Old]" url="~/hr/let_serv.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode title = "Employee Request Update" url="~/hr/upd_request_empservice.aspx"  description="" />
+      <siteMapNode title = "Staff Directory Status Update" url="~/hr/staff_directry_stsupdt.aspx"  description="" />
+
+      <siteMapNode  url ="" title="Announcements" roles="hrm" description="">
+        <siteMapNode title = "Campus Announcement" url="~/hr/campusnotices_fac.aspx"  description="" />
+        <siteMapNode title = "Department Announcement" url="~/hr/deptprsnlancemnt_fac_emp.aspx"  description="" />
+        <siteMapNode title = "Personal Announcement" url="~/hr/personalannouncements_fac_emp.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode title = "Employee Liability Config" url="~/hr/frmempstatliab.aspx"  description="" />
+      <siteMapNode title = "Employee A/c Info." url="~/hr/frmempaccinfo.aspx"  description="" />
+      <siteMapNode title = "Item Deliver" url="~/hr/itemacceptance.aspx"  description="" />
+      <siteMapNode title = "Event Letter" url="~/hr/rpt_eventletter.aspx"  description="" />
+      <siteMapNode title = "General Memo" url="~/hr/memo.aspx"  description="" />
+      <siteMapNode title = "Meeting Invitation" url="~/hr/frmhrmeetinv.aspx"  description="" />
+      <siteMapNode title = "Meeting Attendance" url="~/hr/meeting_attendnce.aspx"  description="" />
+      --><!--<siteMapNode title = "Item Deliver" url="~/hr/borang_permo.aspx"  description="" />--><!--
+      <siteMapNode title = "Upload Staff Handbook" url="~/hr/upload_staff_handbook.aspx"  description="" />
+      <siteMapNode title="Employee Visa Mail Status"    url="~/expatriate/empvisamailsts.aspx"  description="" />
+      
+    </siteMapNode>-->
+
+    <!--<siteMapNode  url ="" title="Resignation/Termination" roles="hrm" description="">
+      <siteMapNode title = "Resignation/Termination [View]" url="~/hr/vw_frmresig.aspx"  description="" />
+      <siteMapNode title = "Warning Letter" url="~/hr/empwarning.aspx"  description="" />
+      <siteMapNode title = "Transfer Letter" url="~/hr/transfer_ltr.aspx"  description="" />
+      <siteMapNode title = "Bank Letter" url="~/hr/empl_bank_letter.aspx"  description="" />
+      <siteMapNode title = "To Whom It may concern" url="~/hr/towhomitmayconcern.aspx"  description="" />
+    </siteMapNode>
+
+    <siteMapNode  url ="" title="Leave/Payroll" roles="hrm" description="">
+      <siteMapNode title = "Leave Entitlement" url="~/hr/employee_leave_update.aspx"  description="" />
+      <siteMapNode title = "Leave Transaction" url="~/hr/frmleavetran.aspx"  description="" />
+      <siteMapNode title = "View Leave Transaction" url="~/hr/empleave.aspx"  description="" />
+      <siteMapNode title = "Increment List" url="~/hr/MonthwiseEmployeeList.aspx"  description="" />
+      <siteMapNode title = "Upload Attendance" url="~/hr/EmployeeAttendance.aspx"  description="" />
+      <siteMapNode title = "View Attendance" url="~/hr/ViewAttendance.aspx"  description="" />
+      <siteMapNode title = "Attendance Report" url="~/hr/rpt_EmployeeAttendance.aspx"  description="" />
+      <siteMapNode title = "View Time Out Form" url="~/hr/ViewTimeOut.aspx"  description="" />
+      <siteMapNode title = "Time Out Report" url="~/hr/rpt_TimeOutForm.aspx"  description="" />
+      <siteMapNode title = "Approve Time Out" url="~/hr/ApproveTimeOut.aspx"  description="" />
+      <siteMapNode title = "Approved Mediclaim Payment" url="~/hr/frmpayapprvmediclaim.aspx"  description="" />
+      <siteMapNode title = "Mediclaim Payment Report" url="~/hr/rpt_paidmediclaim.aspx"  description="" />
+      <siteMapNode title="Mediclaim Transaction[Employee]" url="~/hr/frmempmediclaimview.aspx" description="" />
+    </siteMapNode>
+
+    <siteMapNode  url ="" title="HR Report" roles="hrreport" description="">
+      <siteMapNode title = "Employee List" url="~/hr/rpt_vw_employee.aspx"  description="" />
+      <siteMapNode title = "Employee List[Department Wise]" url="~/hr/rpt_vw_employee_deptwise.aspx"  description="" />
+      <siteMapNode title = "Employee List[Job Type Wise]" url="~/hr/rpt_vw_employee_jobtypewise.aspx"  description="" />
+      <siteMapNode title = "Employee List[Staff Category Wise]" url="~/HRreport/rpt_employee_stffcategory.aspx"  description="" />
+      <siteMapNode title = "Employee List[Country Wise]" url="~/HRreport/rpt_emp_cntrywise.aspx"  description="" />
+      <siteMapNode title = "Employee List[Designation Wise]" url="~/hr/rpt_vw_employee_desigwise.aspx"  description="" />
+      <siteMapNode title = "Employee Detailed Report" url="~/hr/rpt_vwempfull_Data.aspx"  description="" />
+      <siteMapNode title = "Employees Publications" url="~/hr/rpt_publications.aspx"  description="" />
+      <siteMapNode title = "Employee Details[Custom Report]" url="~/hr/rpt_vw_employee_permit.aspx"  description="" />
+    </siteMapNode>
+
+    <siteMapNode  url ="" title="Recruitment" roles="hrm" description="">
+      <siteMapNode title = "Job Applications All" url="~/hr/frmemp_job_dep.aspx"  description="" />
+      <siteMapNode title = "Job Applications Individual" url="~/hr/job_applicant.aspx"  description="" />
+    </siteMapNode>
+
+    <siteMapNode  title="Job Applications" roles="resume_search" description="">
+      <siteMapNode title="View Applicantions" url="~/resume_search/vwemp_job_appl.aspx"  description="" />
+      <siteMapNode title="Search Resume" url="~/resume_search/job_applicant.aspx"  description="" />
+      <siteMapNode title="Search Applicant" url="~/resume_search/search_curri.aspx"  description="" />
+    </siteMapNode>
+      
+    <siteMapNode  url ="" title="Expatriate" roles="expat" description="">
+      <siteMapNode title="Job Application" url="~/expatriate/empapplyonline.aspx"  description="" />
+      <siteMapNode title="Document Upload" url="~/expatriate/emplfileuplod.aspx"  description="" />
+      <siteMapNode title="Delete Uploaded Document" url="~/expatriate/del_emplfileuplod.aspx"  description="" />
+      <siteMapNode title="Job Applicant Details and Verify" url="~/expatriate/vwemplkptdet.aspx"  description="" />
+      <siteMapNode title="KPT Verification Document" url="~/expatriate/empl_kpt_edit.aspx"  description="" />
+      <siteMapNode title="Generate KPT Documents[First]" url="~/expatriate/borang_perm_peng.aspx"  description="" />
+      <siteMapNode title="Generate KPT Documents[Second]" url="~/expatriate/gen_kpt_rep.aspx"  description="" />
+      <siteMapNode title="Change Status" url="~/expatriate/emplstagechng.aspx"  description="" />
+
+      <siteMapNode title="Acknowledgement Upload"    url="" roles="hrm" description="">
+        <siteMapNode title="Upload KPT Acknowledgement"    url="~/expatriate/upld_emplkptack.aspx"  description="" />
+        <siteMapNode title="Upload Immi. Acknowledgement"    url="~/expatriate/emp_immi_receipt.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode title="Approval Upload"    url="" roles="hrm" description="">
+        <siteMapNode title="Upload KPT Approval"    url="~/expatriate/empl_kpt_approval.aspx"  description="" />
+        <siteMapNode title="Upload Immi. Approval"    url="~/expatriate/empl_immi_approval.aspx"  description="" />
+        <siteMapNode title="Upload VISA Approval"    url="~/expatriate/upld_empl_visa.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode title="Report"    url="" roles="hrm" description="">
+        <siteMapNode title="Job Application Log"    url="~/expatriate/vw_empldetlog.aspx"  description="" />
+      </siteMapNode>
+
+      <siteMapNode title="View All Approval"    url="~/expatriate/vw_empl_approval.aspx"  description="" />
+      <siteMapNode title="View Employee KPT Information"    url="~/expatriate/search_EMPL_kptinfo.aspx"  description="" />
+
+      <siteMapNode title="Expatriate Application"    url="~/expatriate/Expatriate_Appl.aspx"  description="" />
+      <siteMapNode title="Verify/Generate KPT Letter"    url="~/expatriate/genkpt_aplupld.aspx"  description="" />
+
+    </siteMapNode>-->
+
+
+
+    <!--<siteMapNode    title="Quality Assurance Department" roles="qa_academic" description="">
+      <siteMapNode    title="Subject Allocation Report" roles="qa_academic" description="">
+        <siteMapNode title="Programme Wise" url="~/AcademicQuality/rpt_suballocation_progrm.aspx"  description="" />
+        <siteMapNode title="Lecturer Wise" url="~/AcademicQuality/rpt_suballocation_lect.aspx"  description="" />
+
+      </siteMapNode>
+      <siteMapNode title="Job Task Report" url="~/AcademicQuality/jobtaskreport.aspx"  description="" />
+    </siteMapNode>-->
+
+
+    <!--<siteMapNode title="Academic Monitoring" roles="acamgmt" description="">
+      <siteMapNode title="Course Topic Report [By Date Range]" url="~/acamgmt/frmtopicdescbydt.aspx"  description="" />
+      <siteMapNode title="Course Topic Report [By Subject]" url="~/acamgmt/frmtopicdescbysub.aspx"  description="" />
+      <siteMapNode title="Lecture Notes Upload Report[By Date Range]" url="~/acamgmt/frmtopicdescbydt_dtls.aspx"  description="" />
+      <siteMapNode title="Lecture Notes Upload Report[By Subject]" url="~/acamgmt/frmtopicdescbysub_dtls.aspx"  description="" />
+
+    </siteMapNode>-->
+    
+
+    <!--<siteMapNode  url ="" title="Control Panel" roles="webadmin" description="">
+      <siteMapNode  url ="" title="Online Admin" roles="webadmin" description="">
+        <siteMapNode title = "User Management" url="~/webadmin/user_management.aspx"  description="" />
+        <siteMapNode title = "Role Management" url="~/webadmin/rolemanagement.aspx"  description="" />
+        <siteMapNode title = "View Deleted user" url="~/webadmin/vwDelUser.aspx"  description="" />
+        <siteMapNode title = "Password Reset" url="~/lncdn/passwordreset.aspx"  description="" />
+        <siteMapNode title = "Email Pool"  url="~/lncdn/email_pool.aspx"  description="" />
+      </siteMapNode>  
+
+      --><!--<siteMapNode  url ="" title="Devolopers Zone" roles="webadmin" description="">
+        <siteMapNode title = "E-Mail Blasting " url="~/lncdn/automail.aspx"  description="" />
+        <siteMapNode title = "FAQ " url="~/lncdn/faq.aspx"  description="" />      
+
+      </siteMapNode>--><!--
+    </siteMapNode>-->
+
+
+  </siteMapNode>
+</siteMap>
+
+

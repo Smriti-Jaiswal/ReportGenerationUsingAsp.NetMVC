@@ -1,0 +1,47 @@
+﻿@model procpu.Models.StudentViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+
+<body>
+    <div class="col-sm-12">
+        <table id="all" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Citizenship ID</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in ViewBag.data)
+            {
+                    <tr>
+                        <td>@(item.stdfname + " " + item.stdmname + " " + item.stdlname)</td>
+                        <td>@item.citizenship_id</td>
+                        <td>@item.phno</td>
+
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('#all').DataTable();
+    });
+</script>

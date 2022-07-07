@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+		font-family:'FontAwesome';
+		src:url('../fonts/fontawesome-webfont.eot?v=3.2.1');
+		src:url('../fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'),url('../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+		font-weight:normal;
+		font-style:normal;
+		}
+[class^="icon-"],[class*=" icon-"]{font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:.3em}
+[class^="icon-"]:before,[class*=" icon-"]:before{text-decoration:inherit;display:inline-block;speak:none}
+
+.flt_lft{float:left;}
+.flt_rgt{float:right;}
+.clr{clear:both;}
+
+a{text-decoration:none;}
+
+.pnl_dataentry{
+    border:1px solid #cdcdcd;
+    -webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	behavior:url(../PIE.htc);
+    color:#1a1a1a;
+    font-size:12px;
+    margin:30px auto;
+    /*min-height:280px;*/
+    padding:15px 20px;
+    position:relative;
+    width:100%;
+}
+
+h1{background-color:#2c2c2c;
+    color:#ffffff;
+    font-family:"Conv_Helvetica-Condensed",sans-serif;
+    font-size:30px;
+    font-weight:normal;
+    line-height:32px;
+    margin:0;
+    padding:8px 34px 10px;
+}
+
+.icon-program:before{content:"\f15c"; font-size:15px; margin:0 5px 0 0; color:#ff6600;}
+.icon-arow:before{content:"\f0da"; font-size:15px; margin:0 5px 0 0; color:#ff6600;}
+.icon-next:before{content:"\f01a"; font-size:35px; margin:10px 0; color:#ff6600;}
+.icon-close:before{content:"\f047"; font-size:35px; margin:10px 0; color:#ff6600;}
+
+.program_list_wraper{padding:0; margin:0;}
+.program_list_wraper ul{list-style:none; padding:0; margin:0;}
+.program_list_wraper ul li{background-color:#d4e4ef; padding:5px 10px; margin:2px 0; font-size:12px; color:#212121;}
+.program_list_wraper ul li:hover{background-color:#c6dcea;}
+.program_txt1{font-size:15px; color:#000; text-decoration:none;}
+.program_txt1 a{font-size:15px; color:#000; text-decoration:none;}
+.program_txt1 a:hover{color:#fff; text-decoration:none; font-size:15px;}
+
+.table_head{background-color:#DE4444; padding:8px 12px; margin:0 0 12px 0; font-size:16px; font-weight:normal; text-transform:uppercase; color:#fff;}
+
+.gridview_box1{width:5%; float:left; padding:0; margin:0;}
+.gridview_box2{width:80%; float:left; padding:0; margin:0 30px 0;}
+.gridview_box3{width:10%; float:left; padding:0; margin:0;}
+
+.greadview_row{background-color:#d4e4ef; padding:6px 10px; margin:3px 0;}
+.greadview_row .btn_holder{width:35%; float:left; padding:0; margin:0 10px;}
+.small_btn{
+	background-color:#2c2c2c;
+	border:1px solid #2c2c2c;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	position:relative;
+	behavior:url(PIE.htc);
+	padding:4px 8px;
+	margin:0;
+	font-size:12px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	line-height:18px;
+	cursor:pointer;
+	border:0;
+	}
+.small_btn:after{content:"";}
+.small_btn:hover,
+.small_btn:focus{
+	background-color:#005e99;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+	font-size:12px;
+	 -moz-transition: all 0.4s ease-in; 
+	 -webkit-transition: all 0.4s ease-in; 
+	 -o-transition: all 0.4s ease-in; 
+	 transition: all 0.4s ease-in;
+	 padding:4px 8px;
+	}
+
+.pnl_dataentry .lft_block{width:65%; float:left; background-color:#CCC; padding:20px; margin:0 25px 0 0;}
+.pnl_dataentry .rgt_block{width:30%; float:right; background-color:#E0D9D9; padding:20px; margin:0 0 0 25px;}
+
+.file_field{width:40%; padding:0; margin:0 25px 5px 0;}
+
+.pnl_dataentry .rgt_block ul{list-style:none; padding:0; margin:0;}
+.pnl_dataentry .rgt_block ul li
+{
+	padding:4px 8px;
+	margin:0 10px 6px;
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+}
+
+.blk_bg{
+ background-color:#212121;
+ -webkit-border-radius:2px;
+ -moz-border-radius:2px;
+ border-radius:2px;
+ position:relative;
+ behavior:url(PIE.htc);
+ color:#fff;
+ padding:4px 8px;
+ margin:0 10px 6px;
+ }
+.blk_bg:hover{background-color:#ff6600;}
+
+.pnl_dataentry .rgt_block .link_txt a{
+ width:100%;
+ font-size:15px;
+ color:#fff;
+ text-decoration:none;
+}
+.pnl_dataentry .rgt_block .link_txt a:hover{
+ font-size:15px;
+ color:#fff;
+ text-decoration:none;
+}
+
+.program_list_wraper2{padding:0; margin:0;}
+.program_list_wraper2 ul{list-style:none; padding:0; margin:0;}
+.program_list_wraper2 ul li{
+	background-color:#FCCACA;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	position:relative;
+	behavior:url(PIE.htc); 
+	padding:5px 10px; 
+	margin:5px 5px; 
+	font-size:12px; 
+	color:#fff; 
+	width:48%; 
+	height:55px;
+	float:left;
+	border: 2px solid #FF6060;
+	line-height: 20px;
+	}
+.program_list_wraper2 ul li:hover{background-color:#DE9B9B; color:#000;}
+/*.program_txt1{font-size:12px; color:#fff; text-decoration:none;}*/
+
+.black_overlay{
+display:none;
+position:absolute;
+top:0%;
+left:0%;
+width:100%;
+height:100%;
+background-color:black;
+z-index:1001;
+-moz-opacity:0.8;
+opacity:.80;
+filter:alpha(opacity=80);
+}
+.white_content {
+display:none;
+position:absolute;
+top:25%;
+left:25%;
+width:50%;
+height:50%;
+padding:16px;
+border:16px solid #005e9a;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+behavior:url(PIE.htc); 
+background-color:white;
+z-index:1002;
+overflow:auto;
+}
+.close_btn{position:absolute; right:0; top:0;}
+@media (min-width: 320px) and (max-width: 640px) 
+{
+ .program_list_wraper2 ul li{
+ background-color:#FCCACA;
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px;
+ border-radius:4px;
+ position:relative;
+ behavior:url(PIE.htc); 
+ padding:5px 10px; 
+ margin:5px 5px; 
+ font-size:12px; 
+ color:#fff; 
+ width:100%; 
+ height: auto;
+ float:left;
+ border: 2px solid #FF6060;
+ line-height:20px;
+ }
+ 
+ .pnl_dataentry .lft_block {
+    width: 100% !important;
+    float: none;
+    clear:both;
+    background-color: #CCC;
+    padding: 20px;
+    margin: 0px;
+} 
+ 
+.pnl_dataentry .rgt_block {
+    width: 100%;
+    float: none;
+    background-color: #E0D9D9;
+    padding: 20px;
+    margin: 0px;
+}
+}

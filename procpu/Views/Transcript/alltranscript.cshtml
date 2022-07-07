@@ -1,0 +1,58 @@
+﻿@model procpu.Models.TableViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+
+<body>
+    <div class="col-sm-12">
+        <table id="all" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+
+                <tr><th class="hidden">Transid</th>
+                    <th>Student Name</th>
+                    <th>Citizenship ID</th>
+                    <th>Transcript Generation Date</th>
+                    <th>School Year</th>
+                    <th>Download Transcipt</th>
+                    <th>Edit Transcipt</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in ViewBag.tblview)
+            {
+                    <tr>
+                        <td class="hidden">@item.transid</td>
+                        <td>@(item.stdfname + " " + item.stdmname + " " + item.stdlname)</td>
+                        <td>@item.citizenship_id</td>
+                        <td>@item.transgendt.ToString("dd-MM-yyyy")</td>
+                        <td>@item.schoolyear</td>
+                        <td><a class="btn btn-success" href="@Url.Action("download", "Transcript", new {id= @item.transid })"><i class="fa fa-download"></i></a></td>
+                        <td><a class="btn btn-warning" onclick="LoadInfo('@item.transid')" href="#"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('#all').DataTable();
+    });
+    function LoadInfo(transid) {
+        debugger;
+        var url = '@Url.Action("edittranscript", "Transcript")?id=' + transid;
+        window.location.href = (url);
+       }
+</script>

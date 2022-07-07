@@ -1,0 +1,239 @@
+.page-container {
+  min-width: 1260px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  /*height: 100%;*/
+  margin: 0px auto;
+}
+
+
+
+.page-container.sidebar-collapsed {
+  padding-right: 65px;
+  transition: all 100ms linear;
+  transition-delay: 300ms;
+}
+
+.page-container.sidebar-collapsed-back {
+  padding-right: 382px;
+  transition: all 100ms linear;
+}
+
+.page-container.sidebar-collapsed .sidebar-menu {
+  width: 0px;
+  transition: all 100ms ease-in-out;
+  transition-delay: 300ms;
+}
+
+.page-container.sidebar-collapsed-back .sidebar-menu {
+  width: 380px;
+  transition: all 100ms ease-in-out;
+}
+
+/*.page-container.sidebar-collapsed .sidebar-icon {
+  transform: rotate(90deg);
+  transition: all 300ms ease-in-out;
+}
+
+.page-container.sidebar-collapsed-back .sidebar-icon {
+  transform: rotate(0deg);
+  transition: all 300ms ease-in-out;
+}
+*/
+.page-container.sidebar-collapsed .logo {
+  padding: 21px;
+  height: 136px;
+  box-sizing: border-box;
+  transition: all 100ms ease-in-out;
+  transition-delay: 300ms;
+}
+
+.page-container.sidebar-collapsed-back .logo {
+  width: 100%;
+  padding: 21px;
+  height: 136px;
+  box-sizing: border-box;
+  transition: all 100ms ease-in-out;
+}
+
+.page-container.sidebar-collapsed #logo {
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.page-container.sidebar-collapsed-back #logo {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  transition-delay: 300ms;
+}
+
+.page-container.sidebar-collapsed #menu span {
+  opacity: 0;
+  transition: all 50ms linear;
+}
+
+.page-container.sidebar-collapsed-back #menu span {
+  opacity: 1;
+  transition: all 200ms linear;
+  transition-delay: 300ms;
+}
+
+.sidebar-menu {
+  position: fixed;
+  float: left;
+  width: 380px;
+  top: 25%;
+      right: -12px;
+  bottom: 25%;
+  background-color: #fff;
+  color: #aaabae;
+  font-family: "Segoe UI";
+  box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  height: 400px;
+      border: 2px solid #798bf5;
+}
+.sidebar-menu-inner {
+  width: 100%;
+  height:auto;
+  overflow: auto;
+  padding: 20px;
+  height: 357px;
+}
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#menu li {
+  position: relative;
+  margin: 0;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(69, 74, 84, 0.7);
+  padding: 0;
+}
+
+#menu li ul {
+  opacity: 0;
+  height: 0px;
+}
+
+#menu li a {
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #aaabae;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+#menu li a:hover {
+  color: #ffffff;
+  background-color: #333944;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+#menu li.active > a {
+  background-color: #2b303a;
+  color: #ffffff;
+}
+
+#menu ul li { background-color: #2b303a; }
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li ul {
+  position: absolute;
+  visibility: hidden;
+  right: 100%;
+  top: -1px;
+  background-color: #2b303a;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.1s linear;
+  border-top: 1px solid rgba(69, 74, 84, 0.7);
+}
+
+#menu li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#menu li li ul {
+  right: 100%;
+  visibility: hidden;
+  top: -1px;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+#menu li li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#menu .fa { margin-right: 5px; }
+
+.logo {
+  width: 100%;
+  padding: 21px;
+  box-sizing: border-box;
+}
+
+.sidebar-icon {
+position: absolute;
+float: right;
+left: -55px;
+border: none;
+background: url("~/Images/announcement.gif");
+width: 40px;
+height: 30px;
+cursor: pointer;
+}
+
+/*#logo
+{
+    width: 150px;
+    height: 64px;
+    vertical-align: middle;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+}*/
+
+
+
+.slide-menu-txt, .slide-menu-txt a
+{
+  /*  color: #f00;*/
+   color :#d95f6b;
+    font-size: 15px;
+    font-weight: bold;
+    
+    }
+.slide-menu-txt a:hover
+{
+    color: #b34b4b;
+    text-decoration: none;
+    }
+.sidebar-menu-header-text {
+    font-weight: bold;
+    font-style: italic;
+    padding: 8px 20px 0;
+    height: 39px;
+   /* background: #db4343;*/
+   background: #d95f6b;
+    border-bottom: 1px solid #898ead;
+    font-size: 16px;
+    color: #fff;
+}

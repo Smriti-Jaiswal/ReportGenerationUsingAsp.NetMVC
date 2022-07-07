@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_luccpuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblcpugeninfo">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="cpugeninfo" Type="varchar(max)" Nullable="false" />
+    <Property Name="cpugeninfodesc" Type="varchar(max)" Nullable="false" />
+    <Property Name="geninfoupld" Type="varchar(max)" Nullable="false" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lcm" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblcpupartmoudtls">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="partnerid" Type="varchar(max)" Nullable="false" />
+    <Property Name="partnername" Type="varchar(max)" Nullable="false" />
+    <Property Name="partneremail" Type="varchar(max)" Nullable="false" />
+    <Property Name="partnercnumber" Type="varchar(max)" Nullable="false" />
+    <Property Name="partnercountry" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="partnermouupld" Type="varchar(max)" Nullable="false" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lcm" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblstdacademicgradedtls">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="frmmodtransid" Type="uniqueidentifier" />
+    <Property Name="schoolyear" Type="varchar(max)" />
+    <Property Name="gradelvl" Type="varchar(max)" />
+    <Property Name="totalcredits" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="gpa" Type="varchar(max)" />
+    <Property Name="cumulativegpa" Type="varchar(max)" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+    <Property Name="studenttransid" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tblstdacademicrecord">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="frmmodtransid" Type="uniqueidentifier" />
+    <Property Name="coursetitle" Type="varchar(max)" />
+    <Property Name="creditattempted" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="creditearned" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="finalgrade" Type="varchar(max)" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+    <Property Name="studenttransid" Type="uniqueidentifier" />
+    <Property Name="assignments" Type="varchar(max)" />
+    <Property Name="quizzes" Type="varchar(max)" />
+    <Property Name="marksobtained" Type="varchar(max)" />
+    <Property Name="totalmarks" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tblstdacademicsummary">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="frmmodtransid" Type="uniqueidentifier" />
+    <Property Name="cumugpa" Type="varchar(max)" />
+    <Property Name="creditsattempted" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="creditsearned" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="diplomaearned" Type="varchar(max)" />
+    <Property Name="graduationdate" Type="datetime" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+    <Property Name="studenttransid" Type="uniqueidentifier" />
+    <Property Name="totalsubjects" Type="varchar(max)" />
+    <Property Name="totalmarksattempted" Type="varchar(max)" />
+    <Property Name="totalmarksobtained" Type="varchar(max)" />
+    <Property Name="totalpercentage" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tblstdapplicationdtls">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stdfname" Type="varchar(max)" Nullable="false" />
+    <Property Name="stdmname" Type="varchar(max)" />
+    <Property Name="stdlname" Type="varchar(max)" Nullable="false" />
+    <Property Name="dob" Type="date" Nullable="false" />
+    <Property Name="citizenship_id" Type="varchar(max)" Nullable="false" />
+    <Property Name="gender" Type="varchar(max)" Nullable="false" />
+    <Property Name="address" Type="varchar(max)" Nullable="false" />
+    <Property Name="country" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="phno" Type="varchar(max)" Nullable="false" />
+    <Property Name="grade" Type="varchar(max)" Nullable="false" />
+    <Property Name="subjectstaken" Type="varchar(max)" Nullable="false" />
+    <Property Name="pathway" Type="varchar(max)" Nullable="false" />
+    <Property Name="centrename" Type="varchar(max)" Nullable="false" />
+    <Property Name="centreaddress" Type="varchar(max)" Nullable="false" />
+    <Property Name="centrephno" Type="varchar(max)" Nullable="false" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblstdattachment">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="frmmodtransid" Type="uniqueidentifier" />
+    <Property Name="attachmenttype" Type="varchar(max)" />
+    <Property Name="attachmentotherdtls" Type="varchar(max)" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+    <Property Name="studenttransid" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tblstddocupload">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="frmmodtransid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="docid" Type="varchar(max)" Nullable="false" />
+    <Property Name="uploaddocs" Type="varchar(max)" Nullable="false" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblstdparentdtls">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="frmmodtransid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="fname" Type="varchar(max)" Nullable="false" />
+    <Property Name="lname" Type="varchar(max)" Nullable="false" />
+    <Property Name="idnumber" Type="varchar(max)" Nullable="false" />
+    <Property Name="email" Type="varchar(max)" Nullable="false" />
+    <Property Name="relation" Type="varchar(max)" Nullable="false" />
+    <Property Name="homeaddress" Type="varchar(max)" Nullable="false" />
+    <Property Name="mobile" Type="varchar(max)" Nullable="false" />
+    <Property Name="cname" Type="varchar(max)" Nullable="false" />
+    <Property Name="caddress" Type="varchar(max)" Nullable="false" />
+    <Property Name="suite" Type="varchar(max)" Nullable="false" />
+    <Property Name="state" Type="varchar(max)" Nullable="false" />
+    <Property Name="postalcode" Type="varchar(max)" Nullable="false" />
+    <Property Name="city" Type="varchar(max)" Nullable="false" />
+    <Property Name="cuntry" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="cphno" Type="varchar(max)" Nullable="false" />
+    <Property Name="howdidyouhearaboutus" Type="varchar(max)" Nullable="false" />
+    <Property Name="fileupload" Type="varchar(max)" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lcm" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblattachmenttype">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="attachmentname" Type="varchar(max)" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblcountrymast">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="country_name" Type="varchar(max)" />
+    <Property Name="currency" Type="varchar" MaxLength="50" />
+    <Property Name="nationality" Type="varchar(max)" />
+    <Property Name="rco" Type="varchar" MaxLength="50" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="del_sts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar" MaxLength="50" />
+    <Property Name="lum" Type="datetime" />
+    <Property Name="callcode" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tbldoctypemast">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="doctype" Type="varchar(max)" Nullable="false" />
+    <Property Name="docgroup" Type="varchar(max)" Nullable="false" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblstdtranscript">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="frmmodtransid" Type="uniqueidentifier" />
+    <Property Name="transcriptnumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transgendt" Type="datetime" />
+    <Property Name="rco" Type="varchar(max)" />
+    <Property Name="rcm" Type="datetime" />
+    <Property Name="delsts" Type="char" MaxLength="1" />
+    <Property Name="luo" Type="varchar(max)" />
+    <Property Name="lum" Type="datetime" />
+  </EntityType>
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_system_AspNetUserClaims_system_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_system_AspNetUserLogins_system_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_system_AspNetUserRoles_system_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_system_AspNetUserRoles_system_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_luccpuModelStoreContainer">
+    <EntitySet Name="tblcpugeninfo" EntityType="Self.tblcpugeninfo" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblcpupartmoudtls" EntityType="Self.tblcpupartmoudtls" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblstdacademicgradedtls" EntityType="Self.tblstdacademicgradedtls" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblstdacademicrecord" EntityType="Self.tblstdacademicrecord" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblstdacademicsummary" EntityType="Self.tblstdacademicsummary" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblstdapplicationdtls" EntityType="Self.tblstdapplicationdtls" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblstdattachment" EntityType="Self.tblstdattachment" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblstddocupload" EntityType="Self.tblstddocupload" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblstdparentdtls" EntityType="Self.tblstdparentdtls" Schema="cpu" store:Type="Tables" />
+    <EntitySet Name="tblattachmenttype" EntityType="Self.tblattachmenttype" Schema="master" store:Type="Tables" />
+    <EntitySet Name="tblcountrymast" EntityType="Self.tblcountrymast" Schema="master" store:Type="Tables" />
+    <EntitySet Name="tbldoctypemast" EntityType="Self.tbldoctypemast" Schema="master" store:Type="Tables" />
+    <EntitySet Name="tblstdtranscript" EntityType="Self.tblstdtranscript" Schema="master" store:Type="Tables" />
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="system" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="system" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="system" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="system" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="system" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="system" store:Type="Tables" />
+    <AssociationSet Name="FK_system_AspNetUserClaims_system_AspNetUsers_UserId" Association="Self.FK_system_AspNetUserClaims_system_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_system_AspNetUserLogins_system_AspNetUsers_UserId" Association="Self.FK_system_AspNetUserLogins_system_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_system_AspNetUserRoles_system_AspNetRoles_RoleId" Association="Self.FK_system_AspNetUserRoles_system_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_system_AspNetUserRoles_system_AspNetUsers_UserId" Association="Self.FK_system_AspNetUserRoles_system_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

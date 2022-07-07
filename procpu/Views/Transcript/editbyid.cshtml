@@ -1,0 +1,30 @@
+﻿@model procpu.Models.EditViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+
+<body>
+
+
+    <div class="col-sm-6">
+        @foreach (var item in ViewBag.editby_id)
+        {
+            <input type="hidden" id="Id" name="Id" value="@item.transid">
+            <label><b>Full Name: </b>@(item.stdfname + " " + item.stdmname + " " + item.stdlname)</label><br />
+            <label><b>Address: </b>@(item.address + ", " + item.country_name) </label><br />
+            <label><b>Phone Number: </b>@item.phno</label><br />
+                <label><b>E-mail Address: </b>@item.email</label><br />
+                <label><b>Date of Birth: </b>@item.dob.ToString("dd-MM-yyyy")</label><br />
+                <label><b>Parent/Guardian: </b>@(item.fname + " " + item.lname)</label><br />
+        }
+    </div>
+</body>
+</html>
+
+
+
